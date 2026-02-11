@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0a0a;
+            color: #f0f0f0;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 80px 24px 40px;
+        }
+
+        .header h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            background: linear-gradient(135deg, #ffffff 0%, #a0a0a0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            margin-top: 16px;
+            font-size: 1.05rem;
+            color: #888;
+            font-weight: 300;
+            max-width: 520px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .badge {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 6px 18px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.8rem;
+            color: #aaa;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        /* Template Grid */
+        .templates {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 24px 100px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 32px;
+        }
+
+        /* Card */
+        .card {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            background: #141414;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            border-color: rgba(255, 255, 255, 0.12);
+        }
+
+        .card-thumbnail {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            overflow: hidden;
+            background: #1a1a1a;
+        }
+
+        .card-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover .card-thumbnail img {
+            transform: scale(1.05);
+        }
+
+        .card-thumbnail .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.35s ease;
+        }
+
+        .card:hover .card-thumbnail .overlay {
+            opacity: 1;
+        }
+
+        .overlay .btn-preview {
+            padding: 12px 28px;
+            border-radius: 999px;
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        .overlay .btn-preview:hover {
+            background: #e0e0e0;
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            padding: 24px;
+        }
+
+        .card-body h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .card-body p {
+            font-size: 0.88rem;
+            color: #777;
+            line-height: 1.55;
+            margin-bottom: 16px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            padding: 4px 12px;
+            border-radius: 999px;
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #aaa;
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        /* Placeholder thumbnail for templates without screenshots */
+        .placeholder-thumb {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            background: linear-gradient(135deg, #1e1e2e, #2a1a2e);
+            color: rgba(255, 255, 255, 0.15);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            color: #555;
+            font-size: 0.82rem;
+        }
+
+        @media (max-width: 420px) {
+            .templates {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Template Gallery</h1>
+        <p>Browse the collection of ready-made website templates. Click any card to preview.</p>
+        <span class="badge">1 Template Available</span>
+    </header>
+
+    <!-- Template List -->
+    <section class="templates">
+
+        <!-- Beauty Template -->
+        <a href="Beauty/index.html" class="card" style="text-decoration:none;color:inherit;">
+            <div class="card-thumbnail">
+                <div class="placeholder-thumb">&#10024;</div>
+                <div class="overlay">
+                    <span class="btn-preview">View Template</span>
+                </div>
+            </div>
+            <div class="card-body">
+                <h3>LUXORA — Beauty &amp; Skincare</h3>
+                <p>A premium beauty and skincare e-commerce template with elegant animations, mega menus, product showcases, and a modern luxurious design.</p>
+                <div class="tags">
+                    <span class="tag">Beauty</span>
+                    <span class="tag">E-Commerce</span>
+                    <span class="tag">HTML / CSS / JS</span>
+                </div>
+            </div>
+        </a>
+
+        <!-- Add more template cards here -->
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        &copy; 2026 Template Gallery &mdash; Add new templates by creating a folder and linking it here.
+    </footer>
+
+</body>
+</html>
