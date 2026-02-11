@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXORA — Premium Beauty & Skincare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <span class="loader-text">LUXORA</span>
+            <div class="loader-bar"><div class="loader-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-track">
+            <span>✦ FREE SHIPPING ON ORDERS OVER $75 ✦ USE CODE <strong>GLOW25</strong> FOR 25% OFF ✦ NEW ARRIVALS JUST DROPPED ✦ COMPLIMENTARY SAMPLES WITH EVERY ORDER ✦ FREE SHIPPING ON ORDERS OVER $75 ✦ USE CODE <strong>GLOW25</strong> FOR 25% OFF ✦ NEW ARRIVALS JUST DROPPED ✦ COMPLIMENTARY SAMPLES WITH EVERY ORDER ✦</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link" data-hover="New">New</a></li>
+                    <li class="has-dropdown">
+                        <a href="#" class="nav-link" data-hover="Skincare">Skincare</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-inner">
+                                <div class="mega-col">
+                                    <h4>By Category</h4>
+                                    <a href="#">Cleansers</a>
+                                    <a href="#">Moisturizers</a>
+                                    <a href="#">Serums & Treatments</a>
+                                    <a href="#">Eye Care</a>
+                                    <a href="#">Masks</a>
+                                    <a href="#">Sunscreen & SPF</a>
+                                </div>
+                                <div class="mega-col">
+                                    <h4>By Concern</h4>
+                                    <a href="#">Anti-Aging</a>
+                                    <a href="#">Acne & Blemishes</a>
+                                    <a href="#">Hydration</a>
+                                    <a href="#">Dark Spots</a>
+                                    <a href="#">Sensitive Skin</a>
+                                    <a href="#">Pore Care</a>
+                                </div>
+                                <div class="mega-col">
+                                    <h4>Top Brands</h4>
+                                    <a href="#">La Mer</a>
+                                    <a href="#">SK-II</a>
+                                    <a href="#">Drunk Elephant</a>
+                                    <a href="#">Tatcha</a>
+                                    <a href="#">The Ordinary</a>
+                                    <a href="#">Sunday Riley</a>
+                                </div>
+                                <div class="mega-col mega-feature">
+                                    <img src="https://images.unsplash.com/photo-1570194065650-d99fb4ee3313?w=300&h=400&fit=crop" alt="Skincare">
+                                    <span class="mega-feature-label">The Glass Skin Edit</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#" class="nav-link" data-hover="Makeup">Makeup</a></li>
+                    <li><a href="#" class="nav-link" data-hover="Fragrance">Fragrance</a></li>
+                    <li><a href="#" class="nav-link" data-hover="Hair">Hair</a></li>
+                </ul>
+            </div>
+            <a href="#" class="logo">
+                <span class="logo-text">LUXORA</span>
+                <span class="logo-tagline">BEAUTY & BEYOND</span>
+            </a>
+            <div class="nav-right">
+                <button class="nav-icon search-toggle" aria-label="Search"><i class="fas fa-search"></i></button>
+                <a href="#" class="nav-icon" aria-label="Account"><i class="fas fa-user"></i></a>
+                <a href="#" class="nav-icon" aria-label="Wishlist"><i class="fas fa-heart"></i><span class="badge">3</span></a>
+                <a href="#" class="nav-icon cart-icon" aria-label="Cart" id="cartToggle"><i class="fas fa-shopping-bag"></i><span class="badge cart-count">2</span></a>
+            </div>
+        </div>
+        <!-- Search Overlay -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-container">
+                <input type="text" placeholder="Search for products, brands, and more..." class="search-input" id="searchInput">
+                <button class="search-close" aria-label="Close search"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="search-suggestions">
+                <span class="search-tag">Vitamin C Serum</span>
+                <span class="search-tag">Retinol</span>
+                <span class="search-tag">Niacinamide</span>
+                <span class="search-tag">Lip Gloss</span>
+                <span class="search-tag">Foundation</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <span class="logo-text">LUXORA</span>
+            <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Skincare</a></li>
+            <li><a href="#">Makeup</a></li>
+            <li><a href="#">Fragrance</a></li>
+            <li><a href="#">Hair</a></li>
+            <li><a href="#">Bath & Body</a></li>
+            <li><a href="#">Tools</a></li>
+            <li><a href="#">Gifts & Sets</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <video autoplay muted loop playsinline class="hero-video" poster="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=1920&h=1080&fit=crop">
+                <source src="" type="video/mp4">
+            </video>
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=1920&h=1080&fit=crop" alt="Beauty" class="hero-fallback">
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">NEW COLLECTION 2026</div>
+            <h1 class="hero-title">
+                <span class="hero-line">Reveal Your</span>
+                <span class="hero-line hero-line-italic">Radiance</span>
+            </h1>
+            <p class="hero-subtitle">Discover luxury skincare crafted with rare botanicals and cutting-edge science for your most luminous skin yet.</p>
+            <div class="hero-cta">
+                <a href="#products" class="btn btn-primary">Shop The Collection</a>
+                <a href="#" class="btn btn-outline">Watch The Film <i class="fas fa-play"></i></a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><span class="stat-number" data-target="250">0</span><span class="stat-plus">+</span><span class="stat-label">Luxury Brands</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="stat-number" data-target="15">0</span><span class="stat-plus">K+</span><span class="stat-label">Products</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="stat-number" data-target="2">0</span><span class="stat-plus">M+</span><span class="stat-label">Happy Clients</span></div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Categories Marquee -->
+    <section class="categories-strip">
+        <div class="marquee">
+            <div class="marquee-track">
+                <span class="marquee-item">SKINCARE</span>
+                <span class="marquee-dot">◆</span>
+                <span class="marquee-item">MAKEUP</span>
+                <span class="marquee-dot">◆</span>
+                <span class="marquee-item">FRAGRANCE</span>
+                <span class="marquee-dot">◆</span>
+                <span class="marquee-item">HAIRCARE</span>
+                <span class="marquee-dot">◆</span>
+                <span class="marquee-item">BATH & BODY</span>
+                <span class="marquee-dot">◆</span>
+                <span class="marquee-item">WELLNESS</span>
+                <span class="marquee-dot">◆</span>
+                <span class="marquee-item">TOOLS</span>
+                <span class="marquee-dot">◆</span>
+                <span class="marquee-item">SKINCARE</span>
+                <span class="marquee-dot">◆</span>
+                <span class="marquee-item">MAKEUP</span>
+                <span class="marquee-dot">◆</span>
+                <span class="marquee-item">FRAGRANCE</span>
+                <span class="marquee-dot">◆</span>
+                <span class="marquee-item">HAIRCARE</span>
+                <span class="marquee-dot">◆</span>
+                <span class="marquee-item">BATH & BODY</span>
+                <span class="marquee-dot">◆</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Cards -->
+    <section class="categories section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Explore</span>
+                <h2 class="section-title">Shop By Category</h2>
+            </div>
+            <div class="category-grid">
+                <a href="#" class="category-card category-card-lg" data-aos>
+                    <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=800&h=1000&fit=crop" alt="Skincare" loading="lazy">
+                    <div class="category-overlay">
+                        <span class="category-name">Skincare</span>
+                        <span class="category-count">1,240+ Products</span>
+                    </div>
+                </a>
+                <a href="#" class="category-card" data-aos>
+                    <img src="https://images.unsplash.com/photo-1583241800698-e8ab01830a07?w=600&h=700&fit=crop" alt="Makeup" loading="lazy">
+                    <div class="category-overlay">
+                        <span class="category-name">Makeup</span>
+                        <span class="category-count">980+ Products</span>
+                    </div>
+                </a>
+                <a href="#" class="category-card" data-aos>
+                    <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=600&h=700&fit=crop" alt="Fragrance" loading="lazy">
+                    <div class="category-overlay">
+                        <span class="category-name">Fragrance</span>
+                        <span class="category-count">540+ Products</span>
+                    </div>
+                </a>
+                <a href="#" class="category-card" data-aos>
+                    <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=600&h=700&fit=crop" alt="Hair" loading="lazy">
+                    <div class="category-overlay">
+                        <span class="category-name">Haircare</span>
+                        <span class="category-count">720+ Products</span>
+                    </div>
+                </a>
+                <a href="#" class="category-card" data-aos>
+                    <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=600&h=700&fit=crop" alt="Bath" loading="lazy">
+                    <div class="category-overlay">
+                        <span class="category-name">Bath & Body</span>
+                        <span class="category-count">430+ Products</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Banner -->
+    <section class="featured-banner">
+        <div class="featured-banner-bg">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=1920&h=800&fit=crop" alt="Featured" loading="lazy">
+        </div>
+        <div class="featured-banner-content">
+            <span class="featured-badge">EDITOR'S PICK</span>
+            <h2>The Midnight<br><em>Rose Collection</em></h2>
+            <p>A symphony of damask rose, midnight jasmine, and pure gold extract. Unlock your skin's most luminous chapter.</p>
+            <a href="#" class="btn btn-primary btn-glow">Discover Now</a>
+        </div>
+    </section>
+
+    <!-- Bestsellers -->
+    <section class="products section-padding" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Curated For You</span>
+                <h2 class="section-title">Bestsellers</h2>
+                <div class="section-tabs">
+                    <button class="tab-btn active" data-tab="all">All</button>
+                    <button class="tab-btn" data-tab="skincare">Skincare</button>
+                    <button class="tab-btn" data-tab="makeup">Makeup</button>
+                    <button class="tab-btn" data-tab="fragrance">Fragrance</button>
+                </div>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="skincare" data-aos>
+                    <div class="product-image-wrapper">
+                        <span class="product-badge badge-bestseller">BESTSELLER</span>
+                        <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=500&h=600&fit=crop" alt="Luminous Glow Serum" class="product-img" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=500&h=600&fit=crop" alt="Luminous Glow Serum" class="product-img-hover" loading="lazy">
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to wishlist"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn quickview-btn" aria-label="Quick view"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Bag</button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">LUXORA ORIGINALS</span>
+                        <h3 class="product-name">Luminous Glow Vitamin C Serum</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(2,847)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$68.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card" data-category="skincare" data-aos>
+                    <div class="product-image-wrapper">
+                        <span class="product-badge badge-new">NEW</span>
+                        <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=500&h=600&fit=crop" alt="Hydra Boost Cream" class="product-img" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=500&h=600&fit=crop" alt="Hydra Boost Cream" class="product-img-hover" loading="lazy">
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to wishlist"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn quickview-btn" aria-label="Quick view"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Bag</button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">TATCHA</span>
+                        <h3 class="product-name">Dewy Skin Cream Plumping & Hydrating</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(4,102)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$72.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card" data-category="makeup" data-aos>
+                    <div class="product-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=500&h=600&fit=crop" alt="Rose Lip Oil" class="product-img" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1631214524020-7e18db9a8f92?w=500&h=600&fit=crop" alt="Rose Lip Oil" class="product-img-hover" loading="lazy">
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to wishlist"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn quickview-btn" aria-label="Quick view"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Bag</button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">DIOR</span>
+                        <h3 class="product-name">Addict Lip Maximizer Plumping Gloss</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(3,219)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$38.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card" data-category="fragrance" data-aos>
+                    <div class="product-image-wrapper">
+                        <span class="product-badge badge-limited">LIMITED</span>
+                        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=500&h=600&fit=crop" alt="Rose Oud EDP" class="product-img" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1594035910387-fbd1a485b12e?w=500&h=600&fit=crop" alt="Rose Oud EDP" class="product-img-hover" loading="lazy">
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to wishlist"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn quickview-btn" aria-label="Quick view"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Bag</button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">TOM FORD</span>
+                        <h3 class="product-name">Rose d'Amalfi Eau de Parfum</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(1,567)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$285.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-card" data-category="skincare" data-aos>
+                    <div class="product-image-wrapper">
+                        <span class="product-badge badge-sale">-30%</span>
+                        <img src="https://images.unsplash.com/photo-1570194065650-d99fb4ee3313?w=500&h=600&fit=crop" alt="Retinol Night Cream" class="product-img" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1617897903246-719242758050?w=500&h=600&fit=crop" alt="Retinol Night Cream" class="product-img-hover" loading="lazy">
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to wishlist"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn quickview-btn" aria-label="Quick view"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Bag</button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">DRUNK ELEPHANT</span>
+                        <h3 class="product-name">A-Passioni™ Retinol Anti-Wrinkle Cream</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">(1,983)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-old">$74.00</span>
+                            <span class="price-current price-sale">$51.80</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card" data-category="makeup" data-aos>
+                    <div class="product-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1631214524020-7e18db9a8f92?w=500&h=600&fit=crop" alt="Flawless Foundation" class="product-img" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1583241800698-e8ab01830a07?w=500&h=600&fit=crop" alt="Flawless Foundation" class="product-img-hover" loading="lazy">
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to wishlist"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn quickview-btn" aria-label="Quick view"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Bag</button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">CHARLOTTE TILBURY</span>
+                        <h3 class="product-name">Airbrush Flawless Foundation</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(5,412)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$44.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-card" data-category="skincare" data-aos>
+                    <div class="product-image-wrapper">
+                        <span class="product-badge badge-bestseller">BESTSELLER</span>
+                        <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=500&h=600&fit=crop" alt="Hyaluronic Acid Serum" class="product-img" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=500&h=600&fit=crop" alt="Hyaluronic Acid Serum" class="product-img-hover" loading="lazy">
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to wishlist"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn quickview-btn" aria-label="Quick view"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Bag</button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">LA MER</span>
+                        <h3 class="product-name">The Concentrate Intense Hydrating Serum</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(892)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$390.00</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <div class="product-card" data-category="fragrance" data-aos>
+                    <div class="product-image-wrapper">
+                        <span class="product-badge badge-new">NEW</span>
+                        <img src="https://images.unsplash.com/photo-1594035910387-fbd1a485b12e?w=500&h=600&fit=crop" alt="Velvet Orchid" class="product-img" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=500&h=600&fit=crop" alt="Velvet Orchid" class="product-img-hover" loading="lazy">
+                        <div class="product-actions">
+                            <button class="action-btn wishlist-btn" aria-label="Add to wishlist"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn quickview-btn" aria-label="Quick view"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Bag</button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">YSL BEAUTY</span>
+                        <h3 class="product-name">Libre Le Parfum Intense</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(2,105)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$155.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="#" class="btn btn-dark btn-lg">View All Products <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skin Quiz Banner -->
+    <section class="quiz-banner">
+        <div class="quiz-banner-inner">
+            <div class="quiz-content">
+                <span class="quiz-eyebrow">PERSONALIZED FOR YOU</span>
+                <h2>Find Your Perfect<br><em>Skincare Routine</em></h2>
+                <p>Take our 2-minute skin quiz and get a customized regimen tailored to your unique skin type, concerns, and goals.</p>
+                <a href="#" class="btn btn-primary btn-lg">Take The Skin Quiz <i class="fas fa-arrow-right"></i></a>
+                <div class="quiz-avatars">
+                    <img src="https://i.pravatar.cc/48?img=1" alt="User">
+                    <img src="https://i.pravatar.cc/48?img=5" alt="User">
+                    <img src="https://i.pravatar.cc/48?img=9" alt="User">
+                    <img src="https://i.pravatar.cc/48?img=16" alt="User">
+                    <span>Join 250K+ who found their match</span>
+                </div>
+            </div>
+            <div class="quiz-image">
+                <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=700&h=800&fit=crop" alt="Skin Quiz" loading="lazy">
+                <div class="quiz-float-card">
+                    <i class="fas fa-sparkles"></i>
+                    <span>98% Match Rate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Section -->
+    <section class="trending section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">What's Hot</span>
+                <h2 class="section-title">Trending Now</h2>
+            </div>
+            <div class="trending-grid">
+                <div class="trend-card trend-card-wide" data-aos>
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=1000&h=600&fit=crop" alt="Glass Skin" loading="lazy">
+                    <div class="trend-overlay">
+                        <span class="trend-tag">#GlassSkin</span>
+                        <h3>The Glass Skin<br>Method</h3>
+                        <a href="#" class="trend-link">Shop the routine <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="trend-card" data-aos>
+                    <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&h=600&fit=crop" alt="Clean Beauty" loading="lazy">
+                    <div class="trend-overlay">
+                        <span class="trend-tag">#CleanBeauty</span>
+                        <h3>Clean &<br>Conscious</h3>
+                        <a href="#" class="trend-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="trend-card" data-aos>
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=600&fit=crop" alt="Lip Stacking" loading="lazy">
+                    <div class="trend-overlay">
+                        <span class="trend-tag">#LipStacking</span>
+                        <h3>The Art of<br>Lip Layering</h3>
+                        <a href="#" class="trend-link">Get the look <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="brands section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Our Partners</span>
+                <h2 class="section-title">Luxury Brands</h2>
+            </div>
+            <div class="brands-carousel">
+                <div class="brand-logo"><span>LA MER</span></div>
+                <div class="brand-logo"><span>CHANEL</span></div>
+                <div class="brand-logo"><span>DIOR</span></div>
+                <div class="brand-logo"><span>TOM FORD</span></div>
+                <div class="brand-logo"><span>SK-II</span></div>
+                <div class="brand-logo"><span>TATCHA</span></div>
+                <div class="brand-logo"><span>LA PRAIRIE</span></div>
+                <div class="brand-logo"><span>GUERLAIN</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Love Letters</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+            </div>
+            <div class="reviews-slider" id="reviewsSlider">
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"The Luminous Glow Serum completely transformed my skin. I've never received so many compliments—people keep asking what I'm using. Absolutely obsessed!"</p>
+                    <div class="review-author">
+                        <img src="https://i.pravatar.cc/60?img=32" alt="Sarah M.">
+                        <div>
+                            <strong>Sarah M.</strong>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                    <span class="review-product">Re: Luminous Glow Vitamin C Serum</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"I've been a La Mer devotee for years, but finding it on Luxora with same-day delivery and bonus samples? Game changer. The packaging arrived so beautifully too."</p>
+                    <div class="review-author">
+                        <img src="https://i.pravatar.cc/60?img=25" alt="Emily K.">
+                        <div>
+                            <strong>Emily K.</strong>
+                            <span>Beauty Insider Elite</span>
+                        </div>
+                    </div>
+                    <span class="review-product">Re: The Concentrate Intense Hydrating Serum</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">"Finally, a beauty destination that actually understands luxury. The skin quiz matched me perfectly—every single product in my routine is now from Luxora."</p>
+                    <div class="review-author">
+                        <img src="https://i.pravatar.cc/60?img=44" alt="Priya R.">
+                        <div>
+                            <strong>Priya R.</strong>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                    <span class="review-product">Re: Personalized Skincare Routine</span>
+                </div>
+            </div>
+            <div class="reviews-nav">
+                <button class="review-nav-btn" id="prevReview"><i class="fas fa-arrow-left"></i></button>
+                <div class="review-dots" id="reviewDots"></div>
+                <button class="review-nav-btn" id="nextReview"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos>
+                    <div class="benefit-icon"><i class="fas fa-truck-fast"></i></div>
+                    <h4>Free Express Shipping</h4>
+                    <p>Complimentary on orders over $75. Same-day in select cities.</p>
+                </div>
+                <div class="benefit-card" data-aos>
+                    <div class="benefit-icon"><i class="fas fa-gift"></i></div>
+                    <h4>Luxury Samples</h4>
+                    <p>Choose 3 free deluxe samples with every order.</p>
+                </div>
+                <div class="benefit-card" data-aos>
+                    <div class="benefit-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h4>100% Authentic</h4>
+                    <p>Every product sourced directly from brands with certificate of authenticity.</p>
+                </div>
+                <div class="benefit-card" data-aos>
+                    <div class="benefit-icon"><i class="fas fa-rotate-left"></i></div>
+                    <h4>Easy Returns</h4>
+                    <p>60-day hassle-free returns. No questions asked.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram / UGC -->
+    <section class="instagram section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">@luxorabeauty</span>
+                <h2 class="section-title">Join Our Community</h2>
+                <p class="section-desc">Tag us for a chance to be featured. Real people, real results.</p>
+            </div>
+        </div>
+        <div class="insta-grid">
+            <a href="#" class="insta-item" data-aos><img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400&h=400&fit=crop" alt="Instagram" loading="lazy"><div class="insta-overlay"><i class="fab fa-instagram"></i></div></a>
+            <a href="#" class="insta-item" data-aos><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=400&fit=crop" alt="Instagram" loading="lazy"><div class="insta-overlay"><i class="fab fa-instagram"></i></div></a>
+            <a href="#" class="insta-item" data-aos><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&h=400&fit=crop" alt="Instagram" loading="lazy"><div class="insta-overlay"><i class="fab fa-instagram"></i></div></a>
+            <a href="#" class="insta-item" data-aos><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=400&h=400&fit=crop" alt="Instagram" loading="lazy"><div class="insta-overlay"><i class="fab fa-instagram"></i></div></a>
+            <a href="#" class="insta-item" data-aos><img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=400&h=400&fit=crop" alt="Instagram" loading="lazy"><div class="insta-overlay"><i class="fab fa-instagram"></i></div></a>
+            <a href="#" class="insta-item" data-aos><img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&h=400&fit=crop" alt="Instagram" loading="lazy"><div class="insta-overlay"><i class="fab fa-instagram"></i></div></a>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-inner">
+            <div class="newsletter-content">
+                <h2>Get <em>10% Off</em><br>Your First Order</h2>
+                <p>Plus early access to new launches, exclusive offers, and beauty tips from our editors.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+                <span class="newsletter-note">By subscribing, you agree to our Privacy Policy. Unsubscribe anytime.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="logo-text">LUXORA</span>
+                    <p>Redefining luxury beauty since 2020. Your destination for the world's most coveted skincare, makeup, and fragrance.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Shop</h4>
+                        <a href="#">New Arrivals</a>
+                        <a href="#">Bestsellers</a>
+                        <a href="#">Skincare</a>
+                        <a href="#">Makeup</a>
+                        <a href="#">Fragrance</a>
+                        <a href="#">Hair</a>
+                        <a href="#">Sale</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>About</h4>
+                        <a href="#">Our Story</a>
+                        <a href="#">Sustainability</a>
+                        <a href="#">Clean Beauty</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Press</a>
+                        <a href="#">Affiliate Program</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Help</h4>
+                        <a href="#">Contact Us</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Shipping & Returns</a>
+                        <a href="#">Order Tracking</a>
+                        <a href="#">Size Guide</a>
+                        <a href="#">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 LUXORA. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                    <i class="fab fa-google-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Bag <span>(2)</span></h3>
+            <button class="cart-close" id="cartClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=100&h=120&fit=crop" alt="Product">
+                <div class="cart-item-info">
+                    <span class="cart-item-brand">LUXORA ORIGINALS</span>
+                    <h4>Luminous Glow Vitamin C Serum</h4>
+                    <div class="cart-item-qty">
+                        <button class="qty-btn">-</button>
+                        <span>1</span>
+                        <button class="qty-btn">+</button>
+                    </div>
+                    <span class="cart-item-price">$68.00</span>
+                </div>
+                <button class="cart-item-remove"><i class="fas fa-trash-alt"></i></button>
+            </div>
+            <div class="cart-item">
+                <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=100&h=120&fit=crop" alt="Product">
+                <div class="cart-item-info">
+                    <span class="cart-item-brand">DIOR</span>
+                    <h4>Addict Lip Maximizer Plumping Gloss</h4>
+                    <div class="cart-item-qty">
+                        <button class="qty-btn">-</button>
+                        <span>1</span>
+                        <button class="qty-btn">+</button>
+                    </div>
+                    <span class="cart-item-price">$38.00</span>
+                </div>
+                <button class="cart-item-remove"><i class="fas fa-trash-alt"></i></button>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-promo">
+                <input type="text" placeholder="Promo code">
+                <button class="btn btn-sm">Apply</button>
+            </div>
+            <div class="cart-totals">
+                <div class="cart-total-row"><span>Subtotal</span><span>$106.00</span></div>
+                <div class="cart-total-row"><span>Shipping</span><span class="text-green">FREE</span></div>
+                <div class="cart-total-row cart-total-final"><span>Total</span><span>$106.00</span></div>
+            </div>
+            <button class="btn btn-primary btn-full">Checkout — $106.00</button>
+            <span class="cart-secure"><i class="fas fa-lock"></i> Secure checkout powered by Stripe</span>
+        </div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="modal-overlay" id="quickViewOverlay"></div>
+    <div class="quick-view-modal" id="quickViewModal">
+        <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+        <div class="modal-body">
+            <div class="modal-gallery">
+                <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=600&h=700&fit=crop" alt="Product" id="modalImage">
+            </div>
+            <div class="modal-info">
+                <span class="product-brand">LUXORA ORIGINALS</span>
+                <h2 id="modalTitle">Luminous Glow Vitamin C Serum</h2>
+                <div class="product-rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="rating-count">(2,847)</span>
+                </div>
+                <p class="modal-price" id="modalPrice">$68.00</p>
+                <p class="modal-desc">A potent yet gentle Vitamin C serum that brightens, firms, and protects. Infused with 15% L-Ascorbic Acid, Hyaluronic Acid, and Vitamin E for maximum glow.</p>
+                <div class="modal-size">
+                    <span>Size:</span>
+                    <div class="size-options">
+                        <button class="size-btn active">30ml</button>
+                        <button class="size-btn">50ml</button>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <button class="btn btn-primary btn-lg btn-full">Add to Bag</button>
+                    <button class="btn btn-outline"><i class="fas fa-heart"></i></button>
+                </div>
+                <div class="modal-features">
+                    <span><i class="fas fa-leaf"></i> Clean Formula</span>
+                    <span><i class="fas fa-paw"></i> Cruelty Free</span>
+                    <span><i class="fas fa-recycle"></i> Recyclable</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
