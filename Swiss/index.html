@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIGNAL — Precision Data Intelligence</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- GRID OVERLAY (visual only) -->
+  <div class="grid-overlay" aria-hidden="true">
+    <div class="col"></div><div class="col"></div><div class="col"></div>
+    <div class="col"></div><div class="col"></div><div class="col"></div>
+    <div class="col"></div><div class="col"></div><div class="col"></div>
+    <div class="col"></div><div class="col"></div><div class="col"></div>
+  </div>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-line"></div>
+      <div class="loader-label">SIGNAL</div>
+      <div class="loader-counter" id="loaderCounter">000</div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-mark">◆</span>
+        <span class="logo-text">SIGNAL</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" data-index="01">About</a>
+        <a href="#capabilities" data-index="02">Capabilities</a>
+        <a href="#cases" data-index="03">Cases</a>
+        <a href="#method" data-index="04">Method</a>
+        <a href="#contact" data-index="05">Contact</a>
+      </div>
+      <div class="nav-right">
+        <span class="nav-time" id="navTime"></span>
+        <a href="#contact" class="nav-cta">Start a Project</a>
+      </div>
+      <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="#about" data-index="01">About</a>
+      <a href="#capabilities" data-index="02">Capabilities</a>
+      <a href="#cases" data-index="03">Cases</a>
+      <a href="#method" data-index="04">Method</a>
+      <a href="#contact" data-index="05">Contact</a>
+      <a href="#contact" class="mobile-cta">Start a Project →</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="hero-meta" data-animate>
+          <span class="meta-line"></span>
+          <span>Data Intelligence Consultancy</span>
+        </div>
+        <h1 class="hero-title" data-animate>
+          <span class="word">We turn</span>
+          <span class="word">noise into</span>
+          <span class="word highlight">signal<span class="period">.</span></span>
+        </h1>
+        <p class="hero-desc" data-animate>
+          A precision consultancy that transforms chaotic data landscapes into
+          clear strategic advantage. We see the patterns others miss.
+        </p>
+        <div class="hero-actions" data-animate>
+          <a href="#contact" class="btn btn-filled">Begin Discovery →</a>
+          <a href="#cases" class="btn btn-line">View Case Studies</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-visual" data-animate>
+          <div class="visual-grid">
+            <div class="v-cell v-cell-1"><span>97.3%</span><small>Prediction Accuracy</small></div>
+            <div class="v-cell v-cell-2"><span>2.4B</span><small>Data Points / Day</small></div>
+            <div class="v-cell v-cell-3"><span>140+</span><small>Enterprise Clients</small></div>
+            <div class="v-cell v-cell-4">
+              <div class="mini-chart">
+                <div class="bar" style="--h:40%"></div>
+                <div class="bar" style="--h:65%"></div>
+                <div class="bar" style="--h:45%"></div>
+                <div class="bar" style="--h:80%"></div>
+                <div class="bar" style="--h:60%"></div>
+                <div class="bar" style="--h:95%"></div>
+                <div class="bar" style="--h:70%"></div>
+              </div>
+              <small>Revenue Impact (Q1–Q4)</small>
+            </div>
+          </div>
+          <div class="visual-tag">LIVE DATA FEED — UPDATED 12.02.2026</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-ticker">
+      <div class="ticker-track">
+        <span>DATA STRATEGY ◆ PREDICTIVE ANALYTICS ◆ MACHINE LEARNING ◆ BUSINESS INTELLIGENCE ◆ REAL-TIME DASHBOARDS ◆ DATA ENGINEERING ◆ AI INTEGRATION ◆ DATA STRATEGY ◆ PREDICTIVE ANALYTICS ◆ MACHINE LEARNING ◆ BUSINESS INTELLIGENCE ◆ REAL-TIME DASHBOARDS ◆ DATA ENGINEERING ◆ AI INTEGRATION ◆</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-grid">
+      <div class="section-index" data-animate>
+        <span class="index-num">01</span>
+        <span class="index-line"></span>
+        <span class="index-label">ABOUT</span>
+      </div>
+      <div class="about-content">
+        <h2 class="section-heading" data-animate>
+          Most companies are <em>drowning</em> in data<br/>
+          and <em>starving</em> for insight.
+        </h2>
+        <div class="about-cols">
+          <div class="about-col" data-animate>
+            <p>Every organization collects data. Very few know what to do with it. The gap between having information and having intelligence is where billions are lost — in delayed decisions, missed patterns, and strategic blind spots.</p>
+          </div>
+          <div class="about-col" data-animate>
+            <p>We exist in that gap. SIGNAL is a consultancy of mathematicians, engineers, and strategists who build the systems that convert raw data into competitive advantage that compounds over time.</p>
+          </div>
+        </div>
+        <div class="about-numbers" data-animate>
+          <div class="about-num">
+            <span class="num" data-count="12">0</span>
+            <small>Years Operating</small>
+          </div>
+          <div class="num-divider"></div>
+          <div class="about-num">
+            <span class="num" data-count="140">0</span><span class="num-suffix">+</span>
+            <small>Enterprise Clients</small>
+          </div>
+          <div class="num-divider"></div>
+          <div class="about-num">
+            <span class="num" data-count="38">0</span><span class="num-suffix">B</span>
+            <small>Revenue Influenced ($)</small>
+          </div>
+          <div class="num-divider"></div>
+          <div class="about-num">
+            <span class="num" data-count="4">0</span>
+            <small>Global Offices</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPABILITIES -->
+  <section class="capabilities" id="capabilities">
+    <div class="section-grid">
+      <div class="section-index" data-animate>
+        <span class="index-num">02</span>
+        <span class="index-line"></span>
+        <span class="index-label">CAPABILITIES</span>
+      </div>
+      <div class="cap-content">
+        <h2 class="section-heading" data-animate>
+          Precision instruments<br/>for the data age.
+        </h2>
+        <div class="cap-list">
+          <div class="cap-item" data-animate>
+            <div class="cap-header">
+              <span class="cap-num">01</span>
+              <h3>Data Strategy & Architecture</h3>
+              <div class="cap-color" style="background:var(--red)"></div>
+            </div>
+            <p>We audit your entire data ecosystem — pipelines, warehouses, governance — and design an architecture that's built for scale, speed, and clarity. No more spaghetti infrastructure.</p>
+            <div class="cap-tags">
+              <span>Data Audit</span><span>Pipeline Design</span><span>Governance</span><span>Cloud Migration</span>
+            </div>
+          </div>
+          <div class="cap-item" data-animate>
+            <div class="cap-header">
+              <span class="cap-num">02</span>
+              <h3>Predictive Analytics & ML</h3>
+              <div class="cap-color" style="background:var(--blue)"></div>
+            </div>
+            <p>Custom machine learning models trained on your data, tuned to your business. We don't sell generic AI — we build prediction engines that know your market better than you do.</p>
+            <div class="cap-tags">
+              <span>Custom Models</span><span>Forecasting</span><span>NLP</span><span>Computer Vision</span>
+            </div>
+          </div>
+          <div class="cap-item" data-animate>
+            <div class="cap-header">
+              <span class="cap-num">03</span>
+              <h3>Real-Time Intelligence</h3>
+              <div class="cap-color" style="background:var(--green)"></div>
+            </div>
+            <p>Dashboards and alerting systems that process millions of events per second. Your leadership team sees what's happening now — not what happened last quarter.</p>
+            <div class="cap-tags">
+              <span>Live Dashboards</span><span>Stream Processing</span><span>Anomaly Detection</span><span>Alerting</span>
+            </div>
+          </div>
+          <div class="cap-item" data-animate>
+            <div class="cap-header">
+              <span class="cap-num">04</span>
+              <h3>Strategic Decision Systems</h3>
+              <div class="cap-color" style="background:var(--yellow)"></div>
+            </div>
+            <p>We embed intelligence directly into your decision workflows. Not reports that sit in inboxes — systems that surface the right insight to the right person at the right moment.</p>
+            <div class="cap-tags">
+              <span>Decision Engines</span><span>Workflow Integration</span><span>Executive Reporting</span><span>ROI Modeling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES -->
+  <section class="cases" id="cases">
+    <div class="section-grid">
+      <div class="section-index" data-animate>
+        <span class="index-num">03</span>
+        <span class="index-line"></span>
+        <span class="index-label">CASE STUDIES</span>
+      </div>
+      <div class="cases-content">
+        <h2 class="section-heading" data-animate>
+          Results that<br/>speak in numbers.
+        </h2>
+        <div class="cases-grid">
+          <article class="case-card case-large" data-animate>
+            <div class="case-visual" style="background: linear-gradient(135deg, var(--red) 0%, #FF6B35 100%);">
+              <div class="case-stat-overlay">
+                <span class="case-big-num">+340%</span>
+                <span class="case-big-label">Revenue Prediction Accuracy</span>
+              </div>
+            </div>
+            <div class="case-info">
+              <span class="case-tag">FINANCIAL SERVICES</span>
+              <h3>Global Investment Firm</h3>
+              <p>Built a real-time market prediction engine processing 800M data points daily, enabling the trading desk to identify opportunities 4.2 hours before competitors.</p>
+            </div>
+          </article>
+          <article class="case-card" data-animate>
+            <div class="case-visual" style="background: linear-gradient(135deg, var(--blue) 0%, #00C9A7 100%);">
+              <div class="case-stat-overlay">
+                <span class="case-big-num">−62%</span>
+                <span class="case-big-label">Customer Churn</span>
+              </div>
+            </div>
+            <div class="case-info">
+              <span class="case-tag">SAAS / TECHNOLOGY</span>
+              <h3>Enterprise SaaS Platform</h3>
+              <p>Predictive churn model that identifies at-risk accounts 90 days out with 94% accuracy.</p>
+            </div>
+          </article>
+          <article class="case-card" data-animate>
+            <div class="case-visual" style="background: linear-gradient(135deg, var(--yellow) 0%, var(--red) 100%);">
+              <div class="case-stat-overlay">
+                <span class="case-big-num">$2.1B</span>
+                <span class="case-big-label">Cost Savings (3yr)</span>
+              </div>
+            </div>
+            <div class="case-info">
+              <span class="case-tag">LOGISTICS / SUPPLY CHAIN</span>
+              <h3>Global Shipping Conglomerate</h3>
+              <p>End-to-end supply chain optimization using real-time IoT data and route prediction models.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHOD -->
+  <section class="method" id="method">
+    <div class="section-grid">
+      <div class="section-index" data-animate>
+        <span class="index-num">04</span>
+        <span class="index-line"></span>
+        <span class="index-label">METHOD</span>
+      </div>
+      <div class="method-content">
+        <h2 class="section-heading" data-animate>
+          Four phases.<br/>Zero ambiguity.
+        </h2>
+        <div class="method-steps">
+          <div class="method-step" data-animate>
+            <div class="step-top">
+              <span class="step-phase">PHASE 01</span>
+              <div class="step-line"></div>
+            </div>
+            <h3>DIAGNOSE</h3>
+            <p>Deep audit of your data ecosystem. We map every source, pipeline, and decision point. You get a brutally honest assessment of where you stand and what's broken.</p>
+            <span class="step-duration">2–3 WEEKS</span>
+          </div>
+          <div class="method-step" data-animate>
+            <div class="step-top">
+              <span class="step-phase">PHASE 02</span>
+              <div class="step-line"></div>
+            </div>
+            <h3>ARCHITECT</h3>
+            <p>We design the target-state system — data models, ML pipelines, integration points, dashboards. Every component specified with engineering precision.</p>
+            <span class="step-duration">3–4 WEEKS</span>
+          </div>
+          <div class="method-step" data-animate>
+            <div class="step-top">
+              <span class="step-phase">PHASE 03</span>
+              <div class="step-line"></div>
+            </div>
+            <h3>BUILD</h3>
+            <p>Implementation in sprints with weekly demos. We build, test, and validate with real data. No surprises at launch — you see progress every seven days.</p>
+            <span class="step-duration">8–12 WEEKS</span>
+          </div>
+          <div class="method-step" data-animate>
+            <div class="step-top">
+              <span class="step-phase">PHASE 04</span>
+              <div class="step-line"></div>
+            </div>
+            <h3>EMBED</h3>
+            <p>We don't just deliver and leave. We train your team, embed the systems into your workflows, and provide 90 days of active support post-launch.</p>
+            <span class="step-duration">ONGOING</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="section-grid">
+      <div class="section-index" data-animate>
+        <span class="index-num">—</span>
+        <span class="index-line"></span>
+        <span class="index-label">CLIENTS</span>
+      </div>
+      <div class="test-content">
+        <div class="test-grid">
+          <blockquote class="test-card" data-animate>
+            <p>"SIGNAL didn't just give us a dashboard — they gave us foresight. We now make decisions in hours that used to take weeks of committee meetings."</p>
+            <footer>
+              <div class="test-avatar" style="background:var(--red);">AK</div>
+              <div><strong>ANNA KOWALSKI</strong><span>CFO, Meridian Capital</span></div>
+            </footer>
+          </blockquote>
+          <blockquote class="test-card" data-animate>
+            <p>"Their team found $180M in supply chain inefficiencies in the first diagnostic. The ROI on this engagement was evident before they even started building."</p>
+            <footer>
+              <div class="test-avatar" style="background:var(--blue);">JH</div>
+              <div><strong>JAMES HARTLEY</strong><span>COO, Atlas Logistics</span></div>
+            </footer>
+          </blockquote>
+          <blockquote class="test-card" data-animate>
+            <p>"We interviewed seven consultancies. SIGNAL was the only one that told us what we were doing wrong before we signed. That honesty is rare and invaluable."</p>
+            <footer>
+              <div class="test-avatar" style="background:var(--green);">RP</div>
+              <div><strong>RACHEL PARK</strong><span>VP Engineering, Vertice AI</span></div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / CTA -->
+  <section class="contact" id="contact">
+    <div class="contact-grid">
+      <div class="contact-left" data-animate>
+        <div class="section-index">
+          <span class="index-num">05</span>
+          <span class="index-line"></span>
+          <span class="index-label">CONTACT</span>
+        </div>
+        <h2 class="contact-heading">Let's find<br/>your signal.</h2>
+        <p class="contact-desc">Start with a 30-minute diagnostic call. We'll give you an honest assessment of your data maturity — no charge, no commitment, no pitch deck.</p>
+        <div class="contact-details">
+          <div class="detail">
+            <span class="detail-label">EMAIL</span>
+            <span class="detail-value">hello@signal.studio</span>
+          </div>
+          <div class="detail">
+            <span class="detail-label">PHONE</span>
+            <span class="detail-value">+1 (415) 000-0000</span>
+          </div>
+          <div class="detail">
+            <span class="detail-label">OFFICES</span>
+            <span class="detail-value">Zürich · New York · Singapore · London</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right" data-animate>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>NAME *</label>
+              <input type="text" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label>EMAIL *</label>
+              <input type="email" placeholder="you@company.com" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>COMPANY</label>
+              <input type="text" placeholder="Company name" />
+            </div>
+            <div class="form-group">
+              <label>BUDGET RANGE</label>
+              <select>
+                <option value="">Select range</option>
+                <option value="50k">$50K – $100K</option>
+                <option value="100k">$100K – $250K</option>
+                <option value="250k">$250K – $500K</option>
+                <option value="500k">$500K+</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>WHAT'S THE CHALLENGE? *</label>
+            <textarea rows="4" placeholder="Describe your data challenge and what success looks like." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-filled btn-full">Submit Inquiry →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-left">
+        <div class="footer-logo"><span class="logo-mark">◆</span> SIGNAL</div>
+        <p>Precision data intelligence.<br/>Zürich, est. 2014.</p>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-col">
+          <h4>NAVIGATE</h4>
+          <a href="#about">About</a>
+          <a href="#capabilities">Capabilities</a>
+          <a href="#cases">Case Studies</a>
+          <a href="#method">Method</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>CONNECT</h4>
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter / X</a>
+          <a href="#">GitHub</a>
+          <a href="#">Medium</a>
+        </div>
+        <div class="footer-col">
+          <h4>LEGAL</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 SIGNAL STUDIO. ALL RIGHTS RESERVED.</span>
+      <span>DESIGNED IN ZÜRICH. DEPLOYED GLOBALLY.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
