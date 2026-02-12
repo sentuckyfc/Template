@@ -450,6 +450,7 @@ body::before {
   aspect-ratio: 3/4;
   border-radius: var(--radius-lg);
   transition: transform 6s var(--ease-gentle);
+  background-color: var(--bg-stone);
 }
 
 .hero-img-wrap:hover .hero-img {
@@ -595,6 +596,7 @@ body::before {
   display: flex;
   align-items: flex-end;
   padding: 24px;
+  background-color: var(--bg-stone);
 }
 
 .phil-card-1 {
@@ -722,6 +724,7 @@ body::before {
   aspect-ratio: 4/3;
   position: relative;
   overflow: hidden;
+  background-color: var(--bg-stone);
 }
 
 .collection-overlay {
@@ -798,6 +801,7 @@ body::before {
   position: relative;
   overflow: hidden;
   transition: transform 4s var(--ease-gentle);
+  background-color: var(--bg-stone);
 }
 
 .featured-visual:hover .featured-img {
@@ -912,6 +916,8 @@ body::before {
   width: 100%;
   height: 120px;
   transition: transform 3s var(--ease-gentle);
+  background-color: var(--bg-stone);
+  overflow: hidden;
 }
 
 .material-card:hover .material-swatch {
@@ -1031,6 +1037,7 @@ body::before {
   aspect-ratio: 16/10;
   position: relative;
   overflow: hidden;
+  background-color: var(--bg-stone);
 }
 
 .journal-featured .journal-img {
