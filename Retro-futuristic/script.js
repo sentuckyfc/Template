@@ -14,6 +14,30 @@
     }, 2600);
   });
 
+  // ---------- VHS TRACKING LINE ----------
+  const vhsTracking = document.getElementById('vhsTracking');
+  let vhsInterval;
+
+  function triggerVHSTracking() {
+    if (!vhsTracking) return;
+    const y = Math.random() * window.innerHeight;
+    vhsTracking.style.top = y + 'px';
+    vhsTracking.classList.add('active');
+    setTimeout(() => {
+      vhsTracking.classList.remove('active');
+    }, 150 + Math.random() * 200);
+  }
+
+  // Random VHS glitch every 4-10 seconds
+  function scheduleVHS() {
+    const delay = 4000 + Math.random() * 6000;
+    vhsInterval = setTimeout(() => {
+      triggerVHSTracking();
+      scheduleVHS();
+    }, delay);
+  }
+  scheduleVHS();
+
   // ---------- NAVBAR HIDE/SHOW ON SCROLL ----------
   const nav = document.getElementById('navbar');
   let lastY = 0;
@@ -174,16 +198,34 @@
   }
 
   // ---------- PARALLAX ORBS ----------
+  let rafOrbs;
   window.addEventListener('mousemove', (e) => {
-    const orbs = document.querySelectorAll('.hero-orb');
-    const x = (e.clientX / window.innerWidth - 0.5) * 2;
-    const y = (e.clientY / window.innerHeight - 0.5) * 2;
+    if (rafOrbs) cancelAnimationFrame(rafOrbs);
+    rafOrbs = requestAnimationFrame(() => {
+      const orbs = document.querySelectorAll('.hero-orb');
+      const x = (e.clientX / window.innerWidth - 0.5) * 2;
+      const y = (e.clientY / window.innerHeight - 0.5) * 2;
 
-    orbs.forEach((orb, i) => {
-      const speed = (i + 1) * 12;
-      orb.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+      orbs.forEach((orb, i) => {
+        const speed = (i + 1) * 12;
+        orb.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+      });
     });
   });
+
+  // ---------- CRT FLICKER ON SCROLL ----------
+  let flickerTimeout;
+  window.addEventListener('scroll', () => {
+    if (flickerTimeout) return;
+    if (Math.random() > 0.92) {
+      flickerTimeout = setTimeout(() => {
+        triggerVHSTracking();
+        flickerTimeout = null;
+      }, 100);
+    } else {
+      flickerTimeout = setTimeout(() => { flickerTimeout = null; }, 200);
+    }
+  }, { passive: true });
 
   // ---------- ACTIVE NAV LINK HIGHLIGHT ----------
   const sections = document.querySelectorAll('section[id]');
