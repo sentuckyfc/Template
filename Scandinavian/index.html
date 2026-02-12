@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STILLHET — Scandinavian Fashion</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- GENTLE LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-leaf">
+        <svg viewBox="0 0 40 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 0C20 0 0 20 0 40C0 51 9 60 20 60C31 60 40 51 40 40C40 20 20 0 20 0Z" fill="currentColor"/>
+          <line x1="20" y1="15" x2="20" y2="55" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+          <line x1="20" y1="30" x2="10" y2="40" stroke="rgba(255,255,255,0.2)" stroke-width="0.8"/>
+          <line x1="20" y1="25" x2="30" y2="38" stroke="rgba(255,255,255,0.2)" stroke-width="0.8"/>
+        </svg>
+      </div>
+      <div class="loader-word">STILLHET</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="nav" id="navbar">
+    <a href="#hero" class="nav-logo">stillhet<span class="logo-dot">.</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#philosophy">Philosophy</a>
+      <a href="#collections">Collections</a>
+      <a href="#materials">Materials</a>
+      <a href="#journal">Journal</a>
+    </div>
+    <a href="#contact" class="nav-cta">Visit Atelier</a>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#philosophy">Philosophy</a>
+    <a href="#collections">Collections</a>
+    <a href="#materials">Materials</a>
+    <a href="#journal">Journal</a>
+    <a href="#contact" class="mobile-cta">Visit Atelier</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-grain"></div>
+
+    <div class="hero-content">
+      <p class="hero-tag" data-reveal>
+        <span class="tag-line"></span>
+        Scandinavian Fashion — Rooted in Stillness
+      </p>
+
+      <h1 class="hero-title" data-reveal>
+        <span class="line">Clothing that</span>
+        <span class="line italic">breathes</span>
+        <span class="line">with you.</span>
+      </h1>
+
+      <p class="hero-sub" data-reveal>
+        Born from Nordic light, natural fibers, and the quiet luxury of things made to last. 
+        STILLHET is fashion that doesn't shout — it resonates.
+      </p>
+
+      <div class="hero-actions" data-reveal>
+        <a href="#collections" class="btn btn-warm">Explore Collections</a>
+        <a href="#philosophy" class="btn btn-outline">Our Philosophy</a>
+      </div>
+    </div>
+
+    <div class="hero-image-col" data-reveal>
+      <div class="hero-img-wrap">
+        <div class="hero-img" style="background: linear-gradient(175deg, #d4c5b0 0%, #b8a99a 40%, #8a7d6d 100%);"></div>
+        <div class="hero-img-label">
+          <span>AW 2026</span>
+          <span>The Quiet Collection</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-dot"></div>
+      <span>Scroll gently</span>
+    </div>
+  </section>
+
+  <!-- ETHOS STRIP -->
+  <div class="ethos-strip">
+    <div class="ethos-item" data-reveal>
+      <span class="ethos-num">01</span>
+      <span class="ethos-text">Organic Materials</span>
+    </div>
+    <div class="ethos-divider"></div>
+    <div class="ethos-item" data-reveal>
+      <span class="ethos-num">02</span>
+      <span class="ethos-text">Carbon Neutral</span>
+    </div>
+    <div class="ethos-divider"></div>
+    <div class="ethos-item" data-reveal>
+      <span class="ethos-num">03</span>
+      <span class="ethos-text">Slow Fashion</span>
+    </div>
+    <div class="ethos-divider"></div>
+    <div class="ethos-item" data-reveal>
+      <span class="ethos-num">04</span>
+      <span class="ethos-text">Nordic Craft</span>
+    </div>
+  </div>
+
+  <!-- PHILOSOPHY -->
+  <section class="philosophy" id="philosophy">
+    <div class="section-label" data-reveal>
+      <span class="label-line"></span>
+      <span>Our Philosophy</span>
+    </div>
+
+    <div class="philosophy-grid">
+      <div class="philosophy-text" data-reveal>
+        <h2>We believe beauty<br/>lives in <em>restraint.</em></h2>
+        <p>In a world that screams for attention, we choose quietness. Every garment we create begins with a single question: <strong>does this need to exist?</strong> If the answer isn't a profound yes — it doesn't get made.</p>
+        <p>Our design language is drawn from the Nordic landscape itself — the soft grey of winter mornings, the warmth of birch wood, the honest texture of undyed wool. We don't follow trends. We follow the seasons.</p>
+      </div>
+      <div class="philosophy-visual" data-reveal>
+        <div class="phil-card phil-card-1" style="background: linear-gradient(160deg, #c9bfae 0%, #a89b89 100%);">
+          <span class="phil-card-label">Wool / Linen / Oak</span>
+        </div>
+        <div class="phil-card phil-card-2" style="background: linear-gradient(160deg, #ddd5c5 0%, #c4b8a3 100%);">
+          <span class="phil-card-label">Natural Dyes Only</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hygge Values -->
+    <div class="hygge-values">
+      <div class="hygge-card" data-reveal>
+        <div class="hygge-icon">
+          <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.2"/><path d="M16 8v8l5 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Timeless Over Trendy</h3>
+        <p>Garments designed to be worn for decades, not seasons. Quiet shapes that transcend fashion cycles and age with character.</p>
+      </div>
+      <div class="hygge-card" data-reveal>
+        <div class="hygge-icon">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M16 4C16 4 4 14 4 20c0 6.6 5.4 8 12 8s12-1.4 12-8C28 14 16 4 16 4z" stroke="currentColor" stroke-width="1.2"/></svg>
+        </div>
+        <h3>Gentle on Earth</h3>
+        <p>100% organic fibers. Zero synthetic dyes. Carbon-neutral production. Every piece is a promise to the planet we borrow from.</p>
+      </div>
+      <div class="hygge-card" data-reveal>
+        <div class="hygge-icon">
+          <svg viewBox="0 0 32 32" fill="none"><rect x="4" y="4" width="24" height="24" rx="2" stroke="currentColor" stroke-width="1.2"/><line x1="4" y1="16" x2="28" y2="16" stroke="currentColor" stroke-width="0.8"/><line x1="16" y1="4" x2="16" y2="28" stroke="currentColor" stroke-width="0.8"/></svg>
+        </div>
+        <h3>Honest Construction</h3>
+        <p>Every seam visible. Every stitch intentional. We celebrate the hand of the maker — imperfections are features, not flaws.</p>
+      </div>
+      <div class="hygge-card" data-reveal>
+        <div class="hygge-icon">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M6 16c0-6 4-12 10-12s10 6 10 12-4 12-10 12S6 22 6 16z" stroke="currentColor" stroke-width="1.2"/><circle cx="16" cy="16" r="3" stroke="currentColor" stroke-width="1"/></svg>
+        </div>
+        <h3>Hygge in Every Fiber</h3>
+        <p>That feeling of wrapping yourself in warmth and belonging. Our fabrics are chosen to be touched, lived in, and loved deeply.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLECTIONS -->
+  <section class="collections" id="collections">
+    <div class="section-label" data-reveal>
+      <span class="label-line"></span>
+      <span>Collections</span>
+    </div>
+
+    <h2 class="collections-title" data-reveal>Four seasons. <em>Four stories.</em></h2>
+
+    <div class="collections-grid">
+      <!-- Collection 1 -->
+      <div class="collection-item" data-reveal>
+        <div class="collection-img" style="background: linear-gradient(170deg, #e8dfd1 0%, #c4b5a0 50%, #9a8d7d 100%);">
+          <div class="collection-overlay">
+            <span class="collection-season">Autumn / Winter 2026</span>
+          </div>
+        </div>
+        <div class="collection-info">
+          <h3>The Quiet Collection</h3>
+          <p>Undyed merino. Raw linen. Silhouettes inspired by the stillness of a frozen fjord at dawn.</p>
+          <div class="collection-details">
+            <span>18 Pieces</span>
+            <span>€120 — €890</span>
+          </div>
+          <a href="#contact" class="btn-text">Explore →</a>
+        </div>
+      </div>
+
+      <!-- Collection 2 -->
+      <div class="collection-item" data-reveal>
+        <div class="collection-img" style="background: linear-gradient(170deg, #d6cfc1 0%, #bfb49e 50%, #a69580 100%);">
+          <div class="collection-overlay">
+            <span class="collection-season">Spring / Summer 2026</span>
+          </div>
+        </div>
+        <div class="collection-info">
+          <h3>Northern Light</h3>
+          <p>Pale birch tones. Featherweight organic cotton. The warmth of midsummer translated into fabric.</p>
+          <div class="collection-details">
+            <span>14 Pieces</span>
+            <span>€95 — €680</span>
+          </div>
+          <a href="#contact" class="btn-text">Explore →</a>
+        </div>
+      </div>
+
+      <!-- Collection 3 -->
+      <div class="collection-item collection-wide" data-reveal>
+        <div class="collection-img" style="background: linear-gradient(170deg, #c8bfb0 0%, #b3a594 50%, #8e7f6e 100%);">
+          <div class="collection-overlay">
+            <span class="collection-season">Essentials — Year-Round</span>
+          </div>
+        </div>
+        <div class="collection-info">
+          <h3>Everyday Stillness</h3>
+          <p>The foundation wardrobe. Seven essential garments in natural tones — designed to combine endlessly, wear forever, and soften with every wash.</p>
+          <div class="collection-details">
+            <span>7 Pieces</span>
+            <span>€85 — €420</span>
+          </div>
+          <a href="#contact" class="btn-text">Explore →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PIECE -->
+  <section class="featured">
+    <div class="featured-inner">
+      <div class="featured-visual" data-reveal>
+        <div class="featured-img" style="background: linear-gradient(165deg, #d1c7b5 0%, #bfb09a 40%, #a3937d 100%);">
+          <div class="featured-badge">Most Loved</div>
+        </div>
+      </div>
+      <div class="featured-content" data-reveal>
+        <div class="section-label">
+          <span class="label-line"></span>
+          <span>Featured</span>
+        </div>
+        <h2>The Hygge<br/><em>Overcoat.</em></h2>
+        <p>Our signature piece. Hand-woven from undyed Shetland wool, lined with organic brushed cotton. The kind of coat that becomes a companion — warmer with every year, softer with every wear.</p>
+        <div class="featured-specs">
+          <div class="spec">
+            <span class="spec-label">Material</span>
+            <span class="spec-value">100% Shetland Wool</span>
+          </div>
+          <div class="spec">
+            <span class="spec-label">Lining</span>
+            <span class="spec-value">Organic Brushed Cotton</span>
+          </div>
+          <div class="spec">
+            <span class="spec-label">Origin</span>
+            <span class="spec-value">Woven in Gothenburg</span>
+          </div>
+          <div class="spec">
+            <span class="spec-label">Price</span>
+            <span class="spec-value">€890</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-warm">Reserve Yours</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATERIALS -->
+  <section class="materials" id="materials">
+    <div class="section-label" data-reveal>
+      <span class="label-line"></span>
+      <span>Materials</span>
+    </div>
+
+    <h2 class="materials-title" data-reveal>We touch everything<br/>before we <em>trust</em> it.</h2>
+
+    <div class="materials-grid">
+      <div class="material-card" data-reveal>
+        <div class="material-swatch" style="background: #e6ddd0;"></div>
+        <h3>Undyed Merino</h3>
+        <p>From free-grazing flocks in the Faroe Islands. Never bleached, never dyed — the sheep decide the color.</p>
+        <span class="material-origin">Faroe Islands</span>
+      </div>
+      <div class="material-card" data-reveal>
+        <div class="material-swatch" style="background: #d4c9b8;"></div>
+        <h3>Organic Linen</h3>
+        <p>Rain-retted flax from the Baltic coast. Gets softer with every wash — the opposite of everything disposable.</p>
+        <span class="material-origin">Lithuania</span>
+      </div>
+      <div class="material-card" data-reveal>
+        <div class="material-swatch" style="background: #c8b9a6;"></div>
+        <h3>Heritage Cotton</h3>
+        <p>Single-origin, hand-picked organic cotton. Brushed for warmth, woven for decades. No shortcuts, no compromises.</p>
+        <span class="material-origin">Portugal</span>
+      </div>
+      <div class="material-card" data-reveal>
+        <div class="material-swatch" style="background: #b8a893;"></div>
+        <h3>Birch Cellulose</h3>
+        <p>Sustainably harvested Nordic birch, transformed into impossibly soft fiber. The future of fabric, grown in a forest.</p>
+        <span class="material-origin">Finland</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-band">
+    <div class="stat-item" data-reveal>
+      <span class="stat-num" data-count="100">0</span><span class="stat-pct">%</span>
+      <span class="stat-desc">Organic & Natural Fibers</span>
+    </div>
+    <div class="stat-item" data-reveal>
+      <span class="stat-num" data-count="12">0</span>
+      <span class="stat-desc">Artisan Partners</span>
+    </div>
+    <div class="stat-item" data-reveal>
+      <span class="stat-num" data-count="0">0</span>
+      <span class="stat-desc">Synthetic Materials Used</span>
+    </div>
+    <div class="stat-item" data-reveal>
+      <span class="stat-num" data-count="3">0</span>
+      <span class="stat-desc">Collections Per Year</span>
+    </div>
+  </div>
+
+  <!-- JOURNAL / EDITORIAL -->
+  <section class="journal" id="journal">
+    <div class="section-label" data-reveal>
+      <span class="label-line"></span>
+      <span>Journal</span>
+    </div>
+
+    <h2 class="journal-title" data-reveal>Slow thoughts,<br/><em>carefully written.</em></h2>
+
+    <div class="journal-grid">
+      <article class="journal-card journal-featured" data-reveal>
+        <div class="journal-img" style="background: linear-gradient(170deg, #d9d0c0 0%, #c0b3a0 100%);">
+          <span class="journal-tag">Essay</span>
+        </div>
+        <div class="journal-content">
+          <time>January 2026</time>
+          <h3>Why We Stopped Making Black Clothes</h3>
+          <p>Black dye is the fashion industry's dirty secret. Here's why we chose to let nature decide our palette — and what we discovered when we stopped hiding behind darkness.</p>
+          <a href="#" class="btn-text">Read →</a>
+        </div>
+      </article>
+
+      <article class="journal-card" data-reveal>
+        <div class="journal-img" style="background: linear-gradient(170deg, #e2d9ca 0%, #ccc0ae 100%);">
+          <span class="journal-tag">Process</span>
+        </div>
+        <div class="journal-content">
+          <time>December 2025</time>
+          <h3>A Week in Our Gothenburg Atelier</h3>
+          <p>Hand-cutting, pattern-making, and the sound of rain on skylights. A visual diary of how garments come to life.</p>
+          <a href="#" class="btn-text">Read →</a>
+        </div>
+      </article>
+
+      <article class="journal-card" data-reveal>
+        <div class="journal-img" style="background: linear-gradient(170deg, #d5ccbe 0%, #bfb5a3 100%);">
+          <span class="journal-tag">Reflection</span>
+        </div>
+        <div class="journal-content">
+          <time>November 2025</time>
+          <h3>The Case for Owning Less</h3>
+          <p>A fashion brand telling you to buy less sounds paradoxical. But what if fewer, better things is the most radical act of all?</p>
+          <a href="#" class="btn-text">Read →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="testimonials-inner">
+      <div class="section-label" data-reveal>
+        <span class="label-line"></span>
+        <span>Voices</span>
+      </div>
+
+      <div class="testimonial-slider" id="testimonialSlider">
+        <div class="testimonial-slide active" data-reveal>
+          <blockquote>"I've never owned a coat that made me feel this way. It's like wearing a hug from someone who really knows you."</blockquote>
+          <cite>
+            <strong>Astrid K.</strong>
+            <span>Oslo, Norway</span>
+          </cite>
+        </div>
+        <div class="testimonial-slide">
+          <blockquote>"STILLHET is the only brand where I don't check the price. I check the material, the origin, the story — and the price always feels fair."</blockquote>
+          <cite>
+            <strong>Henrik M.</strong>
+            <span>Copenhagen, Denmark</span>
+          </cite>
+        </div>
+        <div class="testimonial-slide">
+          <blockquote>"Three years in, my linen shirt is softer than the day I bought it. That's not marketing. That's craft."</blockquote>
+          <cite>
+            <strong>Elsa R.</strong>
+            <span>Stockholm, Sweden</span>
+          </cite>
+        </div>
+      </div>
+
+      <div class="testimonial-dots" id="testimonialDots">
+        <button class="dot active" data-slide="0"></button>
+        <button class="dot" data-slide="1"></button>
+        <button class="dot" data-slide="2"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="newsletter-inner" data-reveal>
+      <h2>Join the <em>quiet circle.</em></h2>
+      <p>Seasonal letters. Behind-the-craft stories. Early access to new collections.<br/>No noise — just warmth, delivered thoughtfully.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Your email address" required />
+        <button type="submit" class="btn btn-warm">Subscribe</button>
+      </form>
+      <span class="newsletter-note">We send 6 letters per year. That's it. Unsubscribe anytime.</span>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-grid">
+      <div class="contact-info" data-reveal>
+        <div class="section-label">
+          <span class="label-line"></span>
+          <span>Visit Us</span>
+        </div>
+        <h2>Our atelier is<br/>always <em>open.</em></h2>
+        <p>Come touch the fabrics. See the workshop. Share a cup of tea and talk about what clothing means to you. No appointments needed — just an open door and an honest welcome.</p>
+        <div class="contact-details">
+          <div class="contact-detail">
+            <span class="detail-label">Address</span>
+            <span class="detail-value">Kaserntorget 8<br/>411 18 Gothenburg, Sweden</span>
+          </div>
+          <div class="contact-detail">
+            <span class="detail-label">Hours</span>
+            <span class="detail-value">Tuesday – Saturday<br/>10:00 – 18:00</span>
+          </div>
+          <div class="contact-detail">
+            <span class="detail-label">Email</span>
+            <span class="detail-value">hello@stillhet.se</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrap" data-reveal>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="First and last name" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label>What brings you here?</label>
+            <select>
+              <option value="">Choose one...</option>
+              <option value="purchase">I'd like to purchase</option>
+              <option value="visit">I want to visit the atelier</option>
+              <option value="wholesale">Wholesale inquiry</option>
+              <option value="press">Press & media</option>
+              <option value="other">Something else entirely</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Your Message</label>
+            <textarea rows="4" placeholder="Take your time. We read every word." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-warm btn-full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">stillhet<span class="logo-dot">.</span></div>
+        <p>Scandinavian fashion, rooted in stillness.<br/>Made in Gothenburg with natural materials,<br/>quiet intention, and maximum care.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <a href="#philosophy">Philosophy</a>
+          <a href="#collections">Collections</a>
+          <a href="#materials">Materials</a>
+          <a href="#journal">Journal</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Pinterest</a>
+          <a href="#">Newsletter</a>
+        </div>
+        <div class="footer-col">
+          <h4>Info</h4>
+          <a href="#">Shipping & Returns</a>
+          <a href="#">Care Guide</a>
+          <a href="#">Privacy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 STILLHET. All rights reserved.</span>
+      <span>Made with care, worn with intention.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
