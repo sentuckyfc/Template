@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHRONOHAUS — Fashion From Tomorrow's Past</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- BOOT SEQUENCE LOADER -->
+  <div id="loader">
+    <div class="loader-scanlines"></div>
+    <div class="loader-content">
+      <div class="loader-glitch" data-text="CHRONOHAUS">CHRONOHAUS</div>
+      <div class="loader-status">
+        <span class="loader-line">> INITIALIZING TEMPORAL SYSTEMS...</span>
+        <span class="loader-line">> SYNCING FASHION CONTINUUM...</span>
+        <span class="loader-line">> REALITY BREACH DETECTED...</span>
+        <span class="loader-line">> WELCOME, TRAVELER.</span>
+      </div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="nav" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>CHRONO<span class="logo-accent">HAUS</span><span class="logo-bracket">]</span>
+    </div>
+    <div class="nav-links">
+      <a href="#manifesto" data-nav>TRANSMISSION</a>
+      <a href="#collections" data-nav>COLLECTIONS</a>
+      <a href="#process" data-nav>PROCESS</a>
+      <a href="#archive" data-nav>ARCHIVE</a>
+    </div>
+    <a href="#contact" class="nav-cta">ENTER THE VOID →</a>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#manifesto">TRANSMISSION</a>
+    <a href="#collections">COLLECTIONS</a>
+    <a href="#process">PROCESS</a>
+    <a href="#archive">ARCHIVE</a>
+    <a href="#contact" class="nav-cta">ENTER THE VOID →</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-noise"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+
+    <div class="hero-tag">
+      <span class="blink">●</span> SIGNAL ACTIVE — SEASON 2026.2 TRANSMISSION
+    </div>
+
+    <h1 class="hero-title" data-reveal>
+      <span class="line">FASHION</span>
+      <span class="line hero-outline">FROM TOMORROW'S</span>
+      <span class="line hero-gradient">PAST.</span>
+    </h1>
+
+    <p class="hero-sub" data-reveal>
+      Where analog soul meets digital precision. CHRONOHAUS engineers garments<br />
+      at the intersection of retro rebellion and speculative futurism.
+    </p>
+
+    <div class="hero-actions" data-reveal>
+      <a href="#collections" class="btn btn-primary">
+        <span class="btn-text">EXPLORE COLLECTIONS</span>
+        <span class="btn-icon">◈</span>
+      </a>
+      <a href="#manifesto" class="btn btn-ghost">READ TRANSMISSION</a>
+    </div>
+
+    <div class="hero-data" data-reveal>
+      <div class="data-cell">
+        <span class="data-label">EST.</span>
+        <span class="data-value">2019</span>
+      </div>
+      <div class="data-divider"></div>
+      <div class="data-cell">
+        <span class="data-label">PIECES ENGINEERED</span>
+        <span class="data-value" data-count="2847">0</span>
+      </div>
+      <div class="data-divider"></div>
+      <div class="data-cell">
+        <span class="data-label">TEMPORAL COORDINATES</span>
+        <span class="data-value" id="heroTime">00:00:00</span>
+      </div>
+      <div class="data-divider"></div>
+      <div class="data-cell">
+        <span class="data-label">SIGNAL STATUS</span>
+        <span class="data-value status-live"><span class="blink">●</span> LIVE</span>
+      </div>
+    </div>
+
+    <div class="scroll-cue">
+      <div class="scroll-line"></div>
+      <span>DESCEND INTO THE SIGNAL</span>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>RETRO-FUTURISM ◈ TEMPORAL FASHION ◈ ANALOG SOUL ◈ DIGITAL SKIN ◈ NEO-VINTAGE ◈ SPECULATIVE WEAR ◈ CHRONO COUTURE ◈ RETRO-FUTURISM ◈ TEMPORAL FASHION ◈ ANALOG SOUL ◈ DIGITAL SKIN ◈ NEO-VINTAGE ◈ SPECULATIVE WEAR ◈ CHRONO COUTURE ◈</span>
+    </div>
+  </div>
+
+  <!-- MANIFESTO / TRANSMISSION -->
+  <section class="manifesto" id="manifesto">
+    <div class="section-tag">SIG.001 — TRANSMISSION</div>
+    <div class="manifesto-grid">
+      <div class="manifesto-left" data-reveal>
+        <h2>THE FUTURE WAS <span class="highlight-cyan">PROMISED.</span><br/>IT NEVER <span class="highlight-magenta">ARRIVED.</span><br/>SO WE <span class="highlight-amber">BUILT IT.</span></h2>
+      </div>
+      <div class="manifesto-right" data-reveal>
+        <p>They told us we'd have chrome jumpsuits and holographic fabric by now. Instead, we got fast fashion and landfill polyester. The future wasn't cancelled — it was <strong>outsourced to the lowest bidder.</strong></p>
+        <p>CHRONOHAUS exists at the fault line between what the past imagined and what the present forgot. We engineer garments that carry the <strong>optimistic voltage of retro sci-fi</strong> — that sense of boundless possibility — fused with the raw, tactile honesty of analog craftsmanship.</p>
+        <div class="manifesto-card">
+          <div class="card-stripe"></div>
+          <div class="card-content">
+            <div class="card-icon">◈</div>
+            <div class="card-text">
+              <strong>Our thesis:</strong> Clothing should feel like a transmission from a timeline where humanity got it right — where technology served beauty, not the other way around.
+            </div>
+          </div>
+        </div>
+        <p class="manifesto-sig">Every stitch is a signal. Every garment is a coordinate. Every collection is a <strong>dispatch from a better future.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLECTIONS -->
+  <section class="collections" id="collections">
+    <div class="section-tag">SIG.002 — COLLECTIONS</div>
+    <h2 class="section-title" data-reveal>TEMPORAL <span class="highlight-cyan">COORDINATES</span></h2>
+    <p class="section-desc" data-reveal>Each collection is a transmission from a different point in the speculative timeline. Navigate the continuum.</p>
+
+    <div class="collections-grid">
+      <div class="collection-card card-featured" data-reveal>
+        <div class="collection-badge">◈ CURRENT SIGNAL</div>
+        <div class="collection-visual" style="background: linear-gradient(135deg, #0ff 0%, #b026ff 50%, #ff2d55 100%);">
+          <div class="collection-overlay">
+            <div class="collection-year">2026.2</div>
+          </div>
+        </div>
+        <div class="collection-info">
+          <h3>SIGNAL DECAY</h3>
+          <p>Distorted silhouettes. Holographic weaves on raw denim. Chrome hardware on hand-dyed cotton. The beauty of a corrupted transmission.</p>
+          <div class="collection-meta">
+            <span>24 PIECES</span>
+            <span>UNISEX</span>
+            <span>$180 — $2,400</span>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-sm">ACCESS COLLECTION →</a>
+        </div>
+      </div>
+
+      <div class="collection-card" data-reveal>
+        <div class="collection-visual" style="background: linear-gradient(135deg, #ff6b35 0%, #f7c948 100%);">
+          <div class="collection-overlay">
+            <div class="collection-year">2025.4</div>
+          </div>
+        </div>
+        <div class="collection-info">
+          <h3>ANALOG GHOST</h3>
+          <p>VHS-era warmth meets tactical precision. Washed-out palettes. Oversized geometrics. Garments that feel like a memory you haven't had yet.</p>
+          <div class="collection-meta">
+            <span>18 PIECES</span>
+            <span>UNISEX</span>
+            <span>$140 — $1,800</span>
+          </div>
+          <a href="#contact" class="btn btn-outline-light btn-sm">VIEW ARCHIVE →</a>
+        </div>
+      </div>
+
+      <div class="collection-card" data-reveal>
+        <div class="collection-visual" style="background: linear-gradient(135deg, #00c9a7 0%, #0066ff 100%);">
+          <div class="collection-overlay">
+            <div class="collection-year">2025.1</div>
+          </div>
+        </div>
+        <div class="collection-info">
+          <h3>CHROME MERIDIAN</h3>
+          <p>Liquid metallics on organic cotton. Structured shoulders, fluid hemlines. The executive wardrobe of a civilization that chose art over war.</p>
+          <div class="collection-meta">
+            <span>21 PIECES</span>
+            <span>UNISEX</span>
+            <span>$160 — $2,100</span>
+          </div>
+          <a href="#contact" class="btn btn-outline-light btn-sm">VIEW ARCHIVE →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOOKBOOK STRIP -->
+  <section class="lookbook">
+    <div class="section-tag">SIG.003 — VISUAL LOG</div>
+    <div class="lookbook-grid">
+      <div class="lookbook-item" data-reveal style="background: linear-gradient(180deg, #1a0a2e 0%, #0ff 200%);">
+        <div class="lookbook-label">LOOK 01 — SIGNAL DECAY</div>
+      </div>
+      <div class="lookbook-item lookbook-tall" data-reveal style="background: linear-gradient(180deg, #2e0a1a 0%, #ff2d55 200%);">
+        <div class="lookbook-label">LOOK 02 — VOID JACKET</div>
+      </div>
+      <div class="lookbook-item" data-reveal style="background: linear-gradient(180deg, #0a2e1a 0%, #00c9a7 200%);">
+        <div class="lookbook-label">LOOK 03 — MERIDIAN COAT</div>
+      </div>
+      <div class="lookbook-item" data-reveal style="background: linear-gradient(180deg, #2e2a0a 0%, #f7c948 200%);">
+        <div class="lookbook-label">LOOK 04 — ANALOG PANT</div>
+      </div>
+      <div class="lookbook-item lookbook-tall" data-reveal style="background: linear-gradient(180deg, #0a1a2e 0%, #b026ff 200%);">
+        <div class="lookbook-label">LOOK 05 — GHOST DRAPE</div>
+      </div>
+      <div class="lookbook-item" data-reveal style="background: linear-gradient(180deg, #1e0a0a 0%, #ff6b35 200%);">
+        <div class="lookbook-label">LOOK 06 — CHROME VEST</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="section-tag">SIG.004 — ENGINEERING</div>
+    <h2 class="section-title" data-reveal>HOW WE <span class="highlight-magenta">BEND</span> THE TIMELINE</h2>
+
+    <div class="process-steps">
+      <div class="process-step" data-reveal>
+        <div class="step-index">01</div>
+        <div class="step-line"></div>
+        <div class="step-body">
+          <h3>SIGNAL CAPTURE</h3>
+          <p>We excavate forgotten futures — mid-century space age, 1970s speculative design, early digital aesthetics — and extract the emotional DNA that made those visions feel like destiny.</p>
+        </div>
+      </div>
+      <div class="process-step" data-reveal>
+        <div class="step-index">02</div>
+        <div class="step-line"></div>
+        <div class="step-body">
+          <h3>MATERIAL SYNTHESIS</h3>
+          <p>Organic fibers meet technical treatments. Hand-dyeing meets laser-cutting. Every fabric is a paradox — ancient in feel, impossible in finish. We work with mills that think in decades, not seasons.</p>
+        </div>
+      </div>
+      <div class="process-step" data-reveal>
+        <div class="step-index">03</div>
+        <div class="step-line"></div>
+        <div class="step-body">
+          <h3>TEMPORAL CONSTRUCTION</h3>
+          <p>Pattern-making by hand, finishing by machine. Each garment is constructed to exist outside trend cycles — a piece from a timeline where fashion evolved differently, more honestly.</p>
+        </div>
+      </div>
+      <div class="process-step" data-reveal>
+        <div class="step-index">04</div>
+        <div class="step-line"></div>
+        <div class="step-body">
+          <h3>TRANSMISSION</h3>
+          <p>Released in limited signals. No restocks, no mass runs. When a transmission ends, those coordinates close permanently. The garments exist only for those who were listening.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAND -->
+  <section class="stats-band">
+    <div class="stat-item" data-reveal>
+      <span class="stat-num" data-count="100">0</span><span class="stat-suffix">%</span>
+      <span class="stat-desc">ORGANIC & RECYCLED MATERIALS</span>
+    </div>
+    <div class="stat-item" data-reveal>
+      <span class="stat-num" data-count="47">0</span>
+      <span class="stat-desc">COUNTRIES RECEIVING SIGNAL</span>
+    </div>
+    <div class="stat-item" data-reveal>
+      <span class="stat-num" data-count="0">0</span>
+      <span class="stat-desc">GARMENTS IN LANDFILL</span>
+    </div>
+    <div class="stat-item" data-reveal>
+      <span class="stat-num" data-count="6">0</span>
+      <span class="stat-desc">TRANSMISSIONS PER YEAR</span>
+    </div>
+  </section>
+
+  <!-- ARCHIVE (Testimonials / Press) -->
+  <section class="archive" id="archive">
+    <div class="section-tag">SIG.005 — INTERCEPTED SIGNALS</div>
+    <h2 class="section-title" data-reveal>TRANSMISSIONS <span class="highlight-amber">RECEIVED</span></h2>
+
+    <div class="archive-grid">
+      <div class="archive-card" data-reveal>
+        <div class="archive-source">FRAME MAGAZINE</div>
+        <p>"CHRONOHAUS doesn't design clothes. They engineer artifacts from a parallel timeline — and somehow make them wearable. This is fashion as speculative fiction."</p>
+        <div class="archive-meta">ISSUE 147 — COVER FEATURE</div>
+      </div>
+      <div class="archive-card" data-reveal>
+        <div class="archive-source">PRIVATE CLIENT — TOKYO</div>
+        <p>"I put on the Void Jacket and felt like I was wearing a secret. Like I'd found a frequency no one else could hear. I've never experienced a garment do that."</p>
+        <div class="archive-meta">CLIENT TRANSMISSION — 2025.11</div>
+      </div>
+      <div class="archive-card" data-reveal>
+        <div class="archive-source">DESIGN ANTHOLOGY</div>
+        <p>"In an industry addicted to disposability, CHRONOHAUS is building permanence. Their garments feel like they've traveled through time — because conceptually, they have."</p>
+        <div class="archive-meta">ANNUAL DESIGN REPORT — 2025</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER / FREQUENCY -->
+  <section class="frequency">
+    <div class="frequency-inner" data-reveal>
+      <div class="frequency-visual">
+        <div class="freq-wave"></div>
+        <div class="freq-wave freq-wave-2"></div>
+        <div class="freq-wave freq-wave-3"></div>
+      </div>
+      <h2>TUNE INTO THE <span class="highlight-cyan">FREQUENCY</span></h2>
+      <p>Early signal access. Behind-the-process transmissions. Priority purchase windows.<br/>Join 12,000+ listeners on the CHRONOHAUS wavelength.</p>
+      <form class="freq-form" id="freqForm">
+        <div class="freq-input-wrap">
+          <input type="email" placeholder="YOUR COORDINATES (EMAIL)" required />
+          <button type="submit" class="btn btn-primary">LOCK ON →</button>
+        </div>
+      </form>
+      <span class="freq-note">NO NOISE. ONLY SIGNAL. UNSUBSCRIBE ANYTIME.</span>
+    </div>
+  </section>
+
+  <!-- CTA / CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-inner" data-reveal>
+      <div class="section-tag">SIG.006 — OPEN CHANNEL</div>
+      <h2 class="contact-title">READY TO <span class="highlight-magenta">CROSS</span> THE TIMELINE?</h2>
+      <p class="contact-sub">Whether you're a private collector, retail buyer, or creative collaborator —<br/>open a channel. Our signal operators respond within 24 hours.</p>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>DESIGNATION *</label>
+            <input type="text" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label>FREQUENCY *</label>
+            <input type="email" placeholder="your@coordinates.com" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>SIGNAL TYPE</label>
+            <select>
+              <option value="">Select your intent</option>
+              <option value="private">PRIVATE ACQUISITION</option>
+              <option value="wholesale">WHOLESALE / RETAIL</option>
+              <option value="collab">COLLABORATION</option>
+              <option value="press">PRESS / MEDIA</option>
+              <option value="other">OTHER TRANSMISSION</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>COLLECTION INTEREST</label>
+            <select>
+              <option value="">Select collection</option>
+              <option value="signal-decay">SIGNAL DECAY (2026.2)</option>
+              <option value="analog-ghost">ANALOG GHOST (2025.4)</option>
+              <option value="chrome-meridian">CHROME MERIDIAN (2025.1)</option>
+              <option value="all">ALL TRANSMISSIONS</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>YOUR TRANSMISSION *</label>
+          <textarea rows="4" placeholder="Tell us what brought you to this frequency..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">BROADCAST TRANSMISSION →</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-bracket">[</span>CHRONO<span class="logo-accent">HAUS</span><span class="logo-bracket">]</span>
+        </div>
+        <p>Fashion from tomorrow's past.<br/>Engineering garments at the intersection of<br/>retro rebellion and speculative futurism.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>NAVIGATE</h4>
+          <a href="#manifesto">Transmission</a>
+          <a href="#collections">Collections</a>
+          <a href="#process">Process</a>
+          <a href="#archive">Archive</a>
+        </div>
+        <div class="footer-col">
+          <h4>SIGNAL</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter / X</a>
+          <a href="#">Pinterest</a>
+          <a href="#">TikTok</a>
+        </div>
+        <div class="footer-col">
+          <h4>PROTOCOL</h4>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CHRONOHAUS. ALL TIMELINES RESERVED.</span>
+      <span>ENGINEERED WITH OBSESSION & CATHODE RAY.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
