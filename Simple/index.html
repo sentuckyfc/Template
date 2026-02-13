@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRPSTREET — Streetwear Culture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-track">
+            <span>NEW DROP: SS26 COLLECTION IS LIVE &nbsp;&bull;&nbsp; FREE SHIPPING OVER $150 &nbsp;&bull;&nbsp; USE CODE <strong>STREET20</strong> FOR 20% OFF &nbsp;&bull;&nbsp; NEW DROP: SS26 COLLECTION IS LIVE &nbsp;&bull;&nbsp; FREE SHIPPING OVER $150 &nbsp;&bull;&nbsp; USE CODE <strong>STREET20</strong> FOR 20% OFF &nbsp;&bull;&nbsp;</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">DRP<span>STREET</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#drops">New Drops</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#lookbook">Lookbook</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="nav-icon" aria-label="Search" id="searchBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                </button>
+                <a href="#" class="nav-icon" aria-label="Cart">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                    <span class="cart-badge">2</span>
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#drops" class="mobile-link">New Drops</a>
+        <a href="#collections" class="mobile-link">Collections</a>
+        <a href="#lookbook" class="mobile-link">Lookbook</a>
+        <a href="#about" class="mobile-link">About</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <span class="hero-tag reveal">SS26 Collection</span>
+            <h1 class="hero-title reveal">
+                <span class="line">WEAR THE</span>
+                <span class="line highlight">CULTURE.</span>
+            </h1>
+            <p class="hero-sub reveal">Streetwear rooted in self-expression. Bold silhouettes, premium fabrics, and drops that don't wait.</p>
+            <div class="hero-actions reveal">
+                <a href="#drops" class="btn btn-primary">Shop the Drop</a>
+                <a href="#lookbook" class="btn btn-outline">View Lookbook</a>
+            </div>
+        </div>
+        <div class="hero-visual reveal">
+            <div class="hero-img-wrapper">
+                <div class="hero-img" style="background-image: url('https://images.unsplash.com/photo-1523398002811-999ca8dec234?w=800&q=80');"></div>
+                <div class="hero-img-overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee">
+        <div class="marquee-track">
+            <span>OVERSIZED &bull; HOODIES &bull; TEES &bull; CARGOS &bull; SNEAKERS &bull; CAPS &bull; JACKETS &bull; LAYERS &bull; OVERSIZED &bull; HOODIES &bull; TEES &bull; CARGOS &bull; SNEAKERS &bull; CAPS &bull; JACKETS &bull; LAYERS &bull;</span>
+        </div>
+    </div>
+
+    <!-- New Drops Section -->
+    <section class="section drops" id="drops">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Latest</span>
+                <h2 class="section-title">New Drops</h2>
+            </div>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card reveal">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500&q=80" alt="Oversized Hoodie" loading="lazy">
+                        <span class="product-badge">New</span>
+                        <div class="product-overlay">
+                            <button class="btn btn-small">Quick Add</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Washed Oversized Hoodie</h3>
+                        <p class="product-price">$120</p>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card reveal">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1588117305388-c2631a279f82?w=500&q=80" alt="Cargo Pants" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="btn btn-small">Quick Add</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Tactical Cargo Pants</h3>
+                        <p class="product-price">$95</p>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card reveal">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500&q=80" alt="Graphic Tee" loading="lazy">
+                        <span class="product-badge hot">Hot</span>
+                        <div class="product-overlay">
+                            <button class="btn btn-small">Quick Add</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Culture Graphic Tee</h3>
+                        <p class="product-price">$55</p>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card reveal">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500&q=80" alt="Bomber Jacket" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="btn btn-small">Quick Add</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Satin Bomber Jacket</h3>
+                        <p class="product-price">$185</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section class="section collections" id="collections">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Explore</span>
+                <h2 class="section-title">Collections</h2>
+            </div>
+            <div class="collection-grid">
+                <a href="#" class="collection-card collection-wide reveal">
+                    <div class="collection-bg" style="background-image: url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=900&q=80');"></div>
+                    <div class="collection-content">
+                        <span class="collection-label">Essentials</span>
+                        <h3>Core Staples</h3>
+                        <span class="collection-cta">Shop Now &rarr;</span>
+                    </div>
+                </a>
+                <a href="#" class="collection-card reveal">
+                    <div class="collection-bg" style="background-image: url('https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&q=80');"></div>
+                    <div class="collection-content">
+                        <span class="collection-label">Limited</span>
+                        <h3>Drop 003</h3>
+                        <span class="collection-cta">Shop Now &rarr;</span>
+                    </div>
+                </a>
+                <a href="#" class="collection-card reveal">
+                    <div class="collection-bg" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80');"></div>
+                    <div class="collection-content">
+                        <span class="collection-label">Accessories</span>
+                        <h3>Headwear & Bags</h3>
+                        <span class="collection-cta">Shop Now &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lookbook Section -->
+    <section class="section lookbook" id="lookbook">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Style</span>
+                <h2 class="section-title">Lookbook</h2>
+            </div>
+            <div class="lookbook-grid">
+                <div class="lookbook-item reveal">
+                    <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=600&q=80" alt="Lookbook 1" loading="lazy">
+                </div>
+                <div class="lookbook-item lookbook-tall reveal">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Lookbook 2" loading="lazy">
+                </div>
+                <div class="lookbook-item reveal">
+                    <img src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?w=600&q=80" alt="Lookbook 3" loading="lazy">
+                </div>
+                <div class="lookbook-item reveal">
+                    <img src="https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?w=600&q=80" alt="Lookbook 4" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Brand Story -->
+    <section class="section about" id="about">
+        <div class="container about-grid">
+            <div class="about-text reveal">
+                <span class="section-tag">Our Story</span>
+                <h2 class="section-title">Born on<br>the Streets.</h2>
+                <p>DRPSTREET started in a garage with one screen printer and a vision — build a brand that speaks for the misfits, the creators, the ones who never asked for permission to be different.</p>
+                <p>Every piece we make is a statement. Every drop is intentional. We don't follow trends. We set them.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="about-visual reveal">
+                <div class="about-img" style="background-image: url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=700&q=80');"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section newsletter">
+        <div class="container">
+            <div class="newsletter-box reveal">
+                <h2>Get Early Access</h2>
+                <p>Be the first to know about new drops, exclusive releases, and members-only discounts.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">DRP<span>STREET</span></a>
+                <p>Streetwear for the culture.<br>Est. 2024</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" aria-label="Twitter/X">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l11.733 16h4.267l-11.733 -16h-4.267z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
+                    </a>
+                    <a href="#" aria-label="TikTok">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <a href="#">New Drops</a>
+                <a href="#">Hoodies</a>
+                <a href="#">Tees</a>
+                <a href="#">Bottoms</a>
+                <a href="#">Accessories</a>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <a href="#">Shipping & Returns</a>
+                <a href="#">Size Guide</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="#">About</a>
+                <a href="#">Journal</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 DRPSTREET. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
