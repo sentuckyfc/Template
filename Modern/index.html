@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAVEN — Modern Property & Living</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-line"></div>
+            <span class="preloader-text">HAVEN</span>
+        </div>
+    </div>
+
+    <!-- Cursor Follower -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-mark">&#9645;</span>
+                <span class="logo-text">HAVEN</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#properties">Properties</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Living</a></li>
+                <li><a href="#testimonials">Stories</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="#contact" class="nav-cta">Book a Tour</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-inner">
+            <a href="#properties" class="mobile-link">Properties</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#features" class="mobile-link">Living</a>
+            <a href="#testimonials" class="mobile-link">Stories</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80&fit=crop" alt="Luxury Property" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-eyebrow reveal-up">
+                <span class="eyebrow-line"></span>
+                <span>Award-Winning Residences</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line reveal-up">Find Your</span>
+                <span class="title-line title-italic reveal-up"><em>Perfect</em></span>
+                <span class="title-line reveal-up">Sanctuary</span>
+            </h1>
+            <p class="hero-sub reveal-up">Curated luxury properties designed for extraordinary living. Where architecture meets serenity.</p>
+            <div class="hero-actions reveal-up">
+                <a href="#properties" class="btn-primary">
+                    <span>Explore Properties</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#about" class="btn-outline">
+                    <span>Our Story</span>
+                </a>
+            </div>
+            <div class="hero-stats reveal-up">
+                <div class="stat">
+                    <span class="stat-number" data-target="250">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Luxury Homes</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="15">0</span>
+                    <span class="stat-label">Years of Excellence</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <span>Modern Living &bull; Architectural Design &bull; Premium Estates &bull; Waterfront Villas &bull; Penthouse Suites &bull; Smart Homes &bull; Sustainable Living &bull; Modern Living &bull; Architectural Design &bull; Premium Estates &bull; Waterfront Villas &bull; Penthouse Suites &bull; Smart Homes &bull; Sustainable Living &bull;</span>
+        </div>
+    </div>
+
+    <!-- Featured Properties -->
+    <section class="properties" id="properties">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-eyebrow reveal-up">
+                    <span class="eyebrow-line"></span>
+                    <span>Featured Collection</span>
+                </div>
+                <h2 class="section-title reveal-up">Exceptional<br><em>Properties</em></h2>
+                <p class="section-subtitle reveal-up">Each residence is handpicked for its architectural merit, location, and lifestyle potential.</p>
+            </div>
+
+            <div class="property-grid">
+                <!-- Property 1 - Large -->
+                <div class="property-card property-large reveal-up">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=900&q=80&fit=crop" alt="The Glass Pavilion" loading="lazy">
+                        <span class="property-badge">Featured</span>
+                        <div class="property-image-overlay">
+                            <a href="#" class="property-view-btn">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="property-info">
+                        <div class="property-location"><i class="fa-solid fa-location-dot"></i> Beverly Hills, CA</div>
+                        <h3 class="property-name">The Glass Pavilion</h3>
+                        <p class="property-desc">A masterpiece of modern residential architecture. Floor-to-ceiling glass walls offer panoramic views of the canyon below.</p>
+                        <div class="property-meta">
+                            <span><i class="fa-solid fa-bed"></i> 5 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 7 Baths</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 8,500 sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <span class="property-price">$12,500,000</span>
+                            <a href="#" class="property-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 2 -->
+                <div class="property-card reveal-up">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80&fit=crop" alt="Serenity Residence" loading="lazy">
+                        <div class="property-image-overlay">
+                            <a href="#" class="property-view-btn">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="property-info">
+                        <div class="property-location"><i class="fa-solid fa-location-dot"></i> Malibu, CA</div>
+                        <h3 class="property-name">Serenity Residence</h3>
+                        <p class="property-desc">Perched above the Pacific coast with seamless indoor-outdoor living spaces.</p>
+                        <div class="property-meta">
+                            <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 5 Baths</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 5,200 sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <span class="property-price">$8,750,000</span>
+                            <a href="#" class="property-link">View <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 3 -->
+                <div class="property-card reveal-up">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80&fit=crop" alt="Horizon House" loading="lazy">
+                        <div class="property-image-overlay">
+                            <a href="#" class="property-view-btn">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="property-info">
+                        <div class="property-location"><i class="fa-solid fa-location-dot"></i> Aspen, CO</div>
+                        <h3 class="property-name">Horizon House</h3>
+                        <p class="property-desc">Mountain modern luxury with sweeping views and warm material palette.</p>
+                        <div class="property-meta">
+                            <span><i class="fa-solid fa-bed"></i> 6 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 6 Baths</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 7,100 sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <span class="property-price">$9,200,000</span>
+                            <a href="#" class="property-link">View <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 4 -->
+                <div class="property-card reveal-up">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80&fit=crop" alt="Azure Waterfront" loading="lazy">
+                        <div class="property-image-overlay">
+                            <a href="#" class="property-view-btn">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="property-info">
+                        <div class="property-location"><i class="fa-solid fa-location-dot"></i> Miami Beach, FL</div>
+                        <h3 class="property-name">Azure Waterfront</h3>
+                        <p class="property-desc">Contemporary waterfront villa with infinity pool and private dock access.</p>
+                        <div class="property-meta">
+                            <span><i class="fa-solid fa-bed"></i> 5 Beds</span>
+                            <span><i class="fa-solid fa-bath"></i> 6 Baths</span>
+                            <span><i class="fa-solid fa-ruler-combined"></i> 6,800 sqft</span>
+                        </div>
+                        <div class="property-footer">
+                            <span class="property-price">$15,900,000</span>
+                            <a href="#" class="property-link">View <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="properties-cta reveal-up">
+                <a href="#" class="btn-primary btn-dark">
+                    <span>View All Properties</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Philosophy -->
+    <section class="about" id="about">
+        <div class="about-inner">
+            <div class="about-image reveal-up">
+                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80&fit=crop" alt="Interior Design">
+                <div class="about-image-accent"></div>
+            </div>
+            <div class="about-content">
+                <div class="section-eyebrow reveal-up">
+                    <span class="eyebrow-line"></span>
+                    <span>Our Philosophy</span>
+                </div>
+                <h2 class="section-title reveal-up">We Don't Sell<br>Houses. We Craft<br><em>Lifestyles.</em></h2>
+                <p class="about-text reveal-up">For over fifteen years, Haven has redefined what it means to find home. We believe every space tells a story — and we're here to help you write yours. Our approach merges architectural vision with deeply personal curation.</p>
+                <div class="about-values reveal-up">
+                    <div class="value">
+                        <div class="value-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                        <div>
+                            <h4>Design-Led</h4>
+                            <p>Every property is evaluated for its architectural integrity and design potential.</p>
+                        </div>
+                    </div>
+                    <div class="value">
+                        <div class="value-icon"><i class="fa-solid fa-handshake"></i></div>
+                        <div>
+                            <h4>White-Glove Service</h4>
+                            <p>Dedicated advisors guide you from first viewing to final key handover.</p>
+                        </div>
+                    </div>
+                    <div class="value">
+                        <div class="value-icon"><i class="fa-solid fa-leaf"></i></div>
+                        <div>
+                            <h4>Sustainable Focus</h4>
+                            <p>We prioritize eco-conscious builds and energy-efficient living spaces.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Living Experience -->
+    <section class="features" id="features">
+        <div class="section-container">
+            <div class="section-header section-header-center">
+                <div class="section-eyebrow reveal-up">
+                    <span class="eyebrow-line"></span>
+                    <span>The Haven Experience</span>
+                </div>
+                <h2 class="section-title reveal-up">Elevated<br><em>Living</em></h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card reveal-up">
+                    <div class="feature-number">01</div>
+                    <div class="feature-icon"><i class="fa-solid fa-building"></i></div>
+                    <h3>Smart Architecture</h3>
+                    <p>Homes designed with cutting-edge technology, automated systems and intelligent space planning.</p>
+                </div>
+                <div class="feature-card reveal-up">
+                    <div class="feature-number">02</div>
+                    <div class="feature-icon"><i class="fa-solid fa-tree-city"></i></div>
+                    <h3>Prime Locations</h3>
+                    <p>Only the most coveted neighborhoods — where nature, culture, and convenience converge.</p>
+                </div>
+                <div class="feature-card reveal-up">
+                    <div class="feature-number">03</div>
+                    <div class="feature-icon"><i class="fa-solid fa-gem"></i></div>
+                    <h3>Bespoke Interiors</h3>
+                    <p>Custom finishes, imported materials, and artisan craftsmanship in every corner.</p>
+                </div>
+                <div class="feature-card reveal-up">
+                    <div class="feature-number">04</div>
+                    <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Secure & Private</h3>
+                    <p>Gated communities, 24/7 security, and privacy-first design for peace of mind.</p>
+                </div>
+                <div class="feature-card reveal-up">
+                    <div class="feature-number">05</div>
+                    <div class="feature-icon"><i class="fa-solid fa-water"></i></div>
+                    <h3>Resort Amenities</h3>
+                    <p>Infinity pools, home spas, gyms, wine cellars, and private cinemas as standard.</p>
+                </div>
+                <div class="feature-card reveal-up">
+                    <div class="feature-number">06</div>
+                    <div class="feature-icon"><i class="fa-solid fa-solar-panel"></i></div>
+                    <h3>Green Living</h3>
+                    <p>Solar-powered, LEED-certified, and designed with the environment in mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full-Width Image Break -->
+    <section class="image-break">
+        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1920&q=80&fit=crop" alt="Architecture" loading="lazy">
+        <div class="image-break-overlay"></div>
+        <div class="image-break-content reveal-up">
+            <h2>Architecture is<br><em>Inhabited Sculpture.</em></h2>
+            <p>— Constantin Brancusi</p>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-container">
+            <div class="section-header section-header-center">
+                <div class="section-eyebrow reveal-up">
+                    <span class="eyebrow-line"></span>
+                    <span>Client Stories</span>
+                </div>
+                <h2 class="section-title reveal-up">What Our<br><em>Clients Say</em></h2>
+            </div>
+
+            <div class="testimonial-slider" id="testimonialSlider">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Haven didn't just find us a house — they found us a home that mirrors who we are. The entire experience was seamless, personal, and genuinely exciting."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Client">
+                            <div>
+                                <strong>Marcus Chen</strong>
+                                <span>Tech Founder, San Francisco</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"From the first consultation to closing day, the level of care and attention was unlike any real estate experience we've had. Truly white-glove."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Client">
+                            <div>
+                                <strong>Sarah Mitchell</strong>
+                                <span>Art Director, New York</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"We've worked with many agencies but Haven's design-led approach is unmatched. They understand that a home is more than walls — it's a feeling."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Client">
+                            <div>
+                                <strong>James Rivera</strong>
+                                <span>Architect, Los Angeles</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <button class="testi-btn testi-prev" id="testiPrev"><i class="fa-solid fa-arrow-left"></i></button>
+                    <div class="testi-dots" id="testiDots"></div>
+                    <button class="testi-btn testi-next" id="testiNext"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section class="contact" id="contact">
+        <div class="contact-inner">
+            <div class="contact-content">
+                <div class="section-eyebrow reveal-up">
+                    <span class="eyebrow-line"></span>
+                    <span>Get in Touch</span>
+                </div>
+                <h2 class="section-title reveal-up">Ready to Find<br>Your <em>Haven?</em></h2>
+                <p class="contact-text reveal-up">Schedule a private consultation with one of our property advisors. Let's find the perfect space for your story.</p>
+                <div class="contact-details reveal-up">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+1 (310) 555-HAVEN</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>hello@havenproperties.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>9900 Wilshire Blvd, Beverly Hills, CA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-wrapper reveal-up">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" placeholder="John" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Doe" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Budget Range</label>
+                        <select required>
+                            <option value="" disabled selected>Select your budget</option>
+                            <option>$1M — $3M</option>
+                            <option>$3M — $5M</option>
+                            <option>$5M — $10M</option>
+                            <option>$10M — $25M</option>
+                            <option>$25M+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea rows="4" placeholder="Tell us about your dream home..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full">
+                        <span>Send Inquiry</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo footer-logo">
+                        <span class="logo-mark">&#9645;</span>
+                        <span class="logo-text">HAVEN</span>
+                    </a>
+                    <p>Redefining luxury living since 2011. Every home tells a story — let us help you write yours.</p>
+                    <div class="footer-socials">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Properties</h4>
+                        <a href="#">Beverly Hills</a>
+                        <a href="#">Malibu</a>
+                        <a href="#">Aspen</a>
+                        <a href="#">Miami Beach</a>
+                        <a href="#">The Hamptons</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="#">About Us</a>
+                        <a href="#">Our Team</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Press</a>
+                        <a href="#">Blog</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <a href="#">Buy</a>
+                        <a href="#">Sell</a>
+                        <a href="#">Rent</a>
+                        <a href="#">Property Management</a>
+                        <a href="#">Interior Design</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Haven Properties. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
