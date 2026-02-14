@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopova | Discover. Desire. Delivered.</title>
+    <meta
+      name="description"
+      content="Shopova — a next-generation marketplace experience inspired by Shopee, elevated with immersive design and smarter shopping journeys."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="top-notice" role="status">
+      <div class="container">
+        <strong>Limited-time Mega Cashback Festival</strong>
+        <span> • </span>
+        <span>Up to 90% off + RM35 voucher on first order</span>
+        <button class="pill-button pill-button--ghost" type="button">Redeem now</button>
+      </div>
+    </div>
+
+    <header class="site-header" data-theme="glass">
+      <div class="container site-header__inner">
+        <div class="site-header__branding">
+          <span class="logo" aria-label="Shopova">Shopova</span>
+        </div>
+
+        <div class="site-header__search" role="search">
+          <label class="sr-only" for="site-search">Search Shopova</label>
+          <input
+            id="site-search"
+            type="search"
+            name="search"
+            placeholder="Search for brands, products, categories..."
+            autocomplete="off"
+          />
+          <button type="button" class="icon-button" aria-label="Search">
+            <span class="icon">🔍</span>
+          </button>
+        </div>
+
+        <nav class="site-header__navigation" aria-label="Primary">
+          <ul>
+            <li><a href="#flash-deals">Flash Deals</a></li>
+            <li><a href="#spotlight">Spotlight</a></li>
+            <li><a href="#trending">Trending</a></li>
+            <li><a href="#brands">Brands</a></li>
+            <li><a href="#stories">Stories</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-header__actions">
+          <button type="button" class="icon-button" aria-label="Notifications">
+            <span class="icon">🔔</span>
+          </button>
+          <button type="button" class="icon-button" aria-label="Help Center">
+            <span class="icon">💬</span>
+          </button>
+          <button type="button" class="pill-button">Sign In</button>
+        </div>
+
+        <button class="site-header__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu" hidden>
+        <nav aria-label="Mobile">
+          <ul>
+            <li><a href="#flash-deals">Flash Deals</a></li>
+            <li><a href="#spotlight">Spotlight</a></li>
+            <li><a href="#trending">Trending</a></li>
+            <li><a href="#brands">Brands</a></li>
+            <li><a href="#stories">Stories</a></li>
+            <li><a href="#newsletter">Join Newsletter</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-label="Featured campaigns">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <span class="eyebrow">Powered by AI Discovery</span>
+            <h1>Discover something extraordinary, every single scroll.</h1>
+            <p>
+              We reimagined the Shopee experience with richer visuals, smarter curation, and immersive storytelling.
+              Shopova guides you from inspiration to checkout in one fluid journey.
+            </p>
+            <div class="hero__cta">
+              <button class="pill-button pill-button--primary">Shop today</button>
+              <button class="pill-button pill-button--ghost">Discover campaigns</button>
+            </div>
+            <dl class="hero__stats">
+              <div>
+                <dt>2.8M+</dt>
+                <dd>Daily curated deals</dd>
+              </div>
+              <div>
+                <dt>98%</dt>
+                <dd>Customer satisfaction</dd>
+              </div>
+              <div>
+                <dt>36s</dt>
+                <dd>Avg. add-to-cart time</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="hero__showcase" role="presentation">
+            <div class="glass-card hero__card hero__card--primary">
+              <h2>Flash Frenzy</h2>
+              <p>Countdown to the night drop</p>
+              <div class="countdown" data-countdown>
+                <span data-countdown-part="hours">00</span>
+                <span>:</span>
+                <span data-countdown-part="minutes">00</span>
+                <span>:</span>
+                <span data-countdown-part="seconds">00</span>
+              </div>
+              <button class="pill-button pill-button--light">View deals</button>
+            </div>
+            <div class="glass-card hero__card hero__card--secondary">
+              <h3>Personalized for you</h3>
+              <ul class="hero__tags">
+                <li>#StudioLiving</li>
+                <li>#MotionPro</li>
+                <li>#GlowGetter</li>
+                <li>#FitTech</li>
+              </ul>
+              <p>Our adaptive moodboard evolves with every tap.</p>
+            </div>
+            <div class="hero__floating-media" aria-hidden="true">
+              <div class="floating-card floating-card--one">New Sellers Spotlight</div>
+              <div class="floating-card floating-card--two">Live Shop Event ↑</div>
+              <div class="floating-card floating-card--three">Free Same-Day Delivery</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section features" aria-label="Experience highlights">
+        <div class="container features__grid">
+          <article class="feature-card">
+            <span class="icon" aria-hidden="true">⚡</span>
+            <h3>Fluid Story Commerce</h3>
+            <p>Swipeable short stories merge inspiration, reviews, and purchase in seconds.</p>
+            <a href="#stories" class="feature-card__link">Explore stories</a>
+          </article>
+          <article class="feature-card">
+            <span class="icon" aria-hidden="true">🤖</span>
+            <h3>Predictive Curation</h3>
+            <p>AI concierge crafts mood-based collections with proactive price alerts.</p>
+            <a href="#spotlight" class="feature-card__link">See spotlight</a>
+          </article>
+          <article class="feature-card">
+            <span class="icon" aria-hidden="true">🚚</span>
+            <h3>Logistics on autopilot</h3>
+            <p>Distributed micro-fulfilment guarantees two-hour deliveries within Klang Valley.</p>
+            <a href="#flash-deals" class="feature-card__link">Track promise</a>
+          </article>
+          <article class="feature-card">
+            <span class="icon" aria-hidden="true">🎧</span>
+            <h3>Concierge live support</h3>
+            <p>Every customer gets a live co-shopping stylist with immersive AR fittings.</p>
+            <a href="#stories" class="feature-card__link">Book a stylist</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="flash-deals" class="section flash-deals" aria-labelledby="flash-deals-title">
+        <div class="container">
+          <div class="section__header">
+            <div>
+              <p class="eyebrow">Now trending</p>
+              <h2 id="flash-deals-title">Flash deals with intelligent price drops</h2>
+            </div>
+            <button class="pill-button pill-button--light">View all deals</button>
+          </div>
+          <div class="carousel" data-carousel>
+            <button class="carousel__control" data-carousel-prev aria-label="Previous deals">❮</button>
+            <div class="carousel__track">
+              <article class="product-card">
+                <figure class="product-card__visual">
+                  <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" alt="Wireless earphones" loading="lazy" />
+                  <span class="badge badge--accent">-52%</span>
+                </figure>
+                <div class="product-card__body">
+                  <h3>NovaSound Air+ Earbuds</h3>
+                  <p>Spatial audio with adaptive noise cancelling.</p>
+                  <p class="price">
+                    <span class="price__current">RM289</span>
+                    <span class="price__original">RM599</span>
+                  </p>
+                  <progress value="68" max="100" aria-label="68% claimed"></progress>
+                  <button class="pill-button pill-button--ghost">Add to cart</button>
+                </div>
+              </article>
+              <article class="product-card">
+                <figure class="product-card__visual">
+                  <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=600&q=80" alt="Smart lamp" loading="lazy" />
+                  <span class="badge badge--accent">Exclusive</span>
+                </figure>
+                <div class="product-card__body">
+                  <h3>GlowMesh Ambient Lamp</h3>
+                  <p>Dynamic circadian lighting with voice presets.</p>
+                  <p class="price">
+                    <span class="price__current">RM189</span>
+                    <span class="price__original">RM259</span>
+                  </p>
+                  <progress value="32" max="100" aria-label="32% claimed"></progress>
+                  <button class="pill-button pill-button--ghost">Add to cart</button>
+                </div>
+              </article>
+              <article class="product-card">
+                <figure class="product-card__visual">
+                  <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80" alt="Running shoes" loading="lazy" />
+                  <span class="badge badge--accent">Hot</span>
+                </figure>
+                <div class="product-card__body">
+                  <h3>StrideX Velocity Knit</h3>
+                  <p>Carbon-infused sole for zero-gravity bounce.</p>
+                  <p class="price">
+                    <span class="price__current">RM349</span>
+                    <span class="price__original">RM429</span>
+                  </p>
+                  <progress value="84" max="100" aria-label="84% claimed"></progress>
+                  <button class="pill-button pill-button--ghost">Add to cart</button>
+                </div>
+              </article>
+              <article class="product-card">
+                <figure class="product-card__visual">
+                  <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=600&q=80" alt="Smartwatch" loading="lazy" />
+                  <span class="badge badge--accent">Bundle</span>
+                </figure>
+                <div class="product-card__body">
+                  <h3>PulseTrack Apex Watch</h3>
+                  <p>Medical-grade analytics with hydration monitor.</p>
+                  <p class="price">
+                    <span class="price__current">RM499</span>
+                    <span class="price__original">RM799</span>
+                  </p>
+                  <progress value="54" max="100" aria-label="54% claimed"></progress>
+                  <button class="pill-button pill-button--ghost">Add to cart</button>
+                </div>
+              </article>
+            </div>
+            <button class="carousel__control" data-carousel-next aria-label="Next deals">❯</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="spotlight" class="section spotlight" aria-labelledby="spotlight-title">
+        <div class="container spotlight__grid">
+          <div class="spotlight__story">
+            <p class="eyebrow">Immersive storytelling</p>
+            <h2 id="spotlight-title">Creator-curated collections with cinematic motion</h2>
+            <p>
+              Shopova collaborates with culture shapers to co-create editorial storefronts. Each capsule blends video narratives, user-generated reviews, and transparent sourcing to help shoppers trust every click.
+            </p>
+            <ul class="spotlight__list">
+              <li>360° product spins and AR try-ons built-in</li>
+              <li>Live polls influence bundle drops in real time</li>
+              <li>Adaptive recommendation engine personalizes pricing</li>
+            </ul>
+            <div class="spotlight__actions">
+              <button class="pill-button pill-button--primary">Enter creator hub</button>
+              <button class="pill-button pill-button--ghost">Watch live sessions</button>
+            </div>
+          </div>
+          <div class="spotlight__media">
+            <video
+              src="https://cdn.coverr.co/videos/coverr-a-girl-does-online-shopping-5458/1080p.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              aria-label="Live shopping teaser"
+            ></video>
+            <div class="spotlight__overlay">
+              <div>
+                <strong>Live viewers</strong>
+                <span>12,482</span>
+              </div>
+              <div>
+                <strong>Co-created wishlists</strong>
+                <span>3,019</span>
+              </div>
+              <button class="pill-button pill-button--light">Join live</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="trending" class="section trending" aria-labelledby="trending-title">
+        <div class="container">
+          <div class="section__header">
+            <div>
+              <p class="eyebrow">Curated for your vibe</p>
+              <h2 id="trending-title">Trending universes</h2>
+            </div>
+            <div class="tabs" role="tablist">
+              <button role="tab" aria-selected="true" data-tab="daily">Daily Discoveries</button>
+              <button role="tab" aria-selected="false" data-tab="luxe">Luxe Reboot</button>
+              <button role="tab" aria-selected="false" data-tab="eco">Eco Future</button>
+              <button role="tab" aria-selected="false" data-tab="fit">Fit Tech</button>
+            </div>
+          </div>
+          <div class="tab-panels">
+            <div class="tab-panel" data-panel="daily" role="tabpanel">
+              <div class="collection-grid">
+                <article class="collection-card">
+                  <img src="https://images.unsplash.com/photo-1513709630908-6b6a5f2e0b8f?auto=format&fit=crop&w=800&q=80" alt="Minimalist homeware" loading="lazy" />
+                  <div class="collection-card__body">
+                    <h3>Su Casa Edit</h3>
+                    <p>Soft neutrals, curved silhouettes, sensory lighting.</p>
+                    <button class="pill-button pill-button--ghost">Shop capsule</button>
+                  </div>
+                </article>
+                <article class="collection-card">
+                  <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80" alt="Streetwear fashion" loading="lazy" />
+                  <div class="collection-card__body">
+                    <h3>Neon Thrift</h3>
+                    <p>Retro-futuristic fits curated by Gen Z stylists.</p>
+                    <button class="pill-button pill-button--ghost">Shop capsule</button>
+                  </div>
+                </article>
+                <article class="collection-card">
+                  <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80" alt="Skincare products" loading="lazy" />
+                  <div class="collection-card__body">
+                    <h3>Cloud Skin Ritual</h3>
+                    <p>Barrier-building skincare with lab-grade actives.</p>
+                    <button class="pill-button pill-button--ghost">Shop capsule</button>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="tab-panel" data-panel="luxe" role="tabpanel" hidden>
+              <div class="collection-grid">
+                <article class="collection-card">
+                  <img src="https://images.unsplash.com/photo-1516832379370-800ece08a555?auto=format&fit=crop&w=800&q=80" alt="Designer handbag" loading="lazy" />
+                  <div class="collection-card__body">
+                    <h3>Luxe Atelier</h3>
+                    <p>Archive drops from independent couture houses.</p>
+                    <button class="pill-button pill-button--ghost">Shop capsule</button>
+                  </div>
+                </article>
+                <article class="collection-card">
+                  <img src="https://images.unsplash.com/photo-1502462041640-56286d1a3902?auto=format&fit=crop&w=800&q=80" alt="Luxury timepiece" loading="lazy" />
+                  <div class="collection-card__body">
+                    <h3>Midnight Horology</h3>
+                    <p>Limited-run timepieces with blockchain provenance.</p>
+                    <button class="pill-button pill-button--ghost">Shop capsule</button>
+                  </div>
+                </article>
+                <article class="collection-card">
+                  <img src="https://images.unsplash.com/photo-1560812018-4e9b6c0bdbf4?auto=format&fit=crop&w=800&q=80" alt="Luxury fragrance" loading="lazy" />
+                  <div class="collection-card__body">
+                    <h3>Parfum Lab</h3>
+                    <p>Bespoke scents crafted by award-winning noses.</p>
+                    <button class="pill-button pill-button--ghost">Shop capsule</button>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="tab-panel" data-panel="eco" role="tabpanel" hidden>
+              <div class="collection-grid">
+                <article class="collection-card">
+                  <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Sustainable fashion" loading="lazy" />
+                  <div class="collection-card__body">
+                    <h3>Earthkind Wardrobe</h3>
+                    <p>Traceable fiber fashion with circular returns.</p>
+                    <button class="pill-button pill-button--ghost">Shop capsule</button>
+                  </div>
+                </article>
+                <article class="collection-card">
+                  <img src="https://images.unsplash.com/photo-1474631245212-32dc3c8310c6?auto=format&fit=crop&w=800&q=80" alt="Eco gadgets" loading="lazy" />
+                  <div class="collection-card__body">
+                    <h3>Green Tech Lab</h3>
+                    <p>Solar-smart devices that power down your bills.</p>
+                    <button class="pill-button pill-button--ghost">Shop capsule</button>
+                  </div>
+                </article>
+                <article class="collection-card">
+                  <img src="https://images.unsplash.com/photo-1502740479091-635887520276?auto=format&fit=crop&w=800&q=80" alt="Plant based foods" loading="lazy" />
+                  <div class="collection-card__body">
+                    <h3>Alt Cuisine Pantry</h3>
+                    <p>Plant-forward staples for next-gen chefs.</p>
+                    <button class="pill-button pill-button--ghost">Shop capsule</button>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="tab-panel" data-panel="fit" role="tabpanel" hidden>
+              <div class="collection-grid">
+                <article class="collection-card">
+                  <img src="https://images.unsplash.com/photo-1526401485004-46910ecc8e51?auto=format&fit=crop&w=800&q=80" alt="Fitness apparel" loading="lazy" />
+                  <div class="collection-card__body">
+                    <h3>MetaAthlete</h3>
+                    <p>Activewear engineered for hyper-performance.</p>
+                    <button class="pill-button pill-button--ghost">Shop capsule</button>
+                  </div>
+                </article>
+                <article class="collection-card">
+                  <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07c?auto=format&fit=crop&w=800&q=80" alt="Smart fitness equipment" loading="lazy" />
+                  <div class="collection-card__body">
+                    <h3>Studio X Garage</h3>
+                    <p>Connected equipment with holographic coaching.</p>
+                    <button class="pill-button pill-button--ghost">Shop capsule</button>
+                  </div>
+                </article>
+                <article class="collection-card">
+                  <img src="https://images.unsplash.com/photo-1517832207067-4db24a2ae47c?auto=format&fit=crop&w=800&q=80" alt="Healthy meals" loading="lazy" />
+                  <div class="collection-card__body">
+                    <h3>Fuel Kitchen</h3>
+                    <p>Chef-prepped macro meals synced with your tracker.</p>
+                    <button class="pill-button pill-button--ghost">Shop capsule</button>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="brands" class="section brands" aria-labelledby="brands-title">
+        <div class="container brands__inner">
+          <div class="section__header">
+            <div>
+              <p class="eyebrow">Top of mind</p>
+              <h2 id="brands-title">Partner brands scaling with Shopova</h2>
+            </div>
+            <button class="pill-button pill-button--light">View marketplace insights</button>
+          </div>
+          <div class="brands__carousel" data-carousel="brands">
+            <div class="brands__track">
+              <span>HyperNova</span>
+              <span>CircaWear</span>
+              <span>BloomLab</span>
+              <span>PulseTrack</span>
+              <span>EcoForge</span>
+              <span>LuxeForge</span>
+              <span>GlowMesh</span>
+              <span>NeonThrift</span>
+              <span>CloudSkin</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="stories" class="section stories" aria-labelledby="stories-title">
+        <div class="container stories__grid">
+          <div class="stories__intro">
+            <p class="eyebrow">Stories to shop by</p>
+            <h2 id="stories-title">Swipeable journeys crafted by community creators</h2>
+            <p>
+              From Kuala Lumpur to Kota Kinabalu, Shopova empowers tastemakers with tools to host live rooms, build story playlists, and drop authentically sourced products.
+            </p>
+            <button class="pill-button pill-button--primary">Launch your story</button>
+          </div>
+          <div class="stories__cards">
+            <article class="story-card">
+              <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=80" alt="Urban fashion livestream" loading="lazy" />
+              <div class="story-card__overlay">
+                <h3>KL Night Market Drops</h3>
+                <p>Live at 8PM • Hosted by @atelierhan</p>
+              </div>
+            </article>
+            <article class="story-card">
+              <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=500&q=80" alt="Beauty tutorial" loading="lazy" />
+              <div class="story-card__overlay">
+                <h3>7-Min Morning Ritual</h3>
+                <p>Live at 10AM • Hosted by @glowwithava</p>
+              </div>
+            </article>
+            <article class="story-card">
+              <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=500&q=80" alt="Gadget showcase" loading="lazy" />
+              <div class="story-card__overlay">
+                <h3>Build Your Dream Desk</h3>
+                <p>Live at 9PM • Hosted by @makerhaus</p>
+              </div>
+            </article>
+            <article class="story-card">
+              <img src="https://images.unsplash.com/photo-1528712306091-ed0763094c98?auto=format&fit=crop&w=500&q=80" alt="Food livestream" loading="lazy" />
+              <div class="story-card__overlay">
+                <h3>Zero-Waste Pantry</h3>
+                <p>Live at 6PM • Hosted by @earthtaste</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials" aria-labelledby="testimonials-title">
+        <div class="container testimonials__inner">
+          <p class="eyebrow">Voices of delight</p>
+          <h2 id="testimonials-title">“Shopova feels like a personal shopper mixed with a private club.”</h2>
+          <div class="testimonials__grid">
+            <blockquote class="testimonial">
+              <p>
+                “The new interface is mind-blowing. I love how the deals are contextual to my mood board. Checkout is nearly instant, and the AR try-ons make gift shopping a breeze.”
+              </p>
+              <footer>
+                <cite>Amina T.</cite>
+                <span>Fashion Content Creator</span>
+              </footer>
+            </blockquote>
+            <blockquote class="testimonial">
+              <p>
+                “Flash sales used to be stressful. Now I get a curated line-up, real-time stock alerts, and transparent shipping times. I can’t go back to the old Shopee interface.”
+              </p>
+              <footer>
+                <cite>Marcus K.</cite>
+                <span>Product Manager</span>
+              </footer>
+            </blockquote>
+            <blockquote class="testimonial">
+              <p>
+                “Our brand grew 4x in three months after joining Shopova. The storytelling toolkit and shopper analytics are next-level.”
+              </p>
+              <footer>
+                <cite>Seruni L.</cite>
+                <span>Co-founder, Lumiere Labs</span>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta" aria-label="Mobile app download">
+        <div class="container cta__inner">
+          <div class="cta__content">
+            <p class="eyebrow">Seamless everywhere</p>
+            <h2>Experience Shopova on the go</h2>
+            <p>
+              Install the app to access exclusive drops, location-aware perks, and live co-shopping rooms wherever you are.
+            </p>
+            <div class="cta__downloads">
+              <a href="https://apps.apple.com" class="store-badge" aria-label="Download on the App Store"> App Store</a>
+              <a href="https://play.google.com" class="store-badge" aria-label="Get it on Google Play">▶ Google Play</a>
+            </div>
+          </div>
+          <div class="cta__mockup" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=600&q=80" alt="Shopova app preview" />
+            <div class="cta__badge">4.9 ★ Rated by 120K+ shoppers</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="newsletter" class="section newsletter" aria-labelledby="newsletter-title">
+        <div class="container newsletter__inner">
+          <div class="newsletter__copy">
+            <p class="eyebrow">Stay in the loop</p>
+            <h2 id="newsletter-title">Get early access to hyper-curated drops</h2>
+            <p>Join 1.5M insiders receiving secret vouchers, hacky tips, and creator-only capsules.</p>
+          </div>
+          <form class="newsletter__form" action="#" method="post">
+            <label class="sr-only" for="newsletter-email">Email address</label>
+            <input id="newsletter-email" type="email" name="email" placeholder="Enter your email" required />
+            <button type="submit" class="pill-button pill-button--primary">Notify me</button>
+            <p class="newsletter__muted">We respect your privacy. Unsubscribe anytime.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" aria-label="Footer">
+      <div class="container site-footer__inner">
+        <div class="site-footer__brand">
+          <span class="logo">Shopova</span>
+          <p>Designed in Kuala Lumpur. Elevating Southeast Asia’s commerce frontier.</p>
+          <div class="site-footer__socials">
+            <a href="#" aria-label="Follow Shopova on Instagram">IG</a>
+            <a href="#" aria-label="Follow Shopova on TikTok">TK</a>
+            <a href="#" aria-label="Follow Shopova on YouTube">YT</a>
+            <a href="#" aria-label="Follow Shopova on X">X</a>
+          </div>
+        </div>
+        <div class="site-footer__links">
+          <div>
+            <h3>Shop</h3>
+            <ul>
+              <li><a href="#">New Arrivals</a></li>
+              <li><a href="#">Best Sellers</a></li>
+              <li><a href="#">Gift Guides</a></li>
+              <li><a href="#">Corporate Purchases</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Shipping &amp; Returns</a></li>
+              <li><a href="#">Live Concierge</a></li>
+              <li><a href="#">Rewards Program</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Shopova</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Sustainability</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="site-footer__legal">
+          <p>© <span data-year></span> Shopova Holdings Sdn. Bhd. All rights reserved.</p>
+          <div class="site-footer__legal-links">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Responsible Disclosure</a>
+            <a href="#">Accessibility</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./scripts/main.js" type="module"></script>
+  </body>
+</html>
