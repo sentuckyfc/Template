@@ -2,13 +2,13 @@
 window.addEventListener('load', () => {
     setTimeout(() => {
         document.getElementById('preloader').classList.add('hidden');
-    }, 1600);
+    }, 1800);
 });
 
 // ========== NAVBAR SCROLL ==========
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 50);
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
 });
 
 // ========== MOBILE MENU ==========
@@ -34,11 +34,11 @@ const revealObserver = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             setTimeout(() => {
                 entry.target.classList.add('visible');
-            }, index * 80);
+            }, index * 100);
             revealObserver.unobserve(entry.target);
         }
     });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+}, { threshold: 0.08, rootMargin: '0px 0px -60px 0px' });
 
 revealElements.forEach(el => revealObserver.observe(el));
 
@@ -59,13 +59,12 @@ counterElements.forEach(el => counterObserver.observe(el));
 function animateCounter(el) {
     const target = parseInt(el.dataset.target);
     const suffix = el.dataset.suffix || '';
-    const duration = 2000;
+    const duration = 2200;
     const start = performance.now();
 
     function update(now) {
         const elapsed = now - start;
         const progress = Math.min(elapsed / duration, 1);
-        // Ease out cubic
         const eased = 1 - Math.pow(1 - progress, 3);
         const current = Math.floor(eased * target);
         el.textContent = current.toLocaleString() + suffix;
@@ -87,13 +86,11 @@ document.querySelectorAll('.faq-question').forEach(btn => {
         const answer = item.querySelector('.faq-answer');
         const isOpen = item.classList.contains('open');
 
-        // Close all
         document.querySelectorAll('.faq-item').forEach(faq => {
             faq.classList.remove('open');
             faq.querySelector('.faq-answer').style.maxHeight = null;
         });
 
-        // Open clicked (if it was closed)
         if (!isOpen) {
             item.classList.add('open');
             answer.style.maxHeight = answer.scrollHeight + 'px';
@@ -101,7 +98,7 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     });
 });
 
-// ========== SMOOTH SCROLL FOR ANCHOR LINKS ==========
+// ========== SMOOTH SCROLL ==========
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         const targetId = this.getAttribute('href');

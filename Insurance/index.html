@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evergreen — Insurance You Can Trust</title>
+    <title>Evergreen — Premium Insurance</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader">
-            <span class="loader-text">Evergreen</span>
-            <div class="loader-bar"><div class="loader-fill"></div></div>
+            <span class="loader-text">EVERGREEN</span>
+            <div class="loader-line"></div>
         </div>
     </div>
 
@@ -24,23 +24,23 @@
         <a href="#services" onclick="closeMobile()">Coverage</a>
         <a href="#why" onclick="closeMobile()">Why Us</a>
         <a href="#plans" onclick="closeMobile()">Plans</a>
-        <a href="#how" onclick="closeMobile()">How It Works</a>
+        <a href="#how" onclick="closeMobile()">Process</a>
         <a href="#faq" onclick="closeMobile()">FAQ</a>
-        <a href="#cta" class="btn btn-primary" onclick="closeMobile()">Get a Quote</a>
+        <a href="#cta" class="btn btn-gold" onclick="closeMobile()">Get a Quote</a>
     </div>
 
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="container nav-inner">
-            <a href="#" class="nav-logo">Ever<span>green</span></a>
+            <a href="#" class="nav-logo">EVER<span>GREEN</span></a>
             <div class="nav-links">
                 <a href="#services">Coverage</a>
                 <a href="#why">Why Us</a>
                 <a href="#plans">Plans</a>
-                <a href="#how">How It Works</a>
+                <a href="#how">Process</a>
                 <a href="#faq">FAQ</a>
             </div>
-            <a href="#cta" class="btn btn-primary nav-cta">Get a Quote</a>
+            <a href="#cta" class="btn btn-gold nav-cta">Request a Quote</a>
             <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
                 <span></span><span></span><span></span>
             </button>
@@ -49,61 +49,74 @@
 
     <!-- ==================== HERO ==================== -->
     <section class="hero">
-        <div class="hero-shape hero-shape-1"></div>
-        <div class="hero-shape hero-shape-2"></div>
-        <div class="hero-shape hero-shape-3"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-grain"></div>
         <div class="container hero-grid">
             <div class="hero-content">
-                <div class="hero-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                    Rated #1 Insurance Provider 2026
+                <div class="hero-eyebrow reveal-hero">
+                    <div class="eyebrow-line"></div>
+                    <span>Established 2011 &mdash; Trusted by 50,000+ Families</span>
                 </div>
-                <h1>Insurance That<br>Feels Like <span class="highlight">Family.</span></h1>
-                <p class="hero-desc">We believe everyone deserves peace of mind. Get clear, honest coverage for your health, home, and life — with no fine print surprises and claims settled in hours, not weeks.</p>
-                <div class="hero-actions">
-                    <a href="#plans" class="btn btn-primary">Explore Our Plans</a>
-                    <a href="#how" class="btn btn-outline">See How It Works</a>
+                <h1 class="reveal-hero">Insurance Crafted<br>With <em>Distinction.</em></h1>
+                <p class="hero-desc reveal-hero">Bespoke coverage designed around your life. Transparent terms, rapid claims, and the kind of personal service that was once reserved for the privileged few.</p>
+                <div class="hero-actions reveal-hero">
+                    <a href="#plans" class="btn btn-gold btn-lg">Explore Plans</a>
+                    <a href="#how" class="btn btn-ghost btn-lg">How It Works</a>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">50K<span>+</span></div>
-                        <div class="stat-label">Families Protected</div>
+            </div>
+            <div class="hero-right reveal-hero">
+                <div class="hero-card">
+                    <div class="hero-card-label">Featured Plan</div>
+                    <h3>Family Shield</h3>
+                    <p>Complete health, life & home coverage for your entire family.</p>
+                    <div class="hero-card-price">
+                        <span class="price-currency">$</span>
+                        <span class="price-amount">59</span>
+                        <span class="price-period">/month</span>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-number">$2B<span>+</span></div>
-                        <div class="stat-label">Claims Paid</div>
+                    <div class="hero-card-features">
+                        <div class="hcf-item"><span class="hcf-check">&#10003;</span> Health up to $500K</div>
+                        <div class="hcf-item"><span class="hcf-check">&#10003;</span> $250K Life Insurance</div>
+                        <div class="hcf-item"><span class="hcf-check">&#10003;</span> Dental & Vision</div>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-number">98<span>%</span></div>
-                        <div class="stat-label">Satisfaction Rate</div>
+                    <a href="#plans" class="btn btn-gold btn-sm btn-full">View Details</a>
+                </div>
+                <div class="hero-float float-1">
+                    <div class="hf-icon">&#10003;</div>
+                    <div>
+                        <div class="hf-title">Claim Approved</div>
+                        <div class="hf-sub">Settled in 18 hours</div>
+                    </div>
+                </div>
+                <div class="hero-float float-2">
+                    <div class="hf-rating">4.9</div>
+                    <div>
+                        <div class="hf-title">Client Rating</div>
+                        <div class="hf-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     </div>
                 </div>
             </div>
-
-            <div class="hero-visual">
-                <div class="hero-illustration">
-                    <div class="hero-card-main">
-                        <div class="card-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                        </div>
-                        <h3>Family Plan</h3>
-                        <p>Health + Life + Home coverage for you and your loved ones</p>
-                        <div class="card-price">$59<span>/mo</span></div>
-                    </div>
-
-                    <!-- Floating cards -->
-                    <div class="float-card card-1">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#0D5C3D" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        Claim Approved
-                    </div>
-                    <div class="float-card card-2">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#D4864E" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                        Settled in 18h
-                    </div>
-                    <div class="float-card card-3">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#D4864E" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        4.9 ★ Rating
-                    </div>
+        </div>
+        <div class="hero-stats-bar">
+            <div class="container stats-inner">
+                <div class="stat-item">
+                    <div class="stat-number">50,000<span>+</span></div>
+                    <div class="stat-label">Families Protected</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">$2B<span>+</span></div>
+                    <div class="stat-label">Claims Paid</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">98<span>%</span></div>
+                    <div class="stat-label">Satisfaction Rate</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">15<span>+</span></div>
+                    <div class="stat-label">Years of Excellence</div>
                 </div>
             </div>
         </div>
@@ -128,63 +141,63 @@
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-label">Our Coverage</span>
-                <h2 class="section-title">Protection Plans Designed<br>Around Real Life</h2>
-                <p class="section-subtitle">Whether it's a routine checkup or a rainy day, we've got the right coverage to keep you and your family secure — simply and affordably.</p>
+                <h2 class="section-title">Comprehensive Protection<br>For Every Chapter of Life</h2>
+                <p class="section-subtitle">Whether safeguarding your health, your home, or your legacy &mdash; our tailored plans provide the peace of mind you deserve.</p>
             </div>
-
             <div class="services-grid">
                 <div class="service-card reveal">
+                    <div class="service-number">01</div>
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
                     </div>
                     <h3>Health Insurance</h3>
                     <p>Doctor visits, hospital stays, prescriptions, and preventive care — all covered with no surprise bills and low co-pays.</p>
-                    <a href="#plans" class="service-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                    <a href="#plans" class="service-link">Explore <span>&rarr;</span></a>
                 </div>
-
                 <div class="service-card reveal">
+                    <div class="service-number">02</div>
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                     </div>
                     <h3>Life Insurance</h3>
                     <p>Give your family lasting financial security. Flexible term and whole life policies with guaranteed payouts and clear terms.</p>
-                    <a href="#plans" class="service-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                    <a href="#plans" class="service-link">Explore <span>&rarr;</span></a>
                 </div>
-
                 <div class="service-card reveal">
+                    <div class="service-number">03</div>
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 4v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 4v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
                     </div>
                     <h3>Auto Insurance</h3>
                     <p>Collision, liability, and comprehensive coverage. Plus roadside assistance and bundled discounts when you combine plans.</p>
-                    <a href="#plans" class="service-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                    <a href="#plans" class="service-link">Explore <span>&rarr;</span></a>
                 </div>
-
                 <div class="service-card reveal">
+                    <div class="service-number">04</div>
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                     </div>
                     <h3>Home Insurance</h3>
                     <p>Protect your home from fire, theft, and natural disasters. Flexible plans for owners and renters — customized to your needs.</p>
-                    <a href="#plans" class="service-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                    <a href="#plans" class="service-link">Explore <span>&rarr;</span></a>
                 </div>
-
                 <div class="service-card reveal">
+                    <div class="service-number">05</div>
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
                     </div>
                     <h3>Business Insurance</h3>
                     <p>General liability, professional indemnity, and employee coverage — everything your business needs under one plan.</p>
-                    <a href="#plans" class="service-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                    <a href="#plans" class="service-link">Explore <span>&rarr;</span></a>
                 </div>
-
                 <div class="service-card reveal">
+                    <div class="service-number">06</div>
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
                     </div>
                     <h3>Travel Insurance</h3>
                     <p>Trip cancellations, medical emergencies abroad, lost luggage, and flight delays — explore the world worry-free.</p>
-                    <a href="#plans" class="service-link">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                    <a href="#plans" class="service-link">Explore <span>&rarr;</span></a>
                 </div>
             </div>
         </div>
@@ -197,11 +210,10 @@
                 <span class="section-label">Why Evergreen</span>
                 <h2 class="section-title">Insurance Should Be<br>Simple &amp; Honest</h2>
                 <p class="section-subtitle">No confusing jargon, no buried clauses. We built Evergreen around one idea: insurance you can actually understand and trust.</p>
-
                 <div class="why-features">
                     <div class="why-feature">
-                        <div class="why-check">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        <div class="why-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
                         </div>
                         <div>
                             <h4>Claims Settled in Hours</h4>
@@ -209,8 +221,8 @@
                         </div>
                     </div>
                     <div class="why-feature">
-                        <div class="why-check">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        <div class="why-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
                         </div>
                         <div>
                             <h4>Transparent Pricing</h4>
@@ -218,8 +230,8 @@
                         </div>
                     </div>
                     <div class="why-feature">
-                        <div class="why-check">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        <div class="why-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
                         </div>
                         <div>
                             <h4>Real People, Real Support</h4>
@@ -227,8 +239,8 @@
                         </div>
                     </div>
                     <div class="why-feature">
-                        <div class="why-check">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        <div class="why-icon-wrap">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
                         </div>
                         <div>
                             <h4>Cancel Anytime</h4>
@@ -237,7 +249,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="why-visual reveal">
                 <div class="why-stat-card">
                     <div class="why-stat-number" data-target="50000" data-suffix="+">0</div>
@@ -247,7 +258,7 @@
                     <div class="why-stat-number" data-target="24" data-suffix="h">0</div>
                     <div class="why-stat-label">Avg. Claim Time</div>
                 </div>
-                <div class="why-stat-card">
+                <div class="why-stat-card accent">
                     <div class="why-stat-number" data-target="98" data-suffix="%">0</div>
                     <div class="why-stat-label">Approval Rate</div>
                 </div>
@@ -267,102 +278,51 @@
                 <h2 class="section-title">Honest Plans, Fair Prices</h2>
                 <p class="section-subtitle">Every plan includes 24/7 support, a digital insurance card, and our satisfaction guarantee. No contracts, cancel anytime.</p>
             </div>
-
             <div class="plans-grid">
                 <div class="plan-card reveal">
                     <div class="plan-name">Essentials</div>
                     <div class="plan-price"><sup>$</sup>29<sub>/mo</sub></div>
                     <p class="plan-desc">Great starter coverage for individuals.</p>
+                    <div class="plan-divider"></div>
                     <div class="plan-features">
-                        <div class="plan-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                            Health coverage up to $150K
-                        </div>
-                        <div class="plan-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                            Primary care &amp; prescriptions
-                        </div>
-                        <div class="plan-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                            Emergency room coverage
-                        </div>
-                        <div class="plan-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                            24/7 telehealth
-                        </div>
-                        <div class="plan-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                            Digital insurance card
-                        </div>
+                        <div class="plan-feature"><span class="pf-check">&#10003;</span> Health coverage up to $150K</div>
+                        <div class="plan-feature"><span class="pf-check">&#10003;</span> Primary care &amp; prescriptions</div>
+                        <div class="plan-feature"><span class="pf-check">&#10003;</span> Emergency room coverage</div>
+                        <div class="plan-feature"><span class="pf-check">&#10003;</span> 24/7 telehealth</div>
+                        <div class="plan-feature"><span class="pf-check">&#10003;</span> Digital insurance card</div>
                     </div>
-                    <a href="#cta" class="btn btn-outline-dark">Get Started</a>
+                    <a href="#cta" class="btn btn-outline-dark btn-full">Get Started</a>
                 </div>
-
                 <div class="plan-card featured reveal">
-                    <div class="plan-popular">Most Popular</div>
+                    <div class="plan-badge">Most Popular</div>
                     <div class="plan-name">Family</div>
                     <div class="plan-price"><sup>$</sup>59<sub>/mo</sub></div>
                     <p class="plan-desc">Complete coverage for your whole family.</p>
+                    <div class="plan-divider"></div>
                     <div class="plan-features">
-                        <div class="plan-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                            Health coverage up to $500K
-                        </div>
-                        <div class="plan-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                            Up to 4 family members
-                        </div>
-                        <div class="plan-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                            Dental &amp; vision included
-                        </div>
-                        <div class="plan-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                            $250K life insurance
-                        </div>
-                        <div class="plan-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                            Priority claims
-                        </div>
-                        <div class="plan-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                            Annual wellness checkup
-                        </div>
+                        <div class="plan-feature"><span class="pf-check">&#10003;</span> Health coverage up to $500K</div>
+                        <div class="plan-feature"><span class="pf-check">&#10003;</span> Up to 4 family members</div>
+                        <div class="plan-feature"><span class="pf-check">&#10003;</span> Dental &amp; vision included</div>
+                        <div class="plan-feature"><span class="pf-check">&#10003;</span> $250K life insurance</div>
+                        <div class="plan-feature"><span class="pf-check">&#10003;</span> Priority claims</div>
+                        <div class="plan-feature"><span class="pf-check">&#10003;</span> Annual wellness checkup</div>
                     </div>
-                    <a href="#cta" class="btn btn-green">Get Started</a>
+                    <a href="#cta" class="btn btn-gold btn-full">Get Started</a>
                 </div>
-
                 <div class="plan-card reveal">
                     <div class="plan-name">Complete</div>
                     <div class="plan-price"><sup>$</sup>129<sub>/mo</sub></div>
                     <p class="plan-desc">Full protection for families &amp; businesses.</p>
+                    <div class="plan-divider"></div>
                     <div class="plan-features">
-                        <div class="plan-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                            Unlimited health coverage
-                        </div>
-                        <div class="plan-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                            Unlimited family members
-                        </div>
-                        <div class="plan-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                            Home, auto &amp; business bundled
-                        </div>
-                        <div class="plan-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                            $1M life insurance
-                        </div>
-                        <div class="plan-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                            Dedicated advisor
-                        </div>
-                        <div class="plan-feature">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                            International travel coverage
-                        </div>
+                        <div class="plan-feature"><span class="pf-check">&#10003;</span> Unlimited health coverage</div>
+                        <div class="plan-feature"><span class="pf-check">&#10003;</span> Unlimited family members</div>
+                        <div class="plan-feature"><span class="pf-check">&#10003;</span> Home, auto &amp; business bundled</div>
+                        <div class="plan-feature"><span class="pf-check">&#10003;</span> $1M life insurance</div>
+                        <div class="plan-feature"><span class="pf-check">&#10003;</span> Dedicated advisor</div>
+                        <div class="plan-feature"><span class="pf-check">&#10003;</span> International travel coverage</div>
                     </div>
-                    <a href="#cta" class="btn btn-outline-dark">Contact Sales</a>
+                    <a href="#cta" class="btn btn-outline-dark btn-full">Contact Sales</a>
                 </div>
             </div>
         </div>
@@ -372,29 +332,32 @@
     <section class="section how-section" id="how">
         <div class="container">
             <div class="section-header reveal">
-                <span class="section-label">How It Works</span>
+                <span class="section-label">Process</span>
                 <h2 class="section-title">Get Covered in Minutes</h2>
                 <p class="section-subtitle">No paperwork, no phone calls, no waiting rooms. Everything happens online, and coverage starts immediately.</p>
             </div>
-
             <div class="steps-grid">
                 <div class="step-card reveal">
-                    <div class="step-number">1</div>
+                    <div class="step-line"></div>
+                    <div class="step-number">01</div>
                     <h3>Pick Your Plan</h3>
                     <p>Browse our plans and choose the level of coverage that fits your life.</p>
                 </div>
                 <div class="step-card reveal">
-                    <div class="step-number">2</div>
+                    <div class="step-line"></div>
+                    <div class="step-number">02</div>
                     <h3>Quick Application</h3>
                     <p>Answer a few simple questions. Takes about 2 minutes — no medical exam needed.</p>
                 </div>
                 <div class="step-card reveal">
-                    <div class="step-number">3</div>
+                    <div class="step-line"></div>
+                    <div class="step-number">03</div>
                     <h3>Instant Approval</h3>
                     <p>Get approved in seconds. Your digital insurance card arrives immediately.</p>
                 </div>
                 <div class="step-card reveal">
-                    <div class="step-number">4</div>
+                    <div class="step-line"></div>
+                    <div class="step-number">04</div>
                     <h3>You're Protected</h3>
                     <p>Coverage is active right away. File claims anytime from your dashboard.</p>
                 </div>
@@ -410,17 +373,10 @@
                 <h2 class="section-title">Trusted by Real Families</h2>
                 <p class="section-subtitle">Hear from people who made the switch to Evergreen and never looked back.</p>
             </div>
-
             <div class="testimonials-grid">
                 <div class="testimonial-card reveal">
-                    <div class="testimonial-stars">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
-                    <p class="testimonial-text">"Had a fender bender and dreaded the claims process. Filed on the app, got approved in 18 hours, payment the next day. I'm never switching."</p>
+                    <div class="testimonial-quote">&ldquo;</div>
+                    <p class="testimonial-text">Had a fender bender and dreaded the claims process. Filed on the app, got approved in 18 hours, payment the next day. I'm never switching.</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">JM</div>
                         <div>
@@ -429,16 +385,9 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="testimonial-card reveal">
-                    <div class="testimonial-stars">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
-                    <p class="testimonial-text">"Mom of three here. The Family plan covers all five of us for less than what I used to pay just for myself. Finally, insurance that makes sense."</p>
+                    <div class="testimonial-quote">&ldquo;</div>
+                    <p class="testimonial-text">Mom of three here. The Family plan covers all five of us for less than what I used to pay just for myself. Finally, insurance that makes sense.</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">SR</div>
                         <div>
@@ -447,16 +396,9 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="testimonial-card reveal">
-                    <div class="testimonial-stars">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
-                    <p class="testimonial-text">"Moved our 40-person startup to the Complete plan. The dedicated advisor alone saves us hours every month. Best decision we've made."</p>
+                    <div class="testimonial-quote">&ldquo;</div>
+                    <p class="testimonial-text">Moved our 40-person startup to the Complete plan. The dedicated advisor alone saves us hours every month. Best decision we've made.</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">AK</div>
                         <div>
@@ -475,64 +417,58 @@
             <div class="section-header reveal">
                 <span class="section-label">FAQ</span>
                 <h2 class="section-title">Common Questions</h2>
-                <p class="section-subtitle">Everything you need to know before getting started. Still have questions? We're one click away.</p>
+                <p class="section-subtitle">Everything you need to know before getting started.</p>
             </div>
-
             <div class="faq-grid">
                 <div class="faq-item reveal">
                     <button class="faq-question">
                         <h4>How quickly can I get covered?</h4>
-                        <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+                        <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">Coverage begins the moment your application is approved — usually within minutes. You'll receive your digital insurance card instantly via email and in your dashboard.</div>
                     </div>
                 </div>
-
                 <div class="faq-item reveal">
                     <button class="faq-question">
                         <h4>Can I cancel my plan at any time?</h4>
-                        <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+                        <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">Yes. All plans are month-to-month. Cancel, upgrade, or downgrade anytime from your dashboard — no phone calls, no penalties.</div>
                     </div>
                 </div>
-
                 <div class="faq-item reveal">
                     <button class="faq-question">
                         <h4>Do I need a medical exam?</h4>
-                        <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+                        <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">No medical exam for Essentials and Family plans. The Complete plan with $1M+ life insurance may require a brief health questionnaire — we'll guide you through it.</div>
                     </div>
                 </div>
-
                 <div class="faq-item reveal">
                     <button class="faq-question">
                         <h4>How do I file a claim?</h4>
-                        <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+                        <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">Log into your dashboard, tap "File a Claim", upload documents, and submit. Most claims are reviewed within 24 hours and you'll be notified by email.</div>
                     </div>
                 </div>
-
                 <div class="faq-item reveal">
                     <button class="faq-question">
                         <h4>Are pre-existing conditions covered?</h4>
-                        <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+                        <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">Yes. Family and Complete plans cover pre-existing conditions after a 6-month waiting period. We believe quality insurance should be accessible to everyone.</div>
                     </div>
                 </div>
-
                 <div class="faq-item reveal">
                     <button class="faq-question">
                         <h4>Can I add family members later?</h4>
-                        <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+                        <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">Absolutely. Add or remove family members anytime from your dashboard. Changes take effect on your next billing cycle — no extra paperwork.</div>
@@ -546,11 +482,14 @@
     <section class="cta-section" id="cta">
         <div class="container">
             <div class="cta-box reveal">
-                <h2>Ready to Feel Protected?</h2>
-                <p>Join 50,000+ families who trust Evergreen. Get your personalized quote in under 2 minutes — free, fast, and no commitment.</p>
-                <div class="cta-actions">
-                    <a href="#plans" class="btn btn-white">Get a Free Quote</a>
-                    <a href="#how" class="btn btn-outline" style="border-color:rgba(255,255,255,0.4);color:#fff;">Learn How It Works</a>
+                <div class="cta-inner">
+                    <span class="section-label" style="color: rgba(255,255,255,0.5);">Get Started</span>
+                    <h2>Ready to Feel Protected?</h2>
+                    <p>Join 50,000+ families who trust Evergreen. Get your personalized quote in under 2 minutes — free, fast, and no commitment.</p>
+                    <div class="cta-actions">
+                        <a href="#plans" class="btn btn-white btn-lg">Get a Free Quote</a>
+                        <a href="#how" class="btn btn-ghost btn-lg">Learn How It Works</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -561,7 +500,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="#" class="nav-logo">Ever<span>green</span></a>
+                    <a href="#" class="nav-logo footer-logo">EVER<span>GREEN</span></a>
                     <p>Honest, modern insurance for individuals, families, and businesses. Transparent pricing, instant approvals, and claims paid in hours.</p>
                 </div>
                 <div class="footer-col">
@@ -593,16 +532,16 @@
                 <span>&copy; 2026 Evergreen Insurance. All rights reserved.</span>
                 <div class="footer-socials">
                     <a href="#" aria-label="Twitter">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
                     </a>
                     <a href="#" aria-label="LinkedIn">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
                     </a>
                     <a href="#" aria-label="Facebook">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                     </a>
                     <a href="#" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                     </a>
                 </div>
             </div>
