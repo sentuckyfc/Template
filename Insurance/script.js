@@ -1,50 +1,42 @@
-// ========== PRELOADER ==========
+// ===== PRELOADER =====
 window.addEventListener('load', () => {
     setTimeout(() => {
         document.getElementById('preloader').classList.add('hidden');
-    }, 1800);
+    }, 1000);
 });
 
-// ========== NAVBAR SCROLL ==========
+// ===== NAVBAR SCROLL =====
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 60);
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
 });
 
-// ========== MOBILE MENU ==========
+// ===== MOBILE MENU =====
 const menuToggle = document.getElementById('menuToggle');
 const mobileMenu = document.getElementById('mobileMenu');
 const mobileClose = document.getElementById('mobileClose');
 
-menuToggle.addEventListener('click', () => {
-    mobileMenu.classList.add('open');
-});
-
+menuToggle.addEventListener('click', () => mobileMenu.classList.add('open'));
 mobileClose.addEventListener('click', closeMobile);
 
 function closeMobile() {
     mobileMenu.classList.remove('open');
 }
 
-// ========== SCROLL REVEAL ==========
-const revealElements = document.querySelectorAll('.reveal');
-
+// ===== SCROLL REVEAL =====
+const reveals = document.querySelectorAll('.reveal');
 const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry, index) => {
+    entries.forEach((entry, i) => {
         if (entry.isIntersecting) {
-            setTimeout(() => {
-                entry.target.classList.add('visible');
-            }, index * 100);
+            setTimeout(() => entry.target.classList.add('visible'), i * 80);
             revealObserver.unobserve(entry.target);
         }
     });
-}, { threshold: 0.08, rootMargin: '0px 0px -60px 0px' });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => revealObserver.observe(el));
 
-revealElements.forEach(el => revealObserver.observe(el));
-
-// ========== ANIMATED COUNTERS ==========
-const counterElements = document.querySelectorAll('.why-stat-number[data-target]');
-
+// ===== COUNTER ANIMATION =====
+const counters = document.querySelectorAll('.stat-val[data-target]');
 const counterObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -53,42 +45,34 @@ const counterObserver = new IntersectionObserver((entries) => {
         }
     });
 }, { threshold: 0.5 });
-
-counterElements.forEach(el => counterObserver.observe(el));
+counters.forEach(el => counterObserver.observe(el));
 
 function animateCounter(el) {
     const target = parseInt(el.dataset.target);
     const suffix = el.dataset.suffix || '';
-    const duration = 2200;
+    const duration = 2000;
     const start = performance.now();
 
-    function update(now) {
-        const elapsed = now - start;
-        const progress = Math.min(elapsed / duration, 1);
+    function tick(now) {
+        const progress = Math.min((now - start) / duration, 1);
         const eased = 1 - Math.pow(1 - progress, 3);
-        const current = Math.floor(eased * target);
-        el.textContent = current.toLocaleString() + suffix;
-
-        if (progress < 1) {
-            requestAnimationFrame(update);
-        } else {
-            el.textContent = target.toLocaleString() + suffix;
-        }
+        el.textContent = Math.floor(eased * target).toLocaleString() + suffix;
+        if (progress < 1) requestAnimationFrame(tick);
+        else el.textContent = target.toLocaleString() + suffix;
     }
-
-    requestAnimationFrame(update);
+    requestAnimationFrame(tick);
 }
 
-// ========== FAQ ACCORDION ==========
-document.querySelectorAll('.faq-question').forEach(btn => {
+// ===== FAQ ACCORDION =====
+document.querySelectorAll('.faq-q').forEach(btn => {
     btn.addEventListener('click', () => {
         const item = btn.parentElement;
-        const answer = item.querySelector('.faq-answer');
+        const answer = item.querySelector('.faq-a');
         const isOpen = item.classList.contains('open');
 
         document.querySelectorAll('.faq-item').forEach(faq => {
             faq.classList.remove('open');
-            faq.querySelector('.faq-answer').style.maxHeight = null;
+            faq.querySelector('.faq-a').style.maxHeight = null;
         });
 
         if (!isOpen) {
@@ -98,12 +82,12 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     });
 });
 
-// ========== SMOOTH SCROLL ==========
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
-        const target = document.querySelector(targetId);
+// ===== SMOOTH SCROLL =====
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+        const id = this.getAttribute('href');
+        if (id === '#') return;
+        const target = document.querySelector(id);
         if (target) {
             e.preventDefault();
             target.scrollIntoView({ behavior: 'smooth', block: 'start' });
