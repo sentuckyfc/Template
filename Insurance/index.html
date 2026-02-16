@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIELDIFY — Modern Insurance Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <span class="loader-text">SHIELDIFY</span>
+            <div class="loader-bar"><div class="loader-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="mobileClose">&times;</button>
+        <a href="#services" onclick="closeMobile()">Services</a>
+        <a href="#why" onclick="closeMobile()">Why Us</a>
+        <a href="#plans" onclick="closeMobile()">Plans</a>
+        <a href="#how" onclick="closeMobile()">How It Works</a>
+        <a href="#faq" onclick="closeMobile()">FAQ</a>
+        <a href="#cta" class="btn btn-primary" onclick="closeMobile()">Get a Quote</a>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="nav-logo">SHIELD<span>IFY</span></a>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#why">Why Us</a>
+                <a href="#plans">Plans</a>
+                <a href="#how">How It Works</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <a href="#cta" class="btn btn-primary nav-cta">Get a Quote</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Trusted by 50,000+ Families
+                </div>
+                <h1>Protect What<br>Matters <span class="highlight">Most.</span></h1>
+                <p class="hero-desc">Smart, affordable insurance plans that give your family peace of mind. From health to home — we've got every angle covered with transparent pricing and zero hidden fees.</p>
+                <div class="hero-actions">
+                    <a href="#plans" class="btn btn-primary">View Plans &amp; Pricing</a>
+                    <a href="#how" class="btn btn-outline">How It Works</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50K<span>+</span></div>
+                        <div class="stat-label">Customers Protected</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">$2B<span>+</span></div>
+                        <div class="stat-label">Claims Paid Out</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98<span>%</span></div>
+                        <div class="stat-label">Customer Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="shield-container">
+                    <div class="shield-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <div class="shield-ring"></div>
+                    <div class="shield-ring"></div>
+                    <div class="shield-ring"></div>
+
+                    <!-- Floating info cards -->
+                    <div class="float-card card-1">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#00D4AA" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        Instant Approval
+                    </div>
+                    <div class="float-card card-2">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#0052FF" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                        Zero Hidden Fees
+                    </div>
+                    <div class="float-card card-3">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#FBBF24" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        4.9 ★ Rated
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TRUST BAR ==================== -->
+    <section class="trust-bar">
+        <div class="container trust-inner">
+            <p class="trust-label">Trusted By Leading Companies Worldwide</p>
+            <div class="trust-logos">
+                <span class="trust-logo">Forbes</span>
+                <span class="trust-logo">Bloomberg</span>
+                <span class="trust-logo">TechCrunch</span>
+                <span class="trust-logo">Reuters</span>
+                <span class="trust-logo">CNBC</span>
+                <span class="trust-logo">The Wall Street Journal</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+                    What We Offer
+                </span>
+                <h2 class="section-title">Insurance Plans Tailored<br>for Every Need</h2>
+                <p class="section-subtitle">From individual health coverage to complete family protection — we make insurance simple, transparent, and genuinely affordable.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Health -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </div>
+                    <h3>Health Insurance</h3>
+                    <p>Comprehensive medical coverage including hospitalization, prescriptions, specialist visits, and preventive care — all with no surprise bills.</p>
+                    <a href="#plans" class="service-link">View Plans <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                </div>
+
+                <!-- Life -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Life Insurance</h3>
+                    <p>Secure your family's future with flexible term and whole life policies. Guaranteed payouts, transparent terms, and affordable premiums.</p>
+                    <a href="#plans" class="service-link">View Plans <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                </div>
+
+                <!-- Auto -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 4v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                    </div>
+                    <h3>Auto Insurance</h3>
+                    <p>Full collision, liability, and comprehensive auto coverage. Fast claims processing, roadside assistance, and bundled discount options.</p>
+                    <a href="#plans" class="service-link">View Plans <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                </div>
+
+                <!-- Home -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+                    <h3>Home Insurance</h3>
+                    <p>Protect your property against fire, theft, natural disasters, and liability. Customizable policies for homeowners and renters alike.</p>
+                    <a href="#plans" class="service-link">View Plans <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                </div>
+
+                <!-- Business -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                    </div>
+                    <h3>Business Insurance</h3>
+                    <p>From general liability to professional indemnity — safeguard your business operations with scalable commercial coverage plans.</p>
+                    <a href="#plans" class="service-link">View Plans <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                </div>
+
+                <!-- Travel -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <h3>Travel Insurance</h3>
+                    <p>Trip cancellation, medical emergencies abroad, lost luggage, and flight delays — travel worry-free anywhere in the world.</p>
+                    <a href="#plans" class="service-link">View Plans <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY US ==================== -->
+    <section class="section why-section" id="why">
+        <div class="container why-grid">
+            <div class="why-content reveal">
+                <span class="section-label">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Why Choose Us
+                </span>
+                <h2 class="section-title">Insurance That Actually<br>Works for You</h2>
+                <p class="section-subtitle">We've stripped away the confusing jargon and hidden clauses. What you see is exactly what you get — transparent, reliable, and fast.</p>
+
+                <div class="why-features">
+                    <div class="why-feature">
+                        <div class="why-check">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <div>
+                            <h4>Claims Paid in 24 Hours</h4>
+                            <p>No more waiting weeks. Our AI-powered system processes and approves genuine claims within a single business day.</p>
+                        </div>
+                    </div>
+                    <div class="why-feature">
+                        <div class="why-check">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <div>
+                            <h4>No Hidden Fees — Ever</h4>
+                            <p>Every cost is disclosed upfront. Our pricing page shows exactly what you'll pay, with zero unexpected charges.</p>
+                        </div>
+                    </div>
+                    <div class="why-feature">
+                        <div class="why-check">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <div>
+                            <h4>24/7 Expert Support</h4>
+                            <p>Real human advisors available round the clock via chat, phone, or video call — not just chatbots.</p>
+                        </div>
+                    </div>
+                    <div class="why-feature">
+                        <div class="why-check">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <div>
+                            <h4>Flexible & Cancellable Anytime</h4>
+                            <p>Upgrade, downgrade, or cancel your plan whenever you need. No lock-in contracts, no cancellation penalties.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="why-visual reveal">
+                <div class="why-stat-card">
+                    <div class="why-stat-number" data-target="50000" data-suffix="+">0</div>
+                    <div class="why-stat-label">Families Protected</div>
+                </div>
+                <div class="why-stat-card">
+                    <div class="why-stat-number" data-target="24" data-suffix="h">0</div>
+                    <div class="why-stat-label">Average Claim Time</div>
+                </div>
+                <div class="why-stat-card">
+                    <div class="why-stat-number" data-target="98" data-suffix="%">0</div>
+                    <div class="why-stat-label">Claim Approval Rate</div>
+                </div>
+                <div class="why-stat-card">
+                    <div class="why-stat-number" data-target="15" data-suffix="+">0</div>
+                    <div class="why-stat-label">Years of Service</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PLANS ==================== -->
+    <section class="section plans-section" id="plans">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                    Pricing Plans
+                </span>
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <p class="section-subtitle">Choose the plan that works for you. All plans include 24/7 support, instant digital cards, and our satisfaction guarantee.</p>
+            </div>
+
+            <div class="plans-grid">
+                <!-- Basic -->
+                <div class="plan-card reveal">
+                    <div class="plan-name">Basic Shield</div>
+                    <div class="plan-price"><sup>$</sup>29<sub>/mo</sub></div>
+                    <p class="plan-desc">Essential protection for individuals starting out.</p>
+                    <div class="plan-features">
+                        <div class="plan-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Health coverage up to $150K
+                        </div>
+                        <div class="plan-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Primary care & prescriptions
+                        </div>
+                        <div class="plan-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Emergency room coverage
+                        </div>
+                        <div class="plan-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            24/7 telehealth access
+                        </div>
+                        <div class="plan-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Digital insurance card
+                        </div>
+                    </div>
+                    <a href="#cta" class="btn btn-outline">Get Started</a>
+                </div>
+
+                <!-- Pro -->
+                <div class="plan-card featured reveal">
+                    <div class="plan-popular">Most Popular</div>
+                    <div class="plan-name">Pro Shield</div>
+                    <div class="plan-price"><sup>$</sup>59<sub>/mo</sub></div>
+                    <p class="plan-desc">Complete coverage for you and your family.</p>
+                    <div class="plan-features">
+                        <div class="plan-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Health coverage up to $500K
+                        </div>
+                        <div class="plan-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Family members included (up to 4)
+                        </div>
+                        <div class="plan-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Dental &amp; vision add-on
+                        </div>
+                        <div class="plan-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Life insurance ($250K term)
+                        </div>
+                        <div class="plan-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Priority claims processing
+                        </div>
+                        <div class="plan-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Annual wellness checkup
+                        </div>
+                    </div>
+                    <a href="#cta" class="btn btn-primary">Get Started</a>
+                </div>
+
+                <!-- Enterprise -->
+                <div class="plan-card reveal">
+                    <div class="plan-name">Enterprise Shield</div>
+                    <div class="plan-price"><sup>$</sup>129<sub>/mo</sub></div>
+                    <p class="plan-desc">Full-spectrum protection for businesses &amp; large families.</p>
+                    <div class="plan-features">
+                        <div class="plan-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Unlimited health coverage
+                        </div>
+                        <div class="plan-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Unlimited family members
+                        </div>
+                        <div class="plan-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Home, auto &amp; business bundled
+                        </div>
+                        <div class="plan-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Life insurance ($1M term)
+                        </div>
+                        <div class="plan-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            Dedicated account manager
+                        </div>
+                        <div class="plan-feature">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            International travel coverage
+                        </div>
+                    </div>
+                    <a href="#cta" class="btn btn-outline">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== HOW IT WORKS ==================== -->
+    <section class="section" id="how">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    How It Works
+                </span>
+                <h2 class="section-title">Get Covered in 4 Easy Steps</h2>
+                <p class="section-subtitle">No paperwork, no lengthy phone calls. Get insured entirely online in under 5 minutes.</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card reveal">
+                    <div class="step-number">1</div>
+                    <h3>Choose Your Plan</h3>
+                    <p>Browse our plans and pick the coverage level that fits your needs and budget.</p>
+                </div>
+                <div class="step-card reveal">
+                    <div class="step-number">2</div>
+                    <h3>Quick Online Form</h3>
+                    <p>Fill out a simple 2-minute form — no medical exams needed for most plans.</p>
+                </div>
+                <div class="step-card reveal">
+                    <div class="step-number">3</div>
+                    <h3>Instant Approval</h3>
+                    <p>Our smart system reviews your application and approves in seconds, not weeks.</p>
+                </div>
+                <div class="step-card reveal">
+                    <div class="step-number">4</div>
+                    <h3>You're Covered!</h3>
+                    <p>Get your digital card instantly. Coverage starts immediately — no waiting period.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    Testimonials
+                </span>
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Real stories from real people who trust Shieldify to protect what matters most.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"Filed my first claim after a fender bender. Got approved within 18 hours and the payment came through the next day. Absolutely seamless experience."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">JM</div>
+                        <div>
+                            <div class="testimonial-name">James Mitchell</div>
+                            <div class="testimonial-role">Auto & Home Customer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"As a mom of three, finding affordable family coverage felt impossible. Shieldify's Pro plan covers all of us for less than what I was paying just for myself before."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">SR</div>
+                        <div>
+                            <div class="testimonial-name">Sarah Rodriguez</div>
+                            <div class="testimonial-role">Pro Shield Family Plan</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <p class="testimonial-text">"Switched our entire 40-person startup to the Enterprise plan. The dedicated account manager alone is worth it. Best business insurance decision we've made."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">AK</div>
+                        <div>
+                            <div class="testimonial-name">Alex Kim</div>
+                            <div class="testimonial-role">CEO, TechNova Inc.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="section faq-section" id="faq">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    FAQ
+                </span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Got questions? We've got answers. If you don't find what you need, our support team is just a click away.</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        <h4>How quickly can I get covered?</h4>
+                        <div class="faq-toggle">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Coverage begins the moment your application is approved — which typically takes just minutes. You'll receive your digital insurance card instantly via email and in your online dashboard.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        <h4>Can I cancel my plan at any time?</h4>
+                        <div class="faq-toggle">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Absolutely. All our plans are month-to-month with no lock-in contracts. You can cancel, upgrade, or downgrade at any time from your dashboard — no phone calls, no penalties.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        <h4>Do I need a medical exam to apply?</h4>
+                        <div class="faq-toggle">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">For Basic and Pro plans — no medical exam is required. Enterprise plans with $1M+ life insurance may require a brief health questionnaire. We'll walk you through everything.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        <h4>How do I file a claim?</h4>
+                        <div class="faq-toggle">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Filing a claim is simple. Log into your dashboard, click "File a Claim", upload any supporting documents, and submit. Our team reviews most claims within 24 hours and you'll be notified via email.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        <h4>Are pre-existing conditions covered?</h4>
+                        <div class="faq-toggle">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Yes. Our Pro and Enterprise plans cover pre-existing conditions after a 6-month waiting period. We believe everyone deserves access to quality insurance regardless of medical history.</div>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        <h4>Can I add family members later?</h4>
+                        <div class="faq-toggle">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        </div>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Of course! You can add or remove family members at any time from your dashboard. Changes take effect on your next billing cycle. No extra paperwork needed.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA ==================== -->
+    <section class="cta-section" id="cta">
+        <div class="container">
+            <div class="cta-box reveal">
+                <h2>Ready to Protect Your Future?</h2>
+                <p>Join 50,000+ families already covered by Shieldify. Get your personalized quote in under 2 minutes — it's free, fast, and commitment-free.</p>
+                <div class="cta-actions">
+                    <a href="#plans" class="btn btn-white">Get a Free Quote</a>
+                    <a href="#how" class="btn btn-outline" style="border-color:rgba(255,255,255,0.4);color:#fff;">See How It Works</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">SHIELD<span>IFY</span></a>
+                    <p>Smart, modern insurance for individuals, families, and businesses. Transparent pricing, instant approvals, and claims paid in 24 hours.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <a href="#services">Health Insurance</a>
+                    <a href="#services">Life Insurance</a>
+                    <a href="#services">Auto Insurance</a>
+                    <a href="#services">Home Insurance</a>
+                    <a href="#services">Business Insurance</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Partners</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <a href="#faq">FAQ</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">File a Claim</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Shieldify Insurance. All rights reserved.</span>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
