@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejen Hartanah Moden</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="logo"><i class="fa-solid fa-house-chimney"></i> Nova<span>Estates</span></div>
+        
+    <div class="menu-btn" id="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="active">Utama</a></li>
+        <li><a href="#about">Tentang Kami</a></li>
+        <li><a href="#listings">Hartanah</a></li>
+        <li class="nav-btn-container"><a href="#contact" class="btn-outline">Hubungi Kami</a></li>
+    </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <span class="badge-hero">Masa Depan Kediaman Anda</span>
+            <h1>Temui Rumah<br>Idaman Anda</h1>
+            <p>Eksplorasi hartanah premium dengan pengalaman yang lancar dan telus.</p>
+        </div>
+        
+        <div class="search-box">
+            <div class="box1">
+                <div class="input-group">
+                    <label>Lokasi</label>
+                    <input type="text" placeholder="Cth: Kuala Lumpur">
+                </div>
+                <div class="divider"></div>
+                <div class="input-group">
+                    <label>Jenis</label>
+                    <select>
+                        <option>Semua Jenis</option>
+                        <option>Kondominium</option>
+                        <option>Landed</option>
+                    </select>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <button class="btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Cari</button>
+        </div>
+    </header>
+
+    <section id="listings" class="listings">
+        <div class="section-header">
+            <h2>Hartanah Eksklusif</h2>
+            <p>Pilihan kediaman terbaik yang menanti anda.</p>
+        </div>
+
+        <div class="property-grid">
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80');">
+                    <span class="badge-new">Baru</span>
+                    <button class="btn-heart"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="card-content">
+                    <div class="price-row">
+                        <span class="price">RM 850,000</span>
+                        <span class="type">Untuk Dijual</span>
+                    </div>
+                    <h3>Vila Tropika Kiara</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Mont Kiara, Kuala Lumpur</p>
+                    
+                    <div class="features">
+                        <span><i class="fa-solid fa-bed"></i> 4 Bilik</span>
+                        <span><i class="fa-solid fa-bath"></i> 3 Bilik Air</span>
+                        <span><i class="fa-solid fa-maximize"></i> 2,400 kp</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80');">
+                    <span class="badge-new">Baru</span>
+                    <button class="btn-heart"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="card-content">
+                    <div class="price-row">
+                        <span class="price">RM 850,000</span>
+                        <span class="type">Untuk Dijual</span>
+                    </div>
+                    <h3>Vila Tropika Kiara</h3>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i> Mont Kiara, Kuala Lumpur</p>
+                    
+                    <div class="features">
+                        <span><i class="fa-solid fa-bed"></i> 4 Bilik</span>
+                        <span><i class="fa-solid fa-bath"></i> 3 Bilik Air</span>
+                        <span><i class="fa-solid fa-maximize"></i> 2,400 kp</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+<script>
+const menuBtn = document.getElementById('menu-btn');
+const navLinks = document.getElementById('nav-links');
+const menuIcon = menuBtn.querySelector('i');
+
+menuBtn.addEventListener('click', () => {
+    // Buka atau tutup menu
+    navLinks.classList.toggle('active');
+    
+    // Tukar ikon dari 'Hamburger' ke 'X'
+    if (navLinks.classList.contains('active')) {
+        menuIcon.classList.remove('fa-bars');
+        menuIcon.classList.add('fa-xmark');
+    } else {
+        menuIcon.classList.remove('fa-xmark');
+        menuIcon.classList.add('fa-bars');
+    }
+});</script>
+</body>
+</html>
