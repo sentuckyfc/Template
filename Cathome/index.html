@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatHome - Where Every Cat Finds Love</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-cat"></i>
+                <span>CatHome</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cats">Our Cats</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#adopt" class="btn btn-primary">Adopt Now</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="floating-paws">
+                <i class="fas fa-paw paw-1"></i>
+                <i class="fas fa-paw paw-2"></i>
+                <i class="fas fa-paw paw-3"></i>
+                <i class="fas fa-paw paw-4"></i>
+                <i class="fas fa-paw paw-5"></i>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-badge">
+                    <i class="fas fa-heart"></i>
+                    Over 10,000 Cats Adopted
+                </span>
+                <h1>Find Your Perfect <span class="gradient-text">Feline Friend</span></h1>
+                <p>Welcome to CatHome, where every whisker tells a story and every purr finds a home. Discover the joy of companionship with our adorable cats waiting for their forever families.</p>
+                <div class="hero-buttons">
+                    <a href="#cats" class="btn btn-primary btn-lg">
+                        <i class="fas fa-search"></i>
+                        Find a Cat
+                    </a>
+                    <a href="#about" class="btn btn-outline btn-lg">
+                        <i class="fas fa-play-circle"></i>
+                        Learn More
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="10547">0</span>
+                        <span class="stat-label">Cats Adopted</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="2847">0</span>
+                        <span class="stat-label">Happy Families</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="15">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600&h=700&fit=crop" alt="Beautiful cat">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-heart"></i>
+                        <span>Loved & Cared</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Vaccinated</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">About Us</span>
+                <h2>Why Choose <span class="gradient-text">CatHome</span>?</h2>
+                <p>We're dedicated to connecting loving families with cats in need of a home. Our mission is to make the adoption process joyful and seamless.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Safe Shelter</h3>
+                    <p>Every cat in our care enjoys a comfortable, clean, and loving environment while waiting for their forever home.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Health Checked</h3>
+                    <p>All our cats receive comprehensive veterinary care, vaccinations, and health screenings before adoption.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Lifetime Support</h3>
+                    <p>We provide ongoing support and guidance to ensure a smooth transition for both you and your new companion.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Expert Guidance</h3>
+                    <p>Our team of cat behaviorists helps match you with the perfect cat based on your lifestyle and preferences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Cats Section -->
+    <section id="cats" class="cats">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Meet Our Cats</span>
+                <h2>Ready for <span class="gradient-text">Adoption</span></h2>
+                <p>Browse our adorable cats waiting to meet their new families. Each one has a unique personality and lots of love to give.</p>
+            </div>
+            <div class="cats-filter">
+                <button class="filter-btn active" data-filter="all">All Cats</button>
+                <button class="filter-btn" data-filter="kitten">Kittens</button>
+                <button class="filter-btn" data-filter="adult">Adults</button>
+                <button class="filter-btn" data-filter="senior">Seniors</button>
+            </div>
+            <div class="cats-grid">
+                <div class="cat-card" data-category="kitten">
+                    <div class="cat-image">
+                        <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=400&h=400&fit=crop" alt="Luna">
+                        <span class="cat-badge">New</span>
+                        <button class="cat-favorite"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="cat-info">
+                        <h3>Luna</h3>
+                        <span class="cat-breed">Persian Mix</span>
+                        <div class="cat-details">
+                            <span><i class="fas fa-birthday-cake"></i> 3 months</span>
+                            <span><i class="fas fa-venus"></i> Female</span>
+                        </div>
+                        <p>Playful and curious kitten who loves chasing toys and cuddling.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Meet Luna</a>
+                    </div>
+                </div>
+                <div class="cat-card" data-category="adult">
+                    <div class="cat-image">
+                        <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?w=400&h=400&fit=crop" alt="Oliver">
+                        <button class="cat-favorite"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="cat-info">
+                        <h3>Oliver</h3>
+                        <span class="cat-breed">British Shorthair</span>
+                        <div class="cat-details">
+                            <span><i class="fas fa-birthday-cake"></i> 2 years</span>
+                            <span><i class="fas fa-mars"></i> Male</span>
+                        </div>
+                        <p>Calm and affectionate gentleman who enjoys quiet afternoons.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Meet Oliver</a>
+                    </div>
+                </div>
+                <div class="cat-card" data-category="kitten">
+                    <div class="cat-image">
+                        <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=400&h=400&fit=crop" alt="Milo">
+                        <span class="cat-badge">Popular</span>
+                        <button class="cat-favorite"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="cat-info">
+                        <h3>Milo</h3>
+                        <span class="cat-breed">Tabby</span>
+                        <div class="cat-details">
+                            <span><i class="fas fa-birthday-cake"></i> 4 months</span>
+                            <span><i class="fas fa-mars"></i> Male</span>
+                        </div>
+                        <p>Energetic explorer with a heart full of love to share.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Meet Milo</a>
+                    </div>
+                </div>
+                <div class="cat-card" data-category="senior">
+                    <div class="cat-image">
+                        <img src="https://images.unsplash.com/photo-1513245543132-31f507417b26?w=400&h=400&fit=crop" alt="Whiskers">
+                        <button class="cat-favorite"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="cat-info">
+                        <h3>Whiskers</h3>
+                        <span class="cat-breed">Maine Coon</span>
+                        <div class="cat-details">
+                            <span><i class="fas fa-birthday-cake"></i> 8 years</span>
+                            <span><i class="fas fa-mars"></i> Male</span>
+                        </div>
+                        <p>Wise and gentle soul seeking a peaceful retirement home.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Meet Whiskers</a>
+                    </div>
+                </div>
+                <div class="cat-card" data-category="adult">
+                    <div class="cat-image">
+                        <img src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?w=400&h=400&fit=crop" alt="Bella">
+                        <button class="cat-favorite"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="cat-info">
+                        <h3>Bella</h3>
+                        <span class="cat-breed">Siamese</span>
+                        <div class="cat-details">
+                            <span><i class="fas fa-birthday-cake"></i> 3 years</span>
+                            <span><i class="fas fa-venus"></i> Female</span>
+                        </div>
+                        <p>Vocal and loving companion who thrives on attention.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Meet Bella</a>
+                    </div>
+                </div>
+                <div class="cat-card" data-category="kitten">
+                    <div class="cat-image">
+                        <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?w=400&h=400&fit=crop" alt="Simba">
+                        <span class="cat-badge">New</span>
+                        <button class="cat-favorite"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="cat-info">
+                        <h3>Simba</h3>
+                        <span class="cat-breed">Orange Tabby</span>
+                        <div class="cat-details">
+                            <span><i class="fas fa-birthday-cake"></i> 2 months</span>
+                            <span><i class="fas fa-mars"></i> Male</span>
+                        </div>
+                        <p>Adorable ball of fluff with endless energy and charm.</p>
+                        <a href="#" class="btn btn-primary btn-sm">Meet Simba</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cats-cta">
+                <a href="#" class="btn btn-outline btn-lg">View All Cats</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Services</span>
+                <h2>Everything Your Cat <span class="gradient-text">Needs</span></h2>
+                <p>Beyond adoption, we offer comprehensive services to ensure your feline friend lives their best life.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=500&h=300&fit=crop" alt="Grooming">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h3>Professional Grooming</h3>
+                        <p>Pamper your cat with our premium grooming services including bathing, nail trimming, and styling.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=500&h=300&fit=crop" alt="Boarding">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <h3>Luxury Boarding</h3>
+                        <p>Going away? Your cat will enjoy a comfortable stay in our premium boarding facility.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?w=500&h=300&fit=crop" alt="Veterinary">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h3>Veterinary Care</h3>
+                        <p>Full-service veterinary clinic with experienced professionals dedicated to feline health.</p>
+                        <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Testimonials</span>
+                <h2>Happy <span class="gradient-text">Families</span></h2>
+                <p>Hear from families who found their perfect companions through CatHome.</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Adopting Luna from CatHome was the best decision we ever made. The team was incredibly supportive throughout the entire process. Luna has brought so much joy to our home!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Sarah">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>Luna's Mom</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"As first-time cat owners, we were nervous. But the CatHome team guided us every step of the way. Oliver is now a cherished member of our family. Thank you!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Michael">
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <span>Oliver's Dad</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The boarding service is fantastic! I travel often for work and knowing my cats are in good hands gives me peace of mind. They always come back happy and well-cared for."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" alt="Emily">
+                        <div class="author-info">
+                            <h4>Emily Rodriguez</h4>
+                            <span>Regular Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="adopt" class="cta">
+        <div class="cta-bg">
+            <div class="cta-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Welcome a <span class="gradient-text">New Friend</span>?</h2>
+                <p>Start your adoption journey today. Your perfect companion is waiting to meet you at CatHome.</p>
+                <div class="cta-buttons">
+                    <a href="#cats" class="btn btn-white btn-lg">Browse Cats</a>
+                    <a href="#contact" class="btn btn-outline-white btn-lg">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-badge">Get In Touch</span>
+                    <h2>Visit <span class="gradient-text">CatHome</span></h2>
+                    <p>We'd love to hear from you! Whether you're interested in adoption, have questions, or want to visit our facility.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>123 Whiskers Lane, Cat City, CC 12345</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>hello@cathome.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Hours</h4>
+                                <p>Mon-Sat: 9AM - 6PM | Sun: 10AM - 4PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form">
+                        <h3>Send Us a Message</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="#" class="footer-logo">
+                            <i class="fas fa-cat"></i>
+                            <span>CatHome</span>
+                        </a>
+                        <p>Where every cat finds love and every family finds their perfect companion. Join us in making a difference, one paw at a time.</p>
+                        <div class="footer-newsletter">
+                            <h4>Subscribe to Our Newsletter</h4>
+                            <form class="newsletter-form">
+                                <input type="email" placeholder="Enter your email">
+                                <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#cats">Adopt a Cat</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Cat Adoption</a></li>
+                            <li><a href="#">Grooming</a></li>
+                            <li><a href="#">Boarding</a></li>
+                            <li><a href="#">Veterinary Care</a></li>
+                            <li><a href="#">Pet Supplies</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Adoption Process</a></li>
+                            <li><a href="#">Success Stories</a></li>
+                            <li><a href="#">Volunteer</a></li>
+                            <li><a href="#">Donate</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 CatHome. All rights reserved. Made with <i class="fas fa-heart"></i> for cats everywhere.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
