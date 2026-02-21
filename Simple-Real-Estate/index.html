@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple And Clean | Real Estate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">AURA<span>.</span></div>
+        
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#" onclick="showPage('home')">Home</a>
+            <a href="#" onclick="showPage('about')">About Agent</a>
+            <a href="#" onclick="showPage('listings')">Listings</a>
+            <a href="#" onclick="showPage('contact')">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="page active">
+        <header class="hero">
+            <div class="hero-content container">
+                <h1>Find Your Dream Property Today</h1>
+                <p>Exclusive estates, penthouses, and luxury villas curated for the elite.</p>
+                <button class="btn-primary" onclick="showPage('listings')">View Listings</button>
+            </div>
+        </header>
+
+        <div class="container section">
+            <h2 class="section-title text-center">Featured Properties</h2>
+            <div class="grid-3">
+                <div class="property-card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800');"></div>
+                    <div class="card-content">
+                        <h3>$4,500,000</h3>
+                        <p class="location">Beverly Hills, CA</p>
+                        <p class="desc">A stunning modern villa featuring panoramic city views and an infinity pool.</p>
+                        <button class="btn-secondary" onclick="showPage('details')">View Details</button>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800');"></div>
+                    <div class="card-content">
+                        <h3>$8,200,000</h3>
+                        <p class="location">Miami Beach, FL</p>
+                        <p class="desc">Oceanfront penthouse with floor-to-ceiling windows and private elevator access.</p>
+                        <button class="btn-secondary" onclick="showPage('details')">View Details</button>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800');"></div>
+                    <div class="card-content">
+                        <h3>$3,150,000</h3>
+                        <p class="location">Aspen, CO</p>
+                        <p class="desc">Exclusive mountain retreat offering ski-in/ski-out access and a grand fireplace.</p>
+                        <button class="btn-secondary" onclick="showPage('details')">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-secondary section">
+            <div class="container text-center">
+                <h2 class="section-title text-center">Why Choose Us</h2>
+                <div class="grid-3">
+                    <div>
+                        <h3 class="gold-text">Unrivaled Expertise</h3>
+                        <p class="mt-2 text-muted">Decades of experience in the ultra-luxury market.</p>
+                    </div>
+                    <div>
+                        <h3 class="gold-text">Global Network</h3>
+                        <p class="mt-2 text-muted">Connecting elite buyers and sellers worldwide.</p>
+                    </div>
+                    <div>
+                        <h3 class="gold-text">Absolute Discretion</h3>
+                        <p class="mt-2 text-muted">We value your privacy above all else.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container section text-center">
+            <h2 class="section-title text-center">Client Testimonials</h2>
+            <div class="testimonial">
+                <p class="text-large">"Aura Real Estate provided an absolutely seamless experience. They found the off-market estate of our dreams within weeks."</p>
+                <span class="gold-text mt-4 block">- Jonathan M., CEO</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="page container section">
+        <div class="about-grid">
+            <div class="about-img" style="background-image: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800');"></div>
+            <div class="about-text">
+                <h2 class="section-title align-left">Alexander Vance</h2>
+                <p class="gold-text" style="margin-bottom: 20px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px;">Senior Luxury Broker</p>
+                <p class="text-muted">With over 15 years of experience in the luxury real estate market, Alexander Vance has cultivated a reputation for excellence, discretion, and unparalleled market knowledge.</p>
+                <br>
+                <p class="text-muted">Specializing in high-net-worth clientele, Alexander ensures that every transaction is handled with white-glove service, whether you are acquiring a coastal retreat or selling a historic estate.</p>
+                <br>
+                <button class="btn-primary mt-4" onclick="showPage('contact')">Contact Alexander</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="listings" class="page container section">
+        <h2 class="section-title text-center">Exclusive Listings</h2>
+        
+        <div class="filter-bar">
+            <select>
+                <option>All Prices</option>
+                <option>$1M - $5M</option>
+                <option>$5M - $10M</option>
+                <option>$10M+</option>
+            </select>
+            <select>
+                <option>All Locations</option>
+                <option>California</option>
+                <option>Florida</option>
+                <option>Colorado</option>
+            </select>
+            <select>
+                <option>Property Type</option>
+                <option>Villa</option>
+                <option>Penthouse</option>
+                <option>Estate</option>
+            </select>
+            <button class="btn-secondary">Filter</button>
+        </div>
+
+        <div class="grid-3">
+            <div class="property-card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800');"></div>
+                <div class="card-content">
+                    <h3>$4,500,000</h3>
+                    <p class="location">Beverly Hills, CA</p>
+                    <p class="desc">5 Beds | 6 Baths | 7,200 sqft</p>
+                    <button class="btn-secondary" onclick="showPage('details')">View Details</button>
+                </div>
+            </div>
+            <div class="property-card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800');"></div>
+                <div class="card-content">
+                    <h3>$8,200,000</h3>
+                    <p class="location">Miami Beach, FL</p>
+                    <p class="desc">4 Beds | 4.5 Baths | 5,500 sqft</p>
+                    <button class="btn-secondary" onclick="showPage('details')">View Details</button>
+                </div>
+            </div>
+            <div class="property-card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800');"></div>
+                <div class="card-content">
+                    <h3>$3,150,000</h3>
+                    <p class="location">Aspen, CO</p>
+                    <p class="desc">6 Beds | 7 Baths | 8,100 sqft</p>
+                    <button class="btn-secondary" onclick="showPage('details')">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="details" class="page container section">
+        <button class="btn-secondary" onclick="showPage('listings')" style="margin-bottom: 30px;">&larr; Back to Listings</button>
+        
+        <div class="gallery-hero" style="background-image: url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200');"></div>
+        
+        <div class="details-grid mt-4">
+            <div class="details-info">
+                <h1 style="font-family: 'Playfair Display'; color: var(--gold); font-size: 3rem;" class="mobile-h1">$4,500,000</h1>
+                <h2 style="font-size: 1.5rem; color: var(--text-main); margin-top: 10px;">123 Summit Drive, Beverly Hills, CA</h2>
+                <div class="key-features mt-4">
+                    <span><strong>5</strong> Bedrooms</span>
+                    <span><strong>6</strong> Bathrooms</span>
+                    <span><strong>7,200</strong> Sq Ft</span>
+                    <span><strong>2021</strong> Built</span>
+                </div>
+                <h3 class="mt-4" style="font-size: 1.8rem;">Property Description</h3>
+                <p class="mt-4 text-muted">Perched above the city, this architectural masterpiece offers unobstructed panoramic views from downtown to the ocean. The property features an open-concept living space with automated fleetwood doors, a zero-edge infinity pool, a state-of-the-art home theater, and a 1,000-bottle wine cellar.</p>
+            </div>
+            
+            <div class="inquiry-form bg-secondary">
+                <h3 style="font-size: 1.5rem;">Inquire About This Property</h3>
+                <form class="mt-4" onsubmit="event.preventDefault();">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="tel" placeholder="Phone Number">
+                    <textarea placeholder="Message" rows="4" required>I am interested in 123 Summit Drive...</textarea>
+                    <button class="btn-primary" style="width: 100%;">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="page container section">
+        <h2 class="section-title text-center">Get In Touch</h2>
+        <div class="details-grid mt-4">
+            <div class="contact-info">
+                <h3 class="gold-text" style="font-size: 1.8rem;">Our Office</h3>
+                <p class="mt-4 text-muted">100 Luxury Way, Suite 500<br>Beverly Hills, CA 90210</p>
+                <p class="mt-4 text-muted"><strong>Phone:</strong> +1 (310) 555-0199</p>
+                <p class="text-muted"><strong>Email:</strong> contact@aurarealestate.com</p>
+            </div>
+            <div class="inquiry-form bg-secondary">
+                <form onsubmit="event.preventDefault();">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="How can we help you?" rows="5" required></textarea>
+                    <button class="btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <div class="logo">AURA<span>.</span></div>
+            <p class="mt-4 text-muted">© 2026 Aura Luxury Real Estate. All rights reserved.</p>
+            <div class="social-links mt-4">
+                <a href="#">Instagram</a> | <a href="#">LinkedIn</a> | <a href="#">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

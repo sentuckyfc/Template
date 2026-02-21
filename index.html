@@ -61,11 +61,33 @@
             text-transform: uppercase;
         }
 
+        /* Category Headers */
+        .category-header {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 24px 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .category-header h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #fff;
+            letter-spacing: -0.01em;
+        }
+
+        .category-header h2 span {
+            color: #777;
+            font-size: 1rem;
+            font-weight: 400;
+            margin-left: 8px;
+        }
+
         /* Template Grid */
         .templates {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 40px 24px 100px;
+            padding: 32px 24px 60px;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
             gap: 32px;
@@ -173,7 +195,7 @@
             background: rgba(255, 255, 255, 0.03);
         }
 
-        /* Placeholder thumbnail for templates without screenshots */
+        /* Placeholder thumbnail */
         .placeholder-thumb {
             width: 100%;
             height: 100%;
@@ -203,18 +225,15 @@
 </head>
 <body>
 
-    <!-- Header -->
     <header class="header">
         <h1>Template Gallery</h1>
         <p>Browse the collection of ready-made website templates. Click any card to preview.</p>
-        <span class="badge">11 Templates Available</span>
+        <span class="badge" id="total-badge">0 Templates Available</span>
     </header>
 
-    <!-- Template List -->
-    <section class="templates">
-
-        <!-- Beauty Template -->
-        <a href="Beauty/index.html" class="card" style="text-decoration:none;color:inherit;">
+    <div id="template-container" style="display: none;">
+        
+        <a href="Beauty/index.html" class="card" data-category="E-Commerce & Retail" style="text-decoration:none;color:inherit;">
             <div class="card-thumbnail">
                 <div class="placeholder-thumb">&#10024;</div>
                 <div class="overlay">
@@ -227,13 +246,11 @@
                 <div class="tags">
                     <span class="tag">Beauty</span>
                     <span class="tag">E-Commerce</span>
-                    <span class="tag">HTML / CSS / JS</span>
                 </div>
             </div>
         </a>
 
-        <!-- Fashion Template -->
-        <a href="Fashion/index.html" class="card" style="text-decoration:none;color:inherit;">
+        <a href="Fashion/index.html" class="card" data-category="E-Commerce & Retail" style="text-decoration:none;color:inherit;">
             <div class="card-thumbnail">
                 <div class="placeholder-thumb" style="background:linear-gradient(135deg,#1e1e2e,#2e2a1a);">&#128085;</div>
                 <div class="overlay">
@@ -246,13 +263,11 @@
                 <div class="tags">
                     <span class="tag">Fashion</span>
                     <span class="tag">E-Commerce</span>
-                    <span class="tag">HTML / CSS / JS</span>
                 </div>
             </div>
         </a>
 
-        <!-- Gaming Landing Page Template -->
-        <a href="Landingpage/index.html" class="card" style="text-decoration:none;color:inherit;">
+        <a href="Landingpage/index.html" class="card" data-category="Tech & Gaming" style="text-decoration:none;color:inherit;">
             <div class="card-thumbnail">
                 <div class="placeholder-thumb" style="background:linear-gradient(135deg,#0a0a1a,#00d4ff10);">&#127918;</div>
                 <div class="overlay">
@@ -265,13 +280,11 @@
                 <div class="tags">
                     <span class="tag">Gaming</span>
                     <span class="tag">Landing Page</span>
-                    <span class="tag">HTML / CSS / JS</span>
                 </div>
             </div>
         </a>
 
-        <!-- Neobrutalist Template -->
-        <a href="Neobrutalist/index.html" class="card" style="text-decoration:none;color:inherit;">
+        <a href="Neobrutalist/index.html" class="card" data-category="Agencies & Corporate" style="text-decoration:none;color:inherit;">
             <div class="card-thumbnail">
                 <div class="placeholder-thumb" style="background:linear-gradient(135deg,#F7C948,#FF3366);color:rgba(0,0,0,0.25);font-weight:700;font-family:sans-serif;">&#9889;</div>
                 <div class="overlay">
@@ -283,14 +296,12 @@
                 <p>A raw, bold, confrontational creative agency landing page with thick borders, hard shadows, scroll reveals, animated counters, and pure neobrutalist energy.</p>
                 <div class="tags">
                     <span class="tag">Neobrutalist</span>
-                    <span class="tag">Landing Page</span>
-                    <span class="tag">HTML / CSS / JS</span>
+                    <span class="tag">Agency</span>
                 </div>
             </div>
         </a>
 
-        <!-- Swiss / International Template -->
-        <a href="Swiss/index.html" class="card" style="text-decoration:none;color:inherit;">
+        <a href="Swiss/index.html" class="card" data-category="Agencies & Corporate" style="text-decoration:none;color:inherit;">
             <div class="card-thumbnail">
                 <div class="placeholder-thumb" style="background:linear-gradient(135deg,#f7f6f3,#e5e4e0);color:rgba(230,57,70,0.3);font-weight:700;font-family:sans-serif;">&#9670;</div>
                 <div class="overlay">
@@ -302,16 +313,12 @@
                 <p>A precision data intelligence consultancy landing page with grid-driven Swiss typography, structured hierarchy, smooth reveals, live clock, and chromatic discipline.</p>
                 <div class="tags">
                     <span class="tag">Swiss Style</span>
-                    <span class="tag">Landing Page</span>
-                    <span class="tag">HTML / CSS / JS</span>
+                    <span class="tag">Consultancy</span>
                 </div>
             </div>
         </a>
 
-        <!-- Add more template cards here -->
-
-        <!-- Retro-Futuristic Template -->
-        <a href="Retro-futuristic/index.html" class="card" style="text-decoration:none;color:inherit;">
+        <a href="Retro-futuristic/index.html" class="card" data-category="E-Commerce & Retail" style="text-decoration:none;color:inherit;">
             <div class="card-thumbnail">
                 <div class="placeholder-thumb" style="background:linear-gradient(135deg,#08080c,#0ff10);color:rgba(0,255,255,0.25);font-weight:700;font-family:sans-serif;">◈</div>
                 <div class="overlay">
@@ -323,14 +330,12 @@
                 <p>A raw, bold retro-futuristic fashion landing page with glitch loaders, CRT scanlines, floating orbs, scroll reveals, animated counters, and a speculative sci-fi narrative arc.</p>
                 <div class="tags">
                     <span class="tag">Retro-Futuristic</span>
-                    <span class="tag">Fashion</span>
-                    <span class="tag">HTML / CSS / JS</span>
+                    <span class="tag">Creative</span>
                 </div>
             </div>
         </a>
 
-        <!-- Scandinavian Template -->
-        <a href="Scandinavian/index.html" class="card" style="text-decoration:none;color:inherit;">
+        <a href="Scandinavian/index.html" class="card" data-category="E-Commerce & Retail" style="text-decoration:none;color:inherit;">
             <div class="card-thumbnail">
                 <div class="placeholder-thumb" style="background:linear-gradient(135deg,#f5f0e8,#d4c9b8);color:rgba(160,133,107,0.35);font-weight:300;font-family:Georgia,serif;">&#127807;</div>
                 <div class="overlay">
@@ -342,14 +347,12 @@
                 <p>A warm minimalist fashion landing page inspired by hygge, natural materials, and Nordic design — featuring gentle scroll reveals, testimonial slider, and earthy organic aesthetics.</p>
                 <div class="tags">
                     <span class="tag">Scandinavian</span>
-                    <span class="tag">Fashion</span>
-                    <span class="tag">HTML / CSS / JS</span>
+                    <span class="tag">Minimalist</span>
                 </div>
             </div>
         </a>
 
-        <!-- Simple Streetwear Template -->
-        <a href="Simple/index.html" class="card" style="text-decoration:none;color:inherit;">
+        <a href="Simple/index.html" class="card" data-category="E-Commerce & Retail" style="text-decoration:none;color:inherit;">
             <div class="card-thumbnail">
                 <div class="placeholder-thumb" style="background:linear-gradient(135deg,#0c0c0c,#1c1c1c);color:rgba(212,255,0,0.3);font-weight:700;font-family:sans-serif;">&#128293;</div>
                 <div class="overlay">
@@ -362,13 +365,11 @@
                 <div class="tags">
                     <span class="tag">Streetwear</span>
                     <span class="tag">E-Commerce</span>
-                    <span class="tag">HTML / CSS / JS</span>
                 </div>
             </div>
         </a>
 
-        <!-- Modern Property Template -->
-        <a href="Modern/index.html" class="card" style="text-decoration:none;color:inherit;">
+        <a href="Modern/index.html" class="card" data-category="Real Estate & Property" style="text-decoration:none;color:inherit;">
             <div class="card-thumbnail">
                 <div class="placeholder-thumb" style="background:linear-gradient(135deg,#f8f7f4,#c9a96e);color:rgba(26,26,26,0.2);font-weight:700;font-family:Georgia,serif;">&#9645;</div>
                 <div class="overlay">
@@ -381,13 +382,11 @@
                 <div class="tags">
                     <span class="tag">Property</span>
                     <span class="tag">Landing Page</span>
-                    <span class="tag">HTML / CSS / JS</span>
                 </div>
             </div>
         </a>
 
-        <!-- Shopova Template -->
-        <a href="shopova/index.html" class="card" style="text-decoration:none;color:inherit;">
+        <a href="shopova/index.html" class="card" data-category="E-Commerce & Retail" style="text-decoration:none;color:inherit;">
             <div class="card-thumbnail">
                 <div class="placeholder-thumb" style="background:linear-gradient(135deg,#1a2433,#3a5a7a);color:rgba(255,255,255,0.3);font-weight:700;font-family:sans-serif;">&#128717;</div>
                 <div class="overlay">
@@ -400,13 +399,28 @@
                 <div class="tags">
                     <span class="tag">Shopova</span>
                     <span class="tag">E-Commerce</span>
-                    <span class="tag">HTML / CSS / JS</span>
                 </div>
             </div>
         </a>
 
-        <!-- Azurevista Template -->
-        <a href="azurevista/index.html" class="card" style="text-decoration:none;color:inherit;">
+        <a href="Insurance/index.html" class="card" data-category="Agencies & Corporate" style="text-decoration:none;color:inherit;">
+            <div class="card-thumbnail">
+                <div class="placeholder-thumb" style="background:linear-gradient(135deg,#0D5C3D,#148C5B);color:rgba(255,255,255,0.25);font-weight:700;font-family:serif;">&#127793;</div>
+                <div class="overlay">
+                    <span class="btn-preview">View Template</span>
+                </div>
+            </div>
+            <div class="card-body">
+                <h3>Evergreen — Insurance</h3>
+                <p>A warm, professional insurance landing page with coverage cards, honest pricing plans, animated counters, FAQ accordion, testimonials, and a trust-building design.</p>
+                <div class="tags">
+                    <span class="tag">Insurance</span>
+                    <span class="tag">Corporate</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="azurevista/index.html" class="card" data-category="Tech & Gaming" style="text-decoration:none;color:inherit;">
             <div class="card-thumbnail">
                 <div class="placeholder-thumb" style="background:linear-gradient(135deg,#004080,#00a0ff);color:rgba(255,255,255,0.3);font-weight:700;font-family:sans-serif;">&#127758;</div>
                 <div class="overlay">
@@ -417,19 +431,79 @@
                 <h3>AZUREVISTA — Cloud Dashboard</h3>
                 <p>An elegant cloud service dashboard template featuring Azure-inspired blues, responsive charts, and a clean UI for monitoring resources.</p>
                 <div class="tags">
-                    <span class="tag">Azurevista</span>
                     <span class="tag">Dashboard</span>
-                    <span class="tag">HTML / CSS / JS</span>
+                    <span class="tag">Tech</span>
                 </div>
             </div>
         </a>
 
-    </section>
+        <a href="Simple-Real-Estate/index.html" class="card" data-category="Real Estate & Property" style="text-decoration:none;color:inherit;">
+            <div class="card-thumbnail">
+                <div class="placeholder-thumb" style="background:linear-gradient(135deg, #ffffff, #f0f4f8); color:rgba(179, 139, 54, 0.4); font-weight:700; font-family:sans-serif;">&#127758;</div>
+                <div class="overlay">
+                    <span class="btn-preview">View Template</span>
+                </div>
+            </div>
+            <div class="card-body">
+                <h3>Aura — Simple Real Estate</h3>
+                <p>An Simple website for real estate agent to sell their property</p>
+                <div class="tags">
+                    <span class="tag">Real Estate</span>
+                    <span class="tag">Landing Page</span>
+                </div>
+            </div>
+        </a>
 
-    <!-- Footer -->
+    </div>
+
+    <div id="gallery-output"></div>
+
     <footer class="footer">
-        &copy; 2026 Template Gallery &mdash; Add new templates by creating a folder and linking it here.
+        &copy; 2026 Template Gallery &mdash; Template base on Catogery
     </footer>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const container = document.getElementById("template-container");
+            const output = document.getElementById("gallery-output");
+            const cards = Array.from(container.querySelectorAll(".card"));
+            const totalBadge = document.getElementById("total-badge");
+
+            // 1. Update total count
+            totalBadge.textContent = `${cards.length} Templates Available`;
+
+            // 2. Group cards by data-category
+            const categories = {};
+            cards.forEach(card => {
+                const categoryName = card.getAttribute("data-category") || "Uncategorized";
+                if (!categories[categoryName]) {
+                    categories[categoryName] = [];
+                }
+                categories[categoryName].push(card);
+            });
+
+            // 3. Render categorized grids
+            for (const [categoryName, categoryCards] of Object.entries(categories)) {
+                // Category Header
+                const header = document.createElement("div");
+                header.className = "category-header";
+                header.innerHTML = `<h2>${categoryName} <span>(${categoryCards.length})</span></h2>`;
+                output.appendChild(header);
+
+                // Category Grid
+                const grid = document.createElement("section");
+                grid.className = "templates";
+                
+                categoryCards.forEach(card => {
+                    // Clone the node so we don't mess up the original structure (optional but clean)
+                    grid.appendChild(card.cloneNode(true));
+                });
+                output.appendChild(grid);
+            }
+
+            // Optional: Remove the hidden container to clean up the DOM
+            container.remove();
+        });
+    </script>
 </body>
 </html>

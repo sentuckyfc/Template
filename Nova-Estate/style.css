@@ -1,0 +1,185 @@
+:root {
+    --primary: #2563eb; /* Biru moden */
+    --primary-hover: #1d4ed8;
+    --bg-light: #f8fafc; /* Latar belakang kelabu sangat lembut */
+    --surface: #ffffff;
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --radius-lg: 20px;
+    --radius-md: 12px;
+    --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 20px 40px rgba(37, 99, 235, 0.1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+body { background-color: var(--bg-light); color: var(--text-main); }
+
+/* --- Navbar --- */
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 8%; background: var(--surface);
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.02);
+}
+.logo { font-size: 1.5rem; font-weight: 700; color: var(--text-main); display: flex; align-items: center; gap: 8px;}
+.logo i { color: var(--primary); }
+.nav-links { display: flex; gap: 30px; list-style: none; }
+.nav-links a { text-decoration: none; color: var(--text-muted); font-weight: 500; transition: 0.3s; }
+.nav-links a:hover, .nav-links a.active { color: var(--primary); }
+
+.btn-outline {
+    border: 2px solid var(--primary); color: var(--primary); padding: 10px 24px;
+    border-radius: 50px; text-decoration: none; font-weight: 600; transition: 0.3s;
+}
+.btn-outline:hover { background: var(--primary); color: white; }
+
+/* --- Hero Section --- */
+.hero {
+    position: relative;
+    height: 75vh;
+    margin: 20px 4% 0;
+    border-radius: 30px;
+    background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.6)), 
+                url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80') center/cover;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    text-align: center; color: white;
+}
+.badge-hero {
+    background: rgba(255,255,255,0.2); backdrop-filter: blur(10px);
+    padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; margin-bottom: 20px;
+}
+.hero h1 { font-size: 4rem; font-weight: 700; line-height: 1.1; margin-bottom: 20px; }
+.hero p { font-size: 1.1rem; opacity: 0.9; max-width: 500px; }
+
+/* --- Floating Search Box --- */
+.search-box {
+    position: absolute; bottom: -40px;
+    background: var(--surface); width: 80%; max-width: 900px;
+    border-radius: 100px; padding: 15px 30px;
+    display: flex; justify-content: space-between; align-items: center;
+    box-shadow: var(--shadow-soft);
+}
+.input-group { display: flex; flex-direction: column; text-align: left; flex: 1; padding: 0 20px; }
+.input-group label { font-size: 0.8rem; color: var(--text-muted); font-weight: 600; margin-bottom: 5px; }
+.input-group input, .input-group select {
+    border: none; outline: none; font-size: 1rem; color: var(--text-main); font-weight: 500; background: transparent;
+}
+.divider { width: 1px; height: 40px; background: #e2e8f0; }
+
+.btn-primary {
+    background: var(--primary); color: white; border: none; padding: 15px 40px;
+    border-radius: 50px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: 0.3s;
+}
+.btn-primary:hover { background: var(--primary-hover); box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3); }
+
+/* --- Senarai Hartanah (Modern Cards) --- */
+.listings { padding: 120px 8% 60px; }
+.section-header { text-align: center; margin-bottom: 50px; }
+.section-header h2 { font-size: 2.5rem; color: var(--text-main); }
+.section-header p { color: var(--text-muted); margin-top: 10px; }
+
+.property-grid {
+    display: flex; justify-content: center; gap: 30px;
+}
+
+.card {
+    background: var(--surface); border-radius: var(--radius-lg); padding: 15px; width: 100%;
+    box-shadow: var(--shadow-soft); transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+.card-img {
+    height: 240px; border-radius: var(--radius-md); position: relative;
+    background-size: cover; background-position: center;
+}
+.badge-new {
+    position: absolute; top: 15px; left: 15px; background: #10b981; color: white;
+    padding: 5px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 600;
+}
+.btn-heart {
+    position: absolute; top: 15px; right: 15px; background: white; border: none;
+    width: 35px; height: 35px; border-radius: 50%; display: grid; place-items: center;
+    color: var(--text-muted); cursor: pointer; transition: 0.3s;
+}
+.btn-heart:hover { color: #ef4444; }
+
+.card-content { padding: 20px 10px 10px; }
+.price-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.price { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+.type { font-size: 0.8rem; background: var(--bg-light); padding: 5px 10px; border-radius: 6px; color: var(--text-muted); font-weight: 500; }
+.card h3 { font-size: 1.2rem; margin-bottom: 8px; }
+.location { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px; display: flex; align-items: center; gap: 5px; }
+
+.features {
+    display: flex; justify-content: space-between; border-top: 1px solid #f1f5f9;
+    padding-top: 15px; color: var(--text-muted); font-size: 0.85rem;
+}
+.features span { display: flex; align-items: center; gap: 6px; }
+
+
+/* Responsive */
+@media(max-width: 900px) {
+    .search-box { position: static; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; border-radius: 20px; margin-top: 30px; gap: 15px; padding: 20px; }
+    .divider { display: none; }
+    .box1 {display: flex; flex-direction: column; justify-content: center; gap: 10px;}
+    .btn-primary { width: 100%; }
+    .hero { height: auto; padding: 60px 20px; border-radius: 0; margin: 0; }
+    .property-grid {
+    display: flex; flex-direction: column; gap: 30px;
+}
+}
+
+/* Sembunyikan butang menu pada paparan Desktop */
+.menu-btn {
+    display: none;
+    font-size: 1.8rem;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-btn:hover { color: var(--primary); }
+
+/* --- Mobile Responsive (Skrin di bawah 900px) --- */
+@media (max-width: 900px) {
+    /* Paparkan butang hamburger */
+    .menu-btn { display: block; }
+
+    /* Gayakan nav-links sebagai dropdown tersembunyi */
+    .nav-links {
+        position: absolute;
+        top: 100%; /* Duduk betul-betul di bawah navbar */
+        left: 0;
+        width: 100%;
+        background: var(--surface);
+        flex-direction: column; /* Susun ke bawah */
+        align-items: center;
+        padding: 0;
+        box-shadow: var(--shadow-soft);
+        
+        /* Animasi moden menggunakan clip-path (tersembunyi secara default) */
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path 0.4s ease-in-out, padding 0.4s;
+    }
+
+    /* Kelas apabila menu dibuka (aktif) */
+    .nav-links.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        padding: 20px 0 30px; /* Tambah ruang apabila dibuka */
+    }
+
+    /* Penjarakan item dalam menu mobile */
+    .nav-links li { margin: 15px 0; }
+    
+    .nav-btn-container { margin-top: 20px; }
+}
+
+@media (min-width: 1024px) {
+    .box1 {
+        display: contents;
+    }
+}
